@@ -6,12 +6,7 @@
 > A local habitation and a name.
 > —William Shakespeare, A Midsummer-Night's Dream
 
-[20230116~20230116] week1
-[20230117~20230117] week1
-[20230118~20230118] week2
-[20230119~20230119] week2 
-[20230120~20230120] week3
-[20230121~20230121] week3
+
 ## 1.1 Getting started
 
 - **Statements & Expressions**. Python code consists of expressions and statements. Broadly, computer programs consist of instructions to either
@@ -61,7 +56,7 @@ When executing an assignment statement, Python evaluates the expression to the r
 
 - **Functions**
 1. **Pure functions.** Functions have some input (their arguments) and return some output (the result of applying them).
-2. **Unpure functions. **
+2. **Unpure functions.**
 ## 1.3 Function
 
 - When it comes to division, Python provides two infix operators: **/** and **//**. The former is normal division, so that it results in a _floating point_, or decimal value, even if the divisor evenly divides the dividend. The **//** operator, on the other hand, rounds the result down to an integer.
@@ -147,7 +142,7 @@ def foo(x):
 `python -m doctests file.py`type this in the terminal , it loads your file into the Python interpreter, and checks to see if each doctest input (e.g. foo(4)) is the same as the specified output (e.g. 4). If it isn't, a message will tell you which doctests you failed.
 `python -m doctests file.py -v`v stands for _verbose. _In addition to telling you which doctests you failed, it will also tell you which doctests passed.
 #### **Writing you own tests**
-#### **Using **`**print**`** statement**
+#### **Using** `print` **statement**
 ```python
 def foo(x):
     result = some_function(x)
@@ -175,7 +170,7 @@ while i < n:
 #### **Interactive Debugging**
 `python -i file.py`** **run this statement in the terminal, and then has a session of python where all the difinitions of `file.py`have already been executed.
 `python ok -q <question name> -i` If you are using the ok autograder, it has a specific tool that enables you to jump into the middle of a failing test case.
-#### **Using **`**assert**`**statements**
+#### **Using** `assert` **statements**
 ```python
 def double(x):
     assert isinstance(x, int), "The input to double(x) must be an integer"
@@ -263,7 +258,7 @@ IndexError: tuple index out of range
 - **Spelling**
 - **Missing parentheses**
 - **Missing closed quotes**
-- `**=**`** VS **`**==**`
+- **`=` VS`==`**
 - **Infinite Loops**
 - **Off-by-one errors**
 ## 1.6 High-order funtion
