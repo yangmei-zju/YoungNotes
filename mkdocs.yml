@@ -1,0 +1,170 @@
+
+# Project information
+site_name: YoungNotes
+site_url: https://youngnotes.com/
+site_author: yangemi-zju
+site_description: >-
+  Some notes 
+# Repository
+repo_name: yangmei-zju/YoungNotes
+repo_url: https://github.com/yangmei-zju/YoungNotes
+
+# Copyright
+copyright: Copyright &copy 2023; 
+
+# Configuration
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default #light mode
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny  
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  language: 'zh'
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    logo: logo
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - zh
+        - en
+        - ja
+
+# Additional configuration
+extra:
+  annotate:
+    json: [.s2]
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yangmei-zju 
+
+extra_css:
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - css/custom.css
+  - css/card.css
+  - css/tasklist.css
+  - css/flink.css
+  - css/more_changelog.css
+  
+
+extra_javascript:
+  - js/baidu-tongji.js
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js
+  - js/katex.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4 
+  # Python Markdown Extensions    
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      #slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #  kwds:
+      #    case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+    - index.md
