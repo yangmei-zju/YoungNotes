@@ -4,7 +4,7 @@ site_name: YoungNotes
 site_url: https://youngnotes.com/
 site_author: yangemi-zju
 site_description: >-
-  Some notes 
+  Some notes
 # Repository
 repo_name: yangmei-zju/YoungNotes
 repo_url: https://github.com/yangmei-zju/YoungNotes
@@ -95,23 +95,18 @@ extra:
       link: https://github.com/yangmei-zju 
 
 extra_css:
-  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
-  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
-  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
-  - css/custom.css
-  - css/card.css
-  - css/tasklist.css
-  - css/flink.css
-  - css/more_changelog.css
-  
+  - 'from_oi_wiki/css/extra.css?v=13'
+  - css/status.css
+  - css/neoteroi-mkdocs.css
 
 extra_javascript:
-  - js/baidu-tongji.js
-  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js
-  - js/katex.js
+  - 'from_oi_wiki/js/extra.js'
+  - js/mathjax.js # 支持数学公式，ref : https://squidfunk.github.io/mkdocs-material/reference/mathjax
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js # 支持表格排序
+  - js/tablesort.js
+
 
 
 # Extensions
@@ -167,4 +162,25 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-    - index.md
+    - Home: index.md
+    - Math:
+      - 数学建模: 
+        - 数论与组合数学模型:
+          - 秘密共享:
+          - NIM游戏:
+          - 伪币问题:
+        - 搜索引擎的pagerank模型:
+        - 随机模型:
+        - 秘书问题:
+        - 几何模型:
+        
+      - 数学分析: .\Math\数学分析.md
+      - 高等代数: .\Math\高等代数.md 
+    - CS:
+      - 数据结构:
+        - 算法复杂度分析: .\CS\FDS\Chapter2-5.md
+        - 表，栈: .\CS\FDS\Chapter6-7.md
+        - 树: 
+      - C小程: .\CS\c小程.md
+      - CS61a:
+        -Chapter 1: .\CS\cs61a\chapter_1.md
