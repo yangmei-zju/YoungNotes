@@ -12,13 +12,13 @@
         <meta name="author" content="yangemi-zju">
       
       
-        <link rel="canonical" href="https://youngnotes.com/Math/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
+        <link rel="canonical" href="https://youngnotes.com/Math/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
       
       
-        <link rel="next" href="../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">
+        <link rel="next" href="../../CS/FDS/1Algorithm_analysis/">
       
       
       <link rel="icon" href="../../{'icon': './assets/tuna.jpg'}">
@@ -26,7 +26,7 @@
     
     
       
-        <title>数学分析 - YoungNotes</title>
+        <title>高等代数 - YoungNotes</title>
       
     
     
@@ -161,7 +161,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              数学分析
+              高等代数
             
           </span>
         </div>
@@ -293,7 +293,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-tabs__link">
           
   
     
@@ -449,6 +449,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -464,7 +484,7 @@
           
   
   <span class="md-ellipsis">
-    数学分析
+    高等代数
   </span>
   
 
@@ -475,7 +495,7 @@
         
   
   <span class="md-ellipsis">
-    数学分析
+    高等代数
   </span>
   
 
@@ -499,17 +519,26 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      数列极限
+      行列式
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="数列极限">
+    <nav class="md-nav" aria-label="行列式">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      实数系的连续性
+      二阶行列式和三阶行列式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ndeta-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      n阶行列式\(det(A)    |A|\)（递归定义  性质  组合定义）
     </span>
   </a>
   
@@ -518,7 +547,7 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      数列极限
+      行列式的展开和转置
     </span>
   </a>
   
@@ -527,33 +556,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      实数系六大基本定理
+      行列式的等价定义
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="实数系六大基本定理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      实数系六大定理极其互证
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      一些题目：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -563,19 +568,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      函数极限
+      矩阵
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="函数极限">
+    <nav class="md-nav" aria-label="矩阵">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      定义 单侧极限 定义的扩充
+      方阵的逆阵
     </span>
   </a>
   
@@ -584,7 +607,7 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      基本性质
+      矩阵的初等变换与初等矩阵
     </span>
   </a>
   
@@ -593,7 +616,25 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      基本命题
+      矩阵乘积的行列式与初等变换法求逆阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      分块矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caunchy-biolet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caunchy-Biolet定理
     </span>
   </a>
   
@@ -605,28 +646,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      连续函数
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="连续函数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      定义（单侧连续）
+      线性空间
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="线性空间">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      间断点
+      线性空间
     </span>
   </a>
   
@@ -635,7 +667,7 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      特殊函数的连续性
+      向量的线性关系
     </span>
   </a>
   
@@ -644,7 +676,7 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      反函数连续性
+      向量组的秩
     </span>
   </a>
   
@@ -653,7 +685,7 @@
           <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      复合函数连续性
+      矩阵的秩
     </span>
   </a>
   
@@ -662,7 +694,7 @@
           <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      闭区间上的连续函数
+      子空间
     </span>
   </a>
   
@@ -671,16 +703,7 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      一致连续性
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
-    <span class="md-ellipsis">
-      单调函数
+      线性方程的解
     </span>
   </a>
   
@@ -692,55 +715,52 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      微分中值定理
+      映射
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      不定积分
+      线性映射
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      定积分
+      特征值
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="定积分">
+    <nav class="md-nav" aria-label="特征值">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      定积分的概念与可积条件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      定积分的性质
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
-    <span class="md-ellipsis">
-      微积分基本定理
+      特征值和特征向量
     </span>
   </a>
   
@@ -755,26 +775,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    高等代数
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1076,17 +1076,26 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      数列极限
+      行列式
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="数列极限">
+    <nav class="md-nav" aria-label="行列式">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      实数系的连续性
+      二阶行列式和三阶行列式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ndeta-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      n阶行列式\(det(A)    |A|\)（递归定义  性质  组合定义）
     </span>
   </a>
   
@@ -1095,7 +1104,7 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      数列极限
+      行列式的展开和转置
     </span>
   </a>
   
@@ -1104,33 +1113,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      实数系六大基本定理
+      行列式的等价定义
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="实数系六大基本定理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      实数系六大定理极其互证
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      一些题目：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1140,19 +1125,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      函数极限
+      矩阵
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="函数极限">
+    <nav class="md-nav" aria-label="矩阵">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      定义 单侧极限 定义的扩充
+      方阵的逆阵
     </span>
   </a>
   
@@ -1161,7 +1164,7 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      基本性质
+      矩阵的初等变换与初等矩阵
     </span>
   </a>
   
@@ -1170,7 +1173,25 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      基本命题
+      矩阵乘积的行列式与初等变换法求逆阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      分块矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caunchy-biolet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caunchy-Biolet定理
     </span>
   </a>
   
@@ -1182,28 +1203,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      连续函数
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="连续函数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      定义（单侧连续）
+      线性空间
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="线性空间">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      间断点
+      线性空间
     </span>
   </a>
   
@@ -1212,7 +1224,7 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      特殊函数的连续性
+      向量的线性关系
     </span>
   </a>
   
@@ -1221,7 +1233,7 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      反函数连续性
+      向量组的秩
     </span>
   </a>
   
@@ -1230,7 +1242,7 @@
           <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      复合函数连续性
+      矩阵的秩
     </span>
   </a>
   
@@ -1239,7 +1251,7 @@
           <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      闭区间上的连续函数
+      子空间
     </span>
   </a>
   
@@ -1248,16 +1260,7 @@
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      一致连续性
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
-    <span class="md-ellipsis">
-      单调函数
+      线性方程的解
     </span>
   </a>
   
@@ -1269,55 +1272,52 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      微分中值定理
+      映射
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      不定积分
+      线性映射
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      定积分
+      特征值
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="定积分">
+    <nav class="md-nav" aria-label="特征值">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      定积分的概念与可积条件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      定积分的性质
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
-    <span class="md-ellipsis">
-      微积分基本定理
+      特征值和特征向量
     </span>
   </a>
   
@@ -1343,7 +1343,7 @@
                   
 
   
-    <a href="https://github.com/yangmei-zju/YoungNotes/edit/master/docs/Math/数学分析.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/yangmei-zju/YoungNotes/edit/master/docs/Math/高等代数.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1352,248 +1352,384 @@
     
       
     
-    <a href="https://github.com/yangmei-zju/YoungNotes/raw/master/docs/Math/数学分析.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/yangmei-zju/YoungNotes/raw/master/docs/Math/高等代数.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="_1">数学分析<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<div class="admonition quote">
-<p class="admonition-title">参考书籍</p>
-<p>数学分析（陈纪修）；
-  数学分析习题讲义（谢惠民）。</p>
-</div>
-<h2 id="_2">数列极限<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">实数系的连续性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h1 id="_1">高等代数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">行列式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">二阶行列式和三阶行列式<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li>上确界与下确界 </li>
-<li>有界 </li>
-<li>确界的定义描述 </li>
-<li>确界存在定理（实数系的连续性公理） <ul>
-<li>实数的小数表达</li>
-<li>Dedekind公理</li>
+<li>解线性方程组（待定系数消元法）自然出现的表达式 </li>
+<li>递归定义 </li>
+<li>余子式<span class="arithmatex">\(M_{ij}\)</span></li>
+<li>代数余子式<span class="arithmatex">\(A_{ij}=(-1)^{i+j}M_{ij}\)</span></li>
+<li>组合定义 </li>
+<li>主对角线（左上到右下↘）</li>
+<li>上（下）三角行列式（定义用数学描述） </li>
+<li>对角矩阵</li>
+<li>转置（行列互换，主对角线对称） </li>
+<li>几何意义（<span class="arithmatex">\(S_{\triangle OAB} = \frac{1}{2} |A_{2 \times 2} |\)</span>，<span class="arithmatex">\(V_{OABC} = \frac{1}{6}|A_{3 \times 3}|\)</span>四面体的体积） </li>
 </ul>
-</li>
-<li>实数的性质 </li>
-<li>四则运算封闭</li>
-<li>有序性</li>
-<li>阿基米德性</li>
-<li>稠密性</li>
-<li>Dedekind分割 </li>
-<li>定义</li>
-<li>Dedekind公理（实数部分《微积分入门》）</li>
-</ul>
-<h3 id="_4">数列极限<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="ndeta-a">n阶行列式<span class="arithmatex">\(det(A)    |A|\)</span>（递归定义  性质  组合定义）<a class="headerlink" href="#ndeta-a" title="Permanent link">&para;</a></h3>
 <ul>
-<li>定义（几何描述） </li>
+<li>定义（数归的余子项定义） </li>
 <li>性质 </li>
-<li>唯一性</li>
-<li>有界性</li>
-<li>保序性（保号性）及其否命题</li>
-<li>夹逼性</li>
-<li>四则运算</li>
-<li>收敛数列的每一子列收敛于同一极限</li>
-<li>Cauchy命题（平均收敛定理） </li>
-<li>Stolz定理 </li>
-<li>自然对数<span class="arithmatex">\(e\)</span>和Euler常数<span class="arithmatex">\(\gamma\)</span></li>
-<li>收敛准则 </li>
+<li>上（下）三角行列式值等于主对角线的元素之积 </li>
+<li>（倍乘变换）将行列式的某一行或者某一列乘以一个常数c，则得到的行列式<span class="arithmatex">\(|B| = c |A|\)</span><ul>
+<li>如果某一行或者某一列的元素全为0则行列式的值为0 </li>
+</ul>
+</li>
+<li>（对换变换）对换行列式的任意不同两行（列），行列式的值改变符号 <ul>
+<li>若行列式的两行（列）成比列，则行列式的值为0</li>
+</ul>
+</li>
+<li>（倍加变换）行列式的一行（列）加到另一行（列）上，行列式的值不变</li>
+<li>行列式按照某一行（列）相加 （<span class="arithmatex">\(|C| = |A| + |B|,c_{ir}=a_{ir}+b_{ir}\)</span><span class="arithmatex">\((i = 1,2,\cdots,n\)</span>）而其他元素相同</li>
+</ul>
+<h3 id="_4">行列式的展开和转置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>对任意的一列（行）展开（通常按照第一列展开）<ul>
+<li><span class="arithmatex">\(|A| = a_{1r}A_{1r}+a_{2r}A_{2r}+\cdots+a_{nr}A{nr}\)</span>（对任意的r列展开）</li>
+<li><span class="arithmatex">\(\forall s\ne t,a_{1r}A_{1s}+a_{2r}A_{2s}+\cdots+a_{nr}A_{ns} = 0\)</span></li>
+</ul>
+</li>
+<li>行列式转置后值不变</li>
+<li><span class="arithmatex">\(Cramar\)</span>法则<span class="arithmatex">\(x_i=\frac{|A_i|}{|A|}\)</span><span class="arithmatex">\(A_i\)</span>为第i列被b替换</li>
+</ul>
+<h3 id="_5">行列式的等价定义<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>定义：全排列，全排列的集合<span class="arithmatex">\(S_n\)</span>, 逆序对，逆序数<span class="arithmatex">\(N\)</span>（逆序对的总个数），偶（奇）排列</p>
+<blockquote>
+<ul>
+<li>引理：对换全排列中任意两个数，则全排列的奇偶性改变（先证明对换相邻元素奇偶性改变，再说明对换不相邻元素相当于做了2（j-i）- 1  次相邻对换）</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>引理：设<span class="arithmatex">\(n \ge 2,\)</span><span class="arithmatex">\(S_n\)</span>中j奇偶排列各占一半</p>
+</li>
+<li>命题：设<span class="arithmatex">\((k_1,k_2,\cdots,k_n)\in S_n\)</span>,则<span class="arithmatex">\(k_1,k-2,\cdots,k_n)\)</span>经过<span class="arithmatex">\(N(k_1,k_2,\cdots,k_n）\)</span>次相邻对换可以变为常排列$(1,2,</li>
+</ul>
+<p>\cdots,n)$</p>
+<blockquote>
+<ul>
+<li>定理：<span class="arithmatex">\(|A| = \sum_{(k_1,k_2\cdots,k_n)\in S_n} (-1）^{N(k_1,k_2,\cdots,k_n)} a_{k_11}a_{k_22}\cdots a_{k_nn}\)</span>(行列式的组合定义）</li>
+</ul>
+</blockquote>
+<h2 id="_6">矩阵<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">定义<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_8">运算<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>加减法 </li>
+<li><span class="arithmatex">\((A + B)_{ij} = a_{ij} + b_{ij}\)</span>类比向量加法 </li>
+<li>运算规则（4） <ul>
+<li>交换律<span class="arithmatex">\(A+B= B+A\)</span></li>
+<li>结合律<span class="arithmatex">\((A+B)+C=A+(B+C)\)</span></li>
+<li>零元<span class="arithmatex">\(0+A=A\)</span></li>
+<li>负元<span class="arithmatex">\(A+(-A)=0\)</span></li>
+</ul>
+</li>
+<li>数乘 </li>
+<li><span class="arithmatex">\((cA)_{ij} = ca_{ij}\)</span>每个元素加倍 </li>
+<li>运算规则（5） <ul>
+<li>分配律<span class="arithmatex">\(c(A+B) = cA+cB\)</span>;<span class="arithmatex">\((c+d)A=cA+dA\)</span>（左右分配律）</li>
+<li>结合律<span class="arithmatex">\((cd)A=c(dA)\)</span></li>
+<li>单位元<span class="arithmatex">\(1 \cdot A=A\)</span></li>
+<li>零元<span class="arithmatex">\(0\cdot A=0\)</span></li>
+</ul>
+</li>
+<li>矩阵的乘法 </li>
+<li><span class="arithmatex">\(AB = rowA\times columeB\)</span> </li>
+<li>运算规则（4） <ul>
+<li>结合律<span class="arithmatex">\((AB)C=A(BC)\)</span></li>
+<li>分配律<span class="arithmatex">\(A(B+C)=AB+AC\)</span>;<span class="arithmatex">\((A+B)C =AC+BC\)</span>（左右分配律）</li>
+<li>与数乘的交换 <span class="arithmatex">\(c(AB)=(cA)B=A(cB)\)</span> </li>
+<li>单位矩阵<span class="arithmatex">\(m\times n ,I_mA=A=AI_n\)</span></li>
+</ul>
+</li>
+<li>方阵幂的运算规则（同一般运算）<span class="arithmatex">\(A^rA^S=A^{r+s}\)</span>;<span class="arithmatex">\((A^r)^s =A^{rs}\)</span></li>
+<li>矩阵的转置 </li>
+<li>定义 </li>
+<li>运算规则（4） <ul>
+<li>两次转置复原 <span class="arithmatex">\((A^\prime)^\prime =A\)</span></li>
+<li>分配律<span class="arithmatex">\((A+B)^{\prime}=A^{\prime}+B^{\prime}\)</span></li>
+<li>标量乘法转置 <span class="arithmatex">\((cA)^{\prime}=cA^{\prime}\)</span></li>
+<li>矩阵乘法转置 <span class="arithmatex">\((AB)^\prime = B^\prime 
+A^\prime\)</span></li>
+</ul>
+</li>
+<li>矩阵的共轭 </li>
+</ul>
+<h3 id="_9">方阵的逆阵<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>逆阵，可逆阵（非异阵）奇异阵 </li>
+<li>逆阵唯一 </li>
+<li>矩阵乘法的结合律 </li>
+<li>运算规则（4） <span class="arithmatex">\(A\)</span>是非异阵</li>
+<li>两次求逆复原 <span class="arithmatex">\((A^{-1})^{-1} = A\)</span><ul>
+<li>矩阵乘法求逆 <span class="arithmatex">\((AB)^{-1} = B^{-1}A^{-1}\)</span></li>
+<li>标量乘法求逆<span class="arithmatex">\((cA)^{-1}=c^{-1}A^{-1}\)</span></li>
+<li>转置求逆  转置的逆是逆的转置 <span class="arithmatex">\((A^\prime)^{-1} = (A^{-1})^\prime\)</span></li>
+</ul>
+</li>
+<li>伴随矩阵<span class="arithmatex">\((A^*)_{i,j}=A_{ij}\)</span>(代数余子式) </li>
+<li><span class="arithmatex">\(AA^* = A^*A = \left|A\right|I_n\)</span>(对角线上均为<span class="arithmatex">\(|A|\)</span>的单位阵)</li>
+<li><span class="arithmatex">\(A^{-1} = \frac{A^*}{\left|A\right|}\)</span>(<span class="arithmatex">\(A\ne 0\)</span>)(<span class="arithmatex">\(|A|\ne 0\)</span>则<span class="arithmatex">\(A\)</span>为非异阵）</li>
+<li><span class="arithmatex">\(Cramar\)</span>法则</li>
+</ul>
+<h3 id="_10">矩阵的初等变换与初等矩阵<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(Gauss\)</span>消元法 （初等行变换）</li>
+<li>写出系数矩阵的增广矩阵<span class="arithmatex">\(A^\sim\)</span></li>
+<li>对换，使第一行，第一列元素不为零</li>
+<li>第一行乘以某个数加到第二行，重复直到消去第一列除第一列的所有元素</li>
+<li>重复操作</li>
+<li>初等变换 </li>
+<li>对换</li>
+<li>倍乘</li>
+<li>倍加</li>
+<li>相抵 </li>
+<li><span class="arithmatex">\(A\)</span>经过有限次初等变换（行及列）后变成<span class="arithmatex">\(B\)</span>，<span class="arithmatex">\(A\)</span>与<span class="arithmatex">\(B\)</span>等价  <span class="arithmatex">\(A\)</span>与<span class="arithmatex">\(B\)</span>相抵<span class="arithmatex">\(A\sim B\)</span><ul>
+<li>相抵关系的性质：<ul>
+<li>自反性：<span class="arithmatex">\(A\sim A\)</span></li>
+<li>对称性：<span class="arithmatex">\(A\sim B\)</span>则<span class="arithmatex">\(B\sim A\)</span></li>
+<li>传递性：<span class="arithmatex">\(A\sim B,B\sim C\)</span>则<span class="arithmatex">\(A\sim C\)</span></li>
+</ul>
+</li>
+<li>任一矩阵必相抵与相抵标准形<ul>
+<li>任意一个矩阵都可以经过初等变换化为相抵标准型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶梯形矩阵 </li>
+<li>任一矩经过若干次初等行变换，A可以化为阶梯形矩阵</li>
+<li>初等矩阵(对单位矩阵初等变换) </li>
+<li>分类 
+         - <span class="arithmatex">\(P_{ij}\)</span>
+         - <span class="arithmatex">\(P_i(c)\)</span>
+         - <span class="arithmatex">\(T_{ij}(c)  
+row_i\times c + row_j\)</span>(改变的是的第j行）</li>
+<li>左乘行变换，右乘列变换 </li>
+<li>矩阵初等矩阵可逆且其逆阵仍是同类矩阵 </li>
+<li>非异阵初等变换后仍可逆，奇异初等变换后仍奇异（反证） </li>
+<li>初等矩阵行列式 
+         - <span class="arithmatex">\(|P_{ij}|=-1,|P_i(c)|=c;|T_{ij}(c)|=1\)</span></li>
+</ul>
+<h3 id="_11">矩阵乘积的行列式与初等变换法求逆阵<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(A\)</span>为一个<span class="arithmatex">\(n\)</span>阶可逆阵，则仅用初等行变换或者仅用初等列变换就可以将它化为单位阵<span class="arithmatex">\(I_n\)</span></p>
+<blockquote>
+<ul>
+<li>任一<span class="arithmatex">\(n\)</span>阶非 异阵均可表示成有限个初等矩阵的积<span class="arithmatex">\(P_m\dots P_1 A=I_n\)</span><span class="arithmatex">\(A=P_1^{-1}\dots P_m^{-1}\)</span></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>一个<span class="arithmatex">\(n\)</span>阶方阵 A 为非异阵的充要条件是它的行列式不为 0</p>
+</li>
+<li>任何一个矩阵：<span class="arithmatex">\(P_s\dots P_1AQ_1\dots Q_r= D\)</span>(D为A  的相抵标准型）</li>
+<li>设<span class="arithmatex">\(A\)</span>为一个<span class="arithmatex">\(n\)</span>阶方阵，<span class="arithmatex">\(Q\)</span>是一个<span class="arithmatex">\(n\)</span>阶初等矩阵，则<span class="arithmatex">\(|QA|=|Q||A|=|AQ|\)</span></li>
+<li>非异阵初等变换后认为非异阵，奇异阵初等变换后仍奇异</li>
+<li><span class="arithmatex">\(A\)</span><span class="arithmatex">\(B\)</span>都是 n 阶矩阵，则<span class="arithmatex">\(|AB|=|A||B|\)</span><ul>
+<li><span class="arithmatex">\(|A^{-1}|=|A|^{-1}\)</span></li>
+</ul>
+</li>
+<li>求矩阵的逆阵<span class="arithmatex">\((A \ I_n)\rightarrow (I_n \ A^{-1})\)</span></li>
+<li>求线性方程组的解<span class="arithmatex">\((A \ B)\rightarrow(I_n \ A^{-1}B)\)</span>只进行变换（由于A为非异阵，因此只进行变换则可化为单位阵）</li>
+<li>（化为阶梯阵可只通过行变换，化为相抵标准型则可能用到列变换）</li>
+</ul>
+<h3 id="_12">分块矩阵<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>定义 行（列）分块方式，第i分块行（列）</li>
+<li>相等</li>
+<li>加法（条件具有相同的行列分块方式）</li>
+<li>数乘</li>
+<li>矩阵乘法 A的列分块方式和B的行分块方式相同 分块矩阵乘积和普通矩阵的乘积一致</li>
+<li>转置 分块转置，分块内部再转置</li>
+<li>共轭 每一个分块的共轭</li>
+<li>分块对角矩阵  <span class="arithmatex">\(A_i,B_i\)</span>为同阶矩阵<span class="arithmatex">\(A = diag\{A_1,A_2,\cdots,A_k\},B=diag\{B_1,B_2,\cdots,B_k\},AB =diag\{A_1B_1,A_2B_2,\cdots,A_kB_k\}\)</span></li>
+<li>分块初等矩阵</li>
+<li>分块初等矩阵是非异阵<span class="arithmatex">\(P^{-1} _{ij}=P^T_{ij},P^{-1}_i（M）= P_{ij}(M^{-1}），T^{-1}_{ij}(M)=T_{ij}(M^{-1}）\)</span></li>
+<li></li>
+</ul>
+<h3 id="caunchy-biolet">Caunchy-Biolet定理<a class="headerlink" href="#caunchy-biolet" title="Permanent link">&para;</a></h3>
+<h2 id="_13">线性空间<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">线性空间<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>定义:<span class="arithmatex">\(\ K\)</span>是一个数域，<span class="arithmatex">\(V\)</span>是一个集合满足八条性质则V是K上的线性空间</li>
+<li>对加法和数乘封闭(验证子空间）</li>
+<li>加法：<ul>
+<li>交换律</li>
+<li>结合律</li>
+<li>零元（唯一性）</li>
+<li>负元（唯一性）</li>
+</ul>
+</li>
+<li>数乘<ul>
+<li>分配律<span class="arithmatex">\(k(\alpha+\beta)=k\alpha+k\beta\)</span>;<span class="arithmatex">\((k+l)\alpha=k\alpha+l\alpha\)</span></li>
+<li>结合律</li>
+<li>单位元</li>
+</ul>
+</li>
+</ul>
+<h3 id="_15">向量的线性关系<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>线性组合（线性表示）<span class="arithmatex">\(V\)</span>是<span class="arithmatex">\(K\)</span>上的线性空间记为<span class="arithmatex">\(V(K)\)</span></li>
+<li>注意<span class="arithmatex">\(C(R）\)</span><span class="arithmatex">\(\{1,i\}\)</span>为一组基与<span class="arithmatex">\(C(C)\)</span><span class="arithmatex">\(1\)</span>与<span class="arithmatex">\(i\)</span>线性相关，<span class="arithmatex">\(\{1\}\)</span>为一组基（因为此时<span class="arithmatex">\(k\)</span>可以取复数）<span class="arithmatex">\(\alpha_1,\alpha_2\dots,\alpha_n,\beta\in V
+,\exist k_1,k_2 \dots k_n\in K,s.t.\beta=k_1\alpha_1+k_2\alpha_2+\dots k_n\alpha_n\)</span>(线性表示唯一的充要条件是<span class="arithmatex">\(\alpha_1,\alpha_2\dots,\alpha_n\)</span>线性无关）</li>
+<li>线性相关及线性无关</li>
+<li>线性组合:<ul>
+<li>一组向量线性无关，只有系数全为0的线性组合才等于零向量</li>
+<li>一组向量线性相关，存在系数不全为0的线性组合等于零向量</li>
+</ul>
+</li>
+<li>线性表示：<ul>
+<li>一组向量线性无关，任一向量都不能被其他向量线性表示</li>
+<li>一组向量线性相关，至少存在一个向量能被其他向量线性表示</li>
+</ul>
+</li>
+<li>线性方程组<span class="arithmatex">\(rank(A) = r = n\)</span>对系数矩阵进行<span class="arithmatex">\(Gauss\)</span>消元 （初等行变换）化为阶梯型矩阵。计算行秩即为列秩；阶梯点对应的原来的列向量即为列空间的一组基<ul>
+<li>一组列向量<span class="arithmatex">\(\{\alpha_1,\alpha_2,\dots,\alpha_n\}\)</span>线性无关，<span class="arithmatex">\(x_1\alpha_1+x_2\alpha_2+\dots+x_n\alpha_n = 0\)</span>只有一组全为0的解</li>
+<li>一组列向量<span class="arithmatex">\(\{\alpha_1,\alpha_2,\dots,\alpha_n\}\)</span>线性相关，<span class="arithmatex">\(x_1\alpha_1+x_2\alpha_2+\dots+x_n\alpha_n = 0\)</span>至少有一组不全为0的解 </li>
+</ul>
+</li>
+<li>已知<span class="arithmatex">\(\beta\)</span>能由一组向量<span class="arithmatex">\(\{\alpha_1,\alpha_2,\dots,\alpha_n\}\)</span>线性表示<ul>
+<li>该组向量线性无关<span class="arithmatex">\(\Leftrightarrow\beta\in V\)</span>(同一个线性空间）由该组向量线性表示的方式唯一</li>
+<li>该组向量线性相关<span class="arithmatex">\(\Leftrightarrow\beta\in V\)</span>(同一个线性空间）由该组向量线性表示的方式不唯一</li>
+</ul>
+</li>
+<li>向量组的包含关系<ul>
+<li>若一组向量线性相关，则任一包含这组向量的向量组必线性相关；</li>
+<li>若一组向量线性无关，则从这组向量中任取一组向量必线性无关</li>
+</ul>
+</li>
+<li>线性表示的传递性:向量A中向量可由B中向量线性表示，B中向量可由C中向量线性表示，则A中向量可由C中向量线性表示。</li>
+</ul>
+<h3 id="_16">向量组的秩<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>极大无关组：线性空间<span class="arithmatex">\(V\)</span>中有一族向量<span class="arithmatex">\(S\)</span>存在一组向量<span class="arithmatex">\(\{\alpha_1,\alpha_2,\alpha_3,\dots \alpha_r\}\)</span></li>
+<li>线性无关</li>
+<li>这族向量中的任一向量都可以被这组向量线性表示.</li>
+<li>向量族**S**的极大线性无关组所含的向量个数称为**S  **的秩，<span class="arithmatex">\(rank(S)\)</span></li>
+<li>存在性：由有限个向量组成的至少包含一个非零向量的向量族的极大无关组一定存在(对S的向量个数数学归纳)<blockquote>
+<ul>
+<li>命题：<span class="arithmatex">\(A,B\)</span>是<span class="arithmatex">\(V\)</span>中的两组向量，<span class="arithmatex">\(A\)</span>中<span class="arithmatex">\(r\)</span>个向量，<span class="arithmatex">\(B\)</span>中有<span class="arithmatex">\(s\)</span>个向量，且<span class="arithmatex">\(A\)</span>可由<span class="arithmatex">\(B\)</span>中向量线性表示（可用A 中向量替换B的线性表示 组）</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>若A中向量线性无关，则有 <span class="arithmatex">\(r\le s\)</span></li>
+</ul>
+</blockquote>
+<p>:::success</p>
+<ul>
+<li>
+<p>若<span class="arithmatex">\(r&gt;s\)</span>,则A中向量线性相关
+:::</p>
+</li>
+<li>
+<p>推论：</p>
+</li>
+<li>（秩的唯一性）向量族的两组极大线性无关组的向量个数相等</li>
+<li>
+<p>n维向量空间中任意超过n个的向量必然线性相关</p>
+</li>
+<li>
+<p>等价</p>
+</li>
+<li>A,B可以互相线性表示，记为A~B</li>
+<li>
+<p>等价的向量组拥有相同的秩（利用上述）
+:::warning</p>
+</li>
+<li>
+<p>基的判定定理</p>
+</li>
+<li>n维线性空间中任一超过n个向量的向量组一定线性相关</li>
+<li>V是n 维线性空间，满足下列条件之一的含有n个向量的向量组是V的一组基<ul>
+<li>线性无关（该向量组和任一v必定线性相关）</li>
+<li>V中任一向量均可由该向量组线性表示</li>
+</ul>
+</li>
+<li>基的扩充定理</li>
+<li>V 是n维线性空间，<span class="arithmatex">\(v_1,v_2\dots,v_m\)</span>是  V中m(m&lt;n)个线性无关向量，<span class="arithmatex">\(\{e_1,e_2,\dots e_n\}\)</span>是V 中的一组基，则必可在 <span class="arithmatex">\(\{e_1,e_2,\dots,e_n\}\)</span>中选出 n - m 个向量，使之和<span class="arithmatex">\(v_1,v_2,\cdots v_m\)</span>一起组成V的一组基。
+:::</li>
+</ul>
+<h3 id="_17">矩阵的秩<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>矩阵的行秩和列秩在初等变换下不变</li>
+<li>
+<p><span class="arithmatex">\(A = (\alpha_1 \alpha_2 \cdots \alpha_n ); 
+  C(A) = L\{\alpha_{j_1},\alpha{j_2},\cdots,\alpha_{j_r}\}\)</span>Q为非异阵，<span class="arithmatex">\(QA = (Q\alpha_1Q \alpha_2 \cdots Q\alpha_n );  C(QA) = L\{Q\alpha_{j_1},Q\alpha{j_2},\cdots,Q\alpha_{j_r}\}\)</span></p>
+<div class="language-text highlight"><pre><span></span><code> 初等行变换保持矩阵列向量的极大无关组的列指标。
+</code></pre></div>
+</li>
+<li>
+<p>行秩等于列秩（进行初等变换化为相抵标准型）</p>
+</li>
+<li>矩阵的转置秩不变</li>
+<li>设<span class="arithmatex">\(A\in M_{m \times n}(K)\)</span>,<span class="arithmatex">\(P\)</span>为m阶非异阵，<span class="arithmatex">\(Q\)</span>为n阶非异阵，则<span class="arithmatex">\(r(PAQ )=r(A)\)</span> (与非异阵相乘秩不变）</li>
+<li><span class="arithmatex">\(A\in M_{m \times n}(K)\)</span>,存在<span class="arithmatex">\(P\)</span>m阶非异阵，存在<span class="arithmatex">\(Q\)</span>为n阶非异阵，使得<span class="arithmatex">\(PAQ = \begin{bmatrix}
+I_r&amp; O\\
+O  &amp;O
+\end{bmatrix}\)</span>(相抵标准型）</li>
+<li>A~B<span class="arithmatex">\(\Longleftrightarrow\)</span>r(A) = r(B)</li>
+<li>A为n阶方阵，r(A) = n<span class="arithmatex">\(\Longleftrightarrow\)</span>A为非异阵</li>
+<li>引理：A为阶梯矩阵，A的秩等于其非零行的个数，且阶梯点所在的列向量是A的列向量的极大无关组。</li>
+</ul>
+<h3 id="_18">子空间<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<h3 id="_19">线性方程的解<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<h2 id="_20">线性映射<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h3 id="_21">映射<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>映射<span class="arithmatex">\(f\)</span>:<span class="arithmatex">\(A\longrightarrow B\)</span><span class="arithmatex">\(\forall a\longrightarrow\exists1 b\)</span></p>
+<ul>
+<li>满射:若<span class="arithmatex">\(Imf =B\)</span></li>
+<li>单射：若<span class="arithmatex">\(a_1\ne a_2,\)</span>则<span class="arithmatex">\(f(a_1)\ne f(a_2)\)</span>；若<span class="arithmatex">\(f(a_1)=f(a_2)\)</span>,则必有<span class="arithmatex">\(a_1=a_2\)</span></li>
+<li>复合映射：</li>
+<li>逆射：</li>
+<li>引理：设<span class="arithmatex">\(f:A\longrightarrow B,\)</span><span class="arithmatex">\(f^{-1}\)</span>存在<span class="arithmatex">\(\longleftrightarrow\)</span><span class="arithmatex">\(f\)</span>是双射</li>
+</ul>
+<h3 id="_22">线性映射<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ul>
 <li>定义</li>
-<li>单调有界收敛</li>
-<li>Cauchy收敛原理（压缩映像）</li>
-<li>判断发散（收敛的对偶法则定义，性质，收敛准则） </li>
-<li>对偶法则</li>
-<li>无界数列发散</li>
-<li>子列（发散子列；两子列收敛于不同极限）</li>
-<li>Cauchy收敛</li>
-</ul>
-<h3 id="_5">实数系六大基本定理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<ul>
-<li>确界原理 </li>
-<li>单调有界收敛 </li>
-<li>闭区间套定理  </li>
-<li><span class="arithmatex">\(B-W\)</span>凝聚定理（有界数列必有收敛子列） <span class="arithmatex">\(\forall\varepsilon&gt;0\)</span>，在领域<span class="arithmatex">\(U(\xi,\varepsilon)\)</span>中总有<span class="arithmatex">\(\{x_n\}\)</span>的无穷项</li>
-<li><span class="arithmatex">\(Cauchy\)</span>收敛原理  不用知道具体的极限值；构造<span class="arithmatex">\(U(x_n,\frac{1}{n})\)</span>来逼近；</li>
-<li>有限覆盖定理 </li>
-<li>一个闭区间的任何一个开覆盖中一定有这个闭区间的有限子覆盖。</li>
-<li>加强形式的覆盖定理（Lebesgue数）</li>
-<li>聚点定理  有界无限点集必存在聚点。</li>
-</ul>
-<h4 id="_6">实数系六大定理极其互证<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
-<p><a href="https://www.yuque.com/attachments/yuque/0/2022/pdf/33675000/1666402292025-9a352168-c288-4378-a344-e35aaa8ef245.pdf">实数完备性基本定理的相互证明(30个).pdf</a>
-<a href="https://www.yuque.com/attachments/yuque/0/2022/pdf/33675000/1666279533349-3aa09fec-956b-4fc7-a34b-fb1f5ead0463.pdf">数列极限与实数完备性.pdf</a></p>
-<h4 id="_7">一些题目：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
-<ol>
-<li>已知<span class="arithmatex">\(S_n = 1 + \frac{1}{2^p} + \frac{1}{3^p} + \cdots + \frac{1}{n^p}\)</span>.</li>
-</ol>
-<p>当<span class="arithmatex">\(p\)</span><span class="arithmatex">\(&lt; 1\)</span>时，证明<span class="arithmatex">\(\left\{S_n\right\}\)</span>收敛；当<span class="arithmatex">\(p\ge1\)</span>时，证明<span class="arithmatex">\(\{S_n\}\)</span>发散。
-<span class="arithmatex">\(proof\)</span>：
-<span class="arithmatex">\(S_{2^n} - S_{2^{n-1}}=\frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\dots+\frac{1}{2^n}&gt;\frac{1}{2^n}+\frac{1}{2^n}+\cdots+\frac{1}{2^n}=\frac{2^{n-1}}{2^n}=\frac{1}{2}\)</span>
-若<span class="arithmatex">\(2^k&lt;n&lt;2^{k+1}\)</span><span class="arithmatex">\(,k\in\Z^+\)</span>
-当<span class="arithmatex">\(p&lt;1\)</span>时，<span class="arithmatex">\(S_n &gt;1+\frac{1}{2} + \frac{1}{3}+\frac{1}{4}+ \dots + \frac{1}{n}&gt;1+\frac{1}{2}+\frac{1}{4}+\frac{1}{4}+\)</span><span class="arithmatex">\(\frac{1}{8} + \frac{1}{8} + \frac{1}{8}+\frac{1}{8}+\cdots&gt;1+\frac{k}{2}\)</span>则<span class="arithmatex">\(S_n\)</span>为正无穷大量，<span class="arithmatex">\(S_n\)</span>发散。
-当<span class="arithmatex">\(p\ge
-1\)</span>时，<span class="arithmatex">\(S_n\)</span>单调，下证<span class="arithmatex">\(S_n\)</span>有界：
-<span class="arithmatex">\(S_n &lt;1+\frac{1}{2^p}+\frac{1}{2^p}+\frac{1}{4^p}+\frac{1}{4^p}+\frac{1}{4^p}+\frac{1}{4^p}+\dots+\frac{1}{2^{k(1-p)}}=1+\frac{1}{2^{1-p}}+\frac{1}{2^{2(1-p)}}+\dots+\frac{1}{2^{k(1-p)}}\)</span><span class="arithmatex">\(&lt;\frac{2^{1-p}}{2^{1-p}-1}\)</span> <span class="arithmatex">\(\Box\)</span></p>
-<ol>
-<li>证明<span class="arithmatex">\(a_n=1-\frac{1}{2}+\frac{1}{3}+\dots+(-1)^{n-1}\frac{1}{n}\)</span>收敛.</li>
-</ol>
-<p><span class="arithmatex">\(proof\)</span>:</p>
-<ul>
-<li>利用<span class="arithmatex">\(Cauchy\)</span>收敛定理：分别证明奇数子列和偶数子列收敛。可证得<span class="arithmatex">\(a_n &lt;\frac{1}{n+1}\)</span></li>
-<li>利用闭区间套定理：构造闭区间套<span class="arithmatex">\([a_2,a_1]\supset[a_4,a_3]\supset\dots\supset[a_{2k},a_{2k-1}]\)</span>，满足<span class="arithmatex">\(|I_k|=a_{2k-1}-a_{2k}=\frac{1}{2k}\)</span>且<span class="arithmatex">\(\lim_{k\to\infty}|I_k|=0\)</span>.由闭区间套定理得，<span class="arithmatex">\(\exists\xi\in\cap_{k = 1}^{\infty}[a_{2k},a_{2k-1}]\)</span>且<span class="arithmatex">\(\xi=\lim_{k\to\infty}a_{2k}=\lim_{k\to\infty}a_{2k-1}\)</span>，因此<span class="arithmatex">\(\lim_{n\to\infty}a_n=\xi\)</span>.</li>
-<li>莱布尼兹判别法：</li>
-</ul>
-<h2 id="_8">函数极限<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="_9">定义 单侧极限 定义的扩充<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<h3 id="_10">基本性质<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<ul>
-<li>唯一性</li>
-<li>局部有界性</li>
-<li>局部保号性</li>
-<li>保序性</li>
-<li>夹逼性</li>
-<li>函数极限的四则运算法则</li>
-<li>复合函数极限</li>
-</ul>
-<h3 id="_11">基本命题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<ul>
-<li>单调函数的单侧极限存在定理（确界存在定理） </li>
-<li><span class="arithmatex">\(Heine\)</span>归结原理（反证法） </li>
-<li>推论<span class="arithmatex">\(f(x_0)\)</span>极限存在<span class="arithmatex">\(\leftrightarrow\)</span><span class="arithmatex">\(\forall\{x_n\}\lim_{n\to\infty}x_n=x_0,f(x_n)\)</span>一定收敛（证明收敛于同一极限）</li>
-<li>函数极限的<span class="arithmatex">\(Cauchy\)</span>收敛法则 </li>
-<li>两个重要极限 </li>
-<li><span class="arithmatex">\(\lim_{x\to0}\frac{sinx}{x}=1\)</span></li>
-<li><span class="arithmatex">\(\lim_{x\to0}(1+x)^{\frac{1}{x}}=e\)</span></li>
-<li>无穷小量，有界量，无穷大量和阶的比较 </li>
-<li>o(),O()，同阶无穷小（大）量，等价无穷量 的定义</li>
-<li>技巧：  </li>
-<li>把指数化为以<span class="arithmatex">\(e\)</span>为底的函数，以及取对数</li>
-<li>三角公式倍角公式，和差化积，积化和差</li>
-<li>换元法</li>
-<li>当<span class="arithmatex">\(x\to0\)</span>时</li>
-<li><span class="arithmatex">\(sinx = x+o(x)\)</span></li>
-<li><span class="arithmatex">\(cosx = 1-\frac{1}{2x^2}+o(x^2)\)</span></li>
-<li><span class="arithmatex">\(e^x=1+x+o(x)\)</span></li>
-<li><span class="arithmatex">\(ln(1+x) = x+o(x)\)</span></li>
-<li><span class="arithmatex">\((1+x)^\alpha=1+\alpha x+o(x)\)</span></li>
-</ul>
-<h2 id="_12">连续函数<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<h3 id="_13">定义（单侧连续）<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
-<ul>
-<li>函数极限语言注意领域不在为去心领域，且要有定义</li>
-<li><span class="arithmatex">\(Heine\)</span>归结</li>
-<li>左右极限存在且与该点函数值相等</li>
-<li>振幅</li>
-</ul>
-<h3 id="_14">间断点<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
-<ul>
-<li>第一类（跳跃）左右极限存在但不相等</li>
-<li>第二类左右极限至少一个不存在</li>
-<li>第三类（可去）左右极限存在且相等，但是与该点函数值不相等，或者函数在该点无定义</li>
-</ul>
-<h3 id="_15">特殊函数的连续性<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
-<ul>
-<li>黎曼函数的连续性（无理数点连续，有理数点不连续，可去间断点）</li>
-<li>狄利克雷函数的连续性（处处不连续）</li>
-</ul>
-<h3 id="_16">反函数连续性<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
-<ul>
-<li>反函数存在性定理</li>
-<li>若函数<span class="arithmatex">\(y=f(x),x\in D_f\)</span>是严格单调增加的，则存在它的反函数<span class="arithmatex">\(x = f^{-1}(y),y\in R_f\)</span>并且<span class="arithmatex">\(f^{-1}(y)\)</span>也是单调增加的。</li>
-<li>反函数连续性定理</li>
-<li>函数<span class="arithmatex">\(y=f(x)\)</span>在闭区间<span class="arithmatex">\([a,b]\)</span>上连续且严格单调增加，<span class="arithmatex">\(f(a) = \alpha,f( b )=\beta\)</span>，则它的反函数<span class="arithmatex">\(x=f^{-1}(y)\)</span>在   <span class="arithmatex">\([\alpha,\beta]\)</span>连续且严格单调增加。<ul>
-<li><span class="arithmatex">\(f([a,b])=[\alpha,\beta],\forall\gamma\in[\alpha,\beta],\exists 
-f(x_0）=\gamma\)</span>，（注意对于区间的定义）</li>
-<li><span class="arithmatex">\(x = f^{-1}(y)\)</span>的连续性</li>
+<li>对象：V，U 两个线性空间的映射，满足线性加法和数乘性质</li>
+<li>特殊映射<ul>
+<li>满线性映射</li>
+<li>单线性映射</li>
+<li>线性变换</li>
+<li>线性同构</li>
+<li>零线性映射</li>
+<li>恒等变换</li>
 </ul>
 </li>
+<li>命题：<span class="arithmatex">\(\varphi:V\rightarrow U\)</span>为线性映射</li>
+<li><span class="arithmatex">\(\varphi(O_V) =O_U\)</span></li>
+<li>线性组合的保持：<span class="arithmatex">\(\forall\alpha,\beta\in V,k,l\in K,\varphi(k\alpha + l\beta )=k\varphi(\alpha) + l \varphi(\beta)\)</span></li>
+<li>线性同构的逆映射也为线性同构：若<span class="arithmatex">\(\varphi:V\rightarrow U\)</span>为同构，则<span class="arithmatex">\(\varphi^{-1}：U\rightarrow V\)</span>也为线性同构 （只需证明逆映射保持线性组合）</li>
+<li>线性同构的复合仍为线性同构</li>
+<li>线性同构推论</li>
+<li>线性同构为等价关系（自反性，对称性，传递性）</li>
+<li>两个线性空间之间存在线性同构<span class="arithmatex">\(\Longleftrightarrow\)</span>它们的维数相等</li>
 </ul>
-<h3 id="_17">复合函数连续性<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
-<h3 id="_18">闭区间上的连续函数<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<h2 id="_23">特征值<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="_24">特征值和特征向量<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
 <ul>
-<li>有界性定理（反证，闭区间套定理；反证BW定理） </li>
-<li>最值定理（确界，子列） </li>
-<li>零点存在定理 </li>
-<li>确界定理</li>
-<li>闭区间套定理（整体到局部）</li>
-<li>覆盖原理（反证，局部到整体）</li>
-<li>介值定理</li>
-</ul>
-<h3 id="_19">一致连续性<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
-<ul>
-<li>定义（区间<span class="arithmatex">\(I\)</span>） </li>
-<li>充分必要条件等价刻画（点列） </li>
-<li>Cantor定理 有界闭区间上的连续函数必在这个区间上一致连续 </li>
-<li>覆盖原理</li>
-<li>凝聚原理（反证）</li>
-<li>有界开区间的连续函数在（a，b）上一致连续的充要条件是存在两个有限的单侧极限 </li>
-<li>函数在R上连续，若趋于正负无穷的极限存在，则该函数在R上一致连续</li>
-<li>一致连续的复合函数也一致连续</li>
-</ul>
-<h3 id="_20">单调函数<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
-<ul>
-<li>单调函数的间断点为跳跃点，即在该处单侧极限存在但不相等</li>
-<li>单调函数的间断点至多为可列个（证明任何两个不同的间断点所对应的跳跃区间必不相交）</li>
-<li><span class="arithmatex">\(f\)</span>为区间<span class="arithmatex">\(I\)</span>的单调函数，值域为区间的充分必要条件是f在区间<span class="arithmatex">\(I\)</span>连续</li>
-</ul>
-<h2 id="_21">微分中值定理<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Fermat定理：极值点的导数值为0</li>
-<li>Rolle定理：闭区间连续，开区间可导</li>
-<li>Lagrange中值定理：闭区间连续，开区间可导（）构造函数利用Rolle定理证明</li>
-<li>Cauchy中值定理：数k值法</li>
-</ul>
-<h2 id="_22">不定积分<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
-<h2 id="_23">定积分<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
-<h3 id="_24">定积分的概念与可积条件<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Riemman可积</li>
-<li><span class="arithmatex">\(\forall \varepsilon &gt; 0,\exist\delta &gt; 0,\forall分割P满足\left \|P\right\|&lt; \delta，\forall介点集\{\xi_i\}，有|\sum_{i = 1}^nf(\xi_i)\Delta x_i - I| &lt; \varepsilon\)</span></li>
-<li><span class="arithmatex">\(Dirichlet\)</span>函数在任意有界区间上都不可积</li>
-<li>达布上下和以及<span class="arithmatex">\(Darbux\)</span>上下积分<ul>
-<li>分割加细，上和递减，下和递加</li>
-</ul>
-</li>
-<li>可积条件</li>
-<li>设<span class="arithmatex">\(f \in R[a,b],则f在[a,b]有界\)</span></li>
-<li>可积的第一充分必要条件:有界函数<span class="arithmatex">\(f\in R[a,b] \Longleftrightarrow \lim_{\left \| p\right\| \rightarrow 0} \sum_{i = 1}^n \omega_i \Delta x_i = 0\)</span></li>
-<li>可积的第二充分必要条件：有界函数<span class="arithmatex">\(f\in [a,b] \Longleftrightarrow\)</span><span class="arithmatex">\(\forall \varepsilon &gt; 0,\exist P,s.t.\sum_P\omega_i \Delta x_i &lt;\varepsilon.\)</span></li>
-<li>可积的第三充分必要条件：有界函数 <span class="arithmatex">\(f \in R[a,b] \Longleftrightarrow \forall \varepsilon,\eta &gt; 0,\exist P，s.t.\sum\Delta x_{\omega \ge\eta} &lt; \varepsilon\)</span></li>
-<li>命题：设函数f在[a,b]上有界，如果f的所有不连续点可以用总长度任意小的至多可列个开区间覆盖，则<span class="arithmatex">\(f \in R[a,b]\)</span></li>
-<li>可积函数类</li>
-<li><span class="arithmatex">\(若f \in C[a,b],则f \in R[a,b]\)</span></li>
-<li>设<span class="arithmatex">\(f是[a,b]\)</span>上的有界函数，且有有限个间断点，则<span class="arithmatex">\(f \in R[a,b]\)</span></li>
-<li>设<span class="arithmatex">\(f在[a,b]\)</span>单调，这<span class="arithmatex">\(f \in R[a,b]\)</span></li>
-</ul>
-<h3 id="_25">定积分的性质<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
-<ul>
-<li>基本性质：</li>
-<li>线性</li>
-<li>乘积可积性</li>
-<li>保序性</li>
-<li>绝对可积性</li>
-<li>区间可加性</li>
-<li>积分第一中值定理：<span class="arithmatex">\(f(x) ,g(x)\in C[a,b],且g(x)在不变号，则\exist\eta,m_f \le \eta \le M_f,s.t.\int _a^bf(x)dx = \eta\int _a^bg(x)dx\)</span> </li>
-<li>若<span class="arithmatex">\(f \in C[a,b],则\exist \xi \in [a,b],s.t.\int_a^bf(x)g(x)dx = f(\xi)\int _a^bg(x)dx\)</span></li>
-<li>积分第二中值定理：</li>
-<li>Bonnet 型：设<span class="arithmatex">\(g(x) \in R[a,b],\)</span><ul>
-<li>若<span class="arithmatex">\(f(x)在[a,b]非负递减，则\exists \xi \in [a,b],s.t.\int _a^bf(x)g(x)dx = f(a)\int _a^{\xi}g(x)dx\)</span> </li>
-<li>若<span class="arithmatex">\(f(x)在[a,b]非负递增，则\exist \xi \in [a,b],s.t. \int _a^bf(x)g(x)dx = f(b)\int _{\xi}^bg(x)dx\)</span></li>
-</ul>
-</li>
-<li>Weierstrass型：</li>
-<li><span class="arithmatex">\(设f(x)在[a,b]单调，g(x)\in R[a,b],则\exist \xi \in [a,b],s.t.\int_a^bf(x)g(x)dx = f(a)\int _a^{\xi}g(x)dx + f(b)\int_{\xi}^bg(x)dx\)</span>  </li>
-</ul>
-<h3 id="_26">微积分基本定理<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Newton-Leibniz公式:
-<span class="arithmatex">\(f(x) \in R[a,b]
-，F(x)= \int_a^xf(t)dt,x\in [a,b]\)</span>，</li>
-<li><span class="arithmatex">\(F(x) \in C[a,b],
-若f(x) \in C[a,b],则F(x)\in D[a,b],且{F}'(x) = f(x)\)</span></li>
-<li>微积分基本定理：</li>
-<li><span class="arithmatex">\(设f(x) \in c[a,b],F(x)为f(x)的一个原函数，则成立 \int _a^bf(x)dx = F(b) - F(a)\)</span></li>
+<li>定义：特征值、特征向量、特征多项式<span class="arithmatex">\(|\lambda I_n - A|\)</span>、特征子空间<span class="arithmatex">\((\lambda  I_n - A) x = 0\)</span>的解空间</li>
+<li>若B ~ A，则B与A具有相同的特征多项式，从而具有相同的特征根(计重数）</li>
+<li><span class="arithmatex">\(|\lambda I_n - A| 为\varphi\)</span>的特征多项式</li>
+<li>任一复方阵必复相似与一个上三角矩阵</li>
+<li>设矩阵A是n阶 方阵，<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_n\)</span>是A的全部特征值，<span class="arithmatex">\(f(x)\)</span>是一个多项式，则<span class="arithmatex">\(f(\lambda_1),f(\lambda_2),\cdots,f(\lambda_n)是f(A)\)</span>的全部特征值。（上三角阵的和，数乘及乘方仍是三角阵）</li>
+<li>设A适合<span class="arithmatex">\(g(x),即g(A) = 0\)</span>，则A的任一特征值<span class="arithmatex">\(\lambda\)</span>也适合<span class="arithmatex">\(g(x),即g(\lambda) = 0\)</span>.</li>
+<li>非异矩阵A的特征值为<span class="arithmatex">\(\lambda_1,\lambda_2,\cdots,\lambda_n\)</span>,则<span class="arithmatex">\(A^{-1}\)</span>的特征值为$\lambda_1</li>
 </ul>
 
 
@@ -1622,7 +1758,7 @@ f(x_0）=\gamma\)</span>，（注意对于区间的定义）</li>
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="上一页: Home">
+          <a href="../%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 数学分析">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1632,20 +1768,20 @@ f(x_0）=\gamma\)</span>，（注意对于区间的定义）</li>
                 上一页
               </span>
               <div class="md-ellipsis">
-                Home
+                数学分析
               </div>
             </div>
           </a>
         
         
           
-          <a href="../%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 高等代数">
+          <a href="../../CS/FDS/1Algorithm_analysis/" class="md-footer__link md-footer__link--next" aria-label="下一页: 算法复杂度分析">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                高等代数
+                算法复杂度分析
               </div>
             </div>
             <div class="md-footer__button md-icon">
