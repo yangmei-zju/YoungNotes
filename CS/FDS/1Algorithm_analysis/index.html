@@ -21,7 +21,7 @@
         <link rel="next" href="../2list_stack/">
       
       
-      <link rel="icon" href="../../../assets/logo2.png">
+      <link rel="icon" href="../../../assets/lemon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.12">
     
     
@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Long+Cang:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Long Cang";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -128,7 +128,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-2-chapter-4" class="md-skip">
+        <a href="#chapter-2algorithm-complexity" class="md-skip">
           跳转至
         </a>
       
@@ -146,7 +146,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../../.." title="YoungNotes" class="md-header__button md-logo" aria-label="YoungNotes" data-md-component="logo">
       
-  <img src="../../../assets/logo2.png" alt="logo">
+  <img src="../../../assets/lemon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -363,7 +363,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="YoungNotes" class="md-nav__button md-logo" aria-label="YoungNotes" data-md-component="logo">
       
-  <img src="../../../assets/logo2.png" alt="logo">
+  <img src="../../../assets/lemon.png" alt="logo">
 
     </a>
     YoungNotes
@@ -1149,7 +1149,7 @@
   
 
 
-<h1 id="chapter-2-chapter-4">Chapter 2 - Chapter 4<a class="headerlink" href="#chapter-2-chapter-4" title="Permanent link">&para;</a></h1>
+<h1 id="chapter-2algorithm-complexity">chapter 2:Algorithm Complexity<a class="headerlink" href="#chapter-2algorithm-complexity" title="Permanent link">&para;</a></h1>
 <style>
     img[alt="box"]{
         width:600px;
@@ -1167,18 +1167,19 @@
 <h4 id="_1">调用栈：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <p>递归函数每次调用自身时候，系统都会为新开启的函数分配内存，以存储局部变量、调用地址和其他信息等。</p>
 <h4 id="_2">尾递归<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<div class="language-text highlight"><pre><span></span><code>- 普通递归：当函数返回到上一层级的函数后，需要继续执行代码，因此系统需要保存上一层调用的上下文。
-- 尾递归：递归调用是函数返回前的最后一个操作，这意味着函数返回到上一层级后，无需继续执行其他操作，因此系统无需保存上一层函数的上下文。
-</code></pre></div>
-<p><code>c
-  /* 尾递归 */
-int tailRecur(int n, int res) {
-    // 终止条件
-    if (n == 0)
-        return res;
-    // 尾递归调用
-    return tailRecur(n - 1, res + n);
-}</code></p>
+<ul>
+<li>普通递归：当函数返回到上一层级的函数后，需要继续执行代码，因此系统需要保存上一层调用的上下文。</li>
+<li>尾递归：递归调用是函数返回前的最后一个操作，这意味着函数返回到上一层级后，无需继续执行其他操作，因此系统无需保存上一层函数的上下文。
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="cm">/* 尾递归 */</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="nf">tailRecur</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="c1">// 终止条件</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="c1">// 尾递归调用</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">tailRecur</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
+</span></code></pre></div></li>
+</ul>
 <h4 id="_3">递归树<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>斐波那契数列： </p>
 <h2 id="22">2.2时间复杂度<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
@@ -1353,7 +1354,7 @@ int tailRecur(int n, int res) {
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy 2023; yangmei-zju
+      Copyright &copy 2023 yangmei-zju
     </div>
   
   
