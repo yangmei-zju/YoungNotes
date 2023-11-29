@@ -1088,7 +1088,7 @@
 </style>
 <div class="admonition question">
 <p class="admonition-title">物理问题与物理规律</p>
-<p><strong>对象</strong>：一固定长度的**柔软**(只能承受轴向载荷压力和拉力，忽略弯矩和剪切，则轴向载荷的方向与弦变形后的切线方向相一致)、<strong>均匀</strong> (单位长度的质量密度为一常数)，<strong>轻质</strong>（重力忽略不计）细弦，两端拉紧。</p>
+<p><strong>对象</strong>：一固定长度的 <strong>柔软</strong> (只能承受轴向载荷压力和拉力，忽略弯矩和剪切，则轴向载荷的方向与弦变形后的切线方向相一致)、<strong>均匀</strong> (单位长度的质量密度为一常数)，<strong>轻质</strong>（重力忽略不计）细弦，两端拉紧。</p>
 <p>在**垂直于弦线方向**施加外加激励，让其离开原来平衡位置，将作微小的横向振动，求弦上个每个点的运动方程。</p>
 <p><strong>坐标系的建立</strong>：当弦在崩紧不振动时是一根直线,取这直线记作<span class="arithmatex">\(x\)</span>轴（纵向）。在横向振动过程中，弦上每个点的纵向位移为0。即每个点的y值发生变化。<span class="arithmatex">\(u(x,t)\)</span>表示<span class="arithmatex">\(t\)</span> 时刻 <span class="arithmatex">\(x\)</span> 位置处的横向位移，即<span class="arithmatex">\(y = u(x,t)\)</span> 即求<span class="arithmatex">\(y = u(x,t)\)</span>
 <img alt="img" src="../image-2.png" /></p>
@@ -1160,14 +1160,14 @@ $$u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}\]</div>
 </div>
 <p>和弦问题一样， 根据水平方向的力平衡（任意方向），可知膜上的张力处处相同，记单位长度膜上的张力（切线方向）为<span class="arithmatex">\(T\)</span>。<span class="arithmatex">\(T\)</span>沿着u(x,y)的切线方向。</p>
 <p><strong>微元法</strong>： 取平面上的微小单元 <span class="arithmatex">\(dxdy\)</span> 进行受力平衡分析:</p>
-<p><strong>受力分析</strong>： 沿<span class="arithmatex">\(x\)</span> 轴方向两对边上由张力引起的横向合力为(u的方向即横向方向为垂直于xy平面的z轴方向)：
-$$
+<p><strong>受力分析</strong>： 沿<span class="arithmatex">\(x\)</span> 轴方向两对边上由张力引起的横向合力为(u的方向即横向方向为垂直于xy平面的z轴方向)：</p>
+<div class="arithmatex">\[
 \left(Tu_x\mid_{x+dx}-Tu_x\mid_x\right)dy=Tu_{xx}dxdy
-$$</p>
-<p>沿<span class="arithmatex">\(y\)</span>轴方向两对边上由张力引起的横向合力为：
-$$
+\]</div>
+<p>沿<span class="arithmatex">\(y\)</span>轴方向两对边上由张力引起的横向合力为：</p>
+<div class="arithmatex">\[
 \left(Tu_y\mid_{y+dy}-Tu_y \mid_y\right)dx=Tu_{yy}dxdy
-$$</p>
+\]</div>
 <p><strong>平衡方程：</strong>
 用 <span class="arithmatex">\(\rho\)</span> 表示单位面积的质量，<span class="arithmatex">\(T\)</span>表示张力。</p>
 <div class="arithmatex">\[
@@ -1211,8 +1211,8 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p>弹性作用力为：<span class="arithmatex">\(ES\frac{du}{dx}\)</span>,   即为弹性模量<span class="arithmatex">\(\times\)</span>横截面积<span class="arithmatex">\(\times\)</span>应变</p>
 </div>
 <p><strong>平衡方程：</strong> 
-根据牛顿第二定律
-<span class="arithmatex">\(<span class="arithmatex">\(\rho Sdxu_t=ES\Bigl[u_x(x+dx,t)-u_x(x,t)\Bigr]=ESu_{xx}dx\)</span>\)</span></p>
+根据牛顿第二定律</p>
+<div class="arithmatex">\[\rho Sdxu_t=ES\Bigl[u_x(x+dx,t)-u_x(x,t)\Bigr]=ESu_{xx}dx\]</div>
 <p><span class="arithmatex">\(\alpha\)</span> 具有速度量纲，也是波速。 <span class="arithmatex">\(a^2=E/\rho\)</span></p>
 <div class="admonition abstract">
 <p class="admonition-title">杆的纵向振动</p>
@@ -1232,11 +1232,14 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p>扩散系数(diffusion coefficient)<span class="arithmatex">\(D\)</span>与物质的性态、温度(温度越高，扩散越快)等因素有关。</p>
 </li>
 <li>
-<p>公式：<span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> 分量形式：<span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> 注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
+<p>公式：</p>
 </li>
-<li>
-<p>质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </p>
-</li>
+</ul>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> 
+   分量形式：</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> 注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
+<ul>
+<li>质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </li>
 </ul>
 </div>
 <p><strong>微元</strong>：取空间一个平行六面体<br />
@@ -1244,11 +1247,15 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p><strong>参数和变量</strong>：<span class="arithmatex">\(u(x,y,z,t)\)</span> 表示$ (x,y,z)$ 位置在 <span class="arithmatex">\(t\)</span> 时刻的浓度，<span class="arithmatex">\(\nabla u\)</span>表示某个位置处浓度的梯度。
 <strong>总的流入量</strong>：</p>
 <p>单位时间内：</p>
-<p>沿着<span class="arithmatex">\(x\)</span>方向的**净**流入量：$q_x\mid_{x} dxdy -q_x\mid_{x+dx} dxdy   = - \frac{\partial{q_x}}{\partial{x}}dxdydz $</p>
-<p>根据Fick's first law的分量形式，<span class="arithmatex">\(x\)</span>方向的净流入量也写作：<span class="arithmatex">\(D\frac{\partial^2 u}{\partial x^2} dxdydz\)</span></p>
-<p>因此总流入量：<span class="arithmatex">\(<span class="arithmatex">\(D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial 
- z^2})dxdydz\)</span>\)</span></p>
-<p><strong>质量守恒</strong>：<span class="arithmatex">\(<span class="arithmatex">\(\frac{\partial u}{\partial t} dxdydz  = D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\)</span>\)</span></p>
+<p>沿着<span class="arithmatex">\(x\)</span>方向的**净**流入量：</p>
+<div class="arithmatex">\[q_x\mid_{x} dxdy -q_x\mid_{x+dx} dxdy   = - \frac{\partial{q_x}}{\partial{x}}dxdydz \]</div>
+<p>根据Fick's first law的分量形式，<span class="arithmatex">\(x\)</span>方向的净流入量也写作：
+<span class="arithmatex">\(D\frac{\partial^2 u}{\partial x^2} dxdydz\)</span></p>
+<p>因此总流入量：</p>
+<div class="arithmatex">\[D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial 
+ z^2})dxdydz\]</div>
+<p><strong>质量守恒</strong>：</p>
+<div class="arithmatex">\[\frac{\partial u}{\partial t} dxdydz  = D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\]</div>
 <div class="admonition abstrct">
 <p class="admonition-title">扩散方程</p>
 <div class="arithmatex">\[u_t= D( \frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2}) = D \Delta_3 u(x,y,z,t) \]</div>
