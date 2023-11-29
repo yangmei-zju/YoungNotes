@@ -1089,7 +1089,7 @@
 <div class="admonition question">
 <p class="admonition-title">物理问题与物理规律</p>
 <p><strong>对象</strong>：一固定长度的 <strong>柔软</strong> (只能承受轴向载荷压力和拉力，忽略弯矩和剪切，则轴向载荷的方向与弦变形后的切线方向相一致)、<strong>均匀</strong> (单位长度的质量密度为一常数)，<strong>轻质</strong>（重力忽略不计）细弦，两端拉紧。</p>
-<p>在**垂直于弦线方向**施加外加激励，让其离开原来平衡位置，将作微小的横向振动，求弦上个每个点的运动方程。</p>
+<p>在 <strong>垂直于弦线方向</strong> 施加外加激励，让其离开原来平衡位置，将作微小的横向振动，求弦上个每个点的运动方程。</p>
 <p><strong>坐标系的建立</strong>：当弦在崩紧不振动时是一根直线,取这直线记作<span class="arithmatex">\(x\)</span>轴（纵向）。在横向振动过程中，弦上每个点的纵向位移为0。即每个点的y值发生变化。<span class="arithmatex">\(u(x,t)\)</span>表示<span class="arithmatex">\(t\)</span> 时刻 <span class="arithmatex">\(x\)</span> 位置处的横向位移，即<span class="arithmatex">\(y = u(x,t)\)</span> 即求<span class="arithmatex">\(y = u(x,t)\)</span>
 <img alt="img" src="../image-2.png" /></p>
 <div class="admonition tip">
@@ -1138,14 +1138,15 @@
 <div class="arithmatex">\[
 \left.u_x\right|_{x+dx}=u_x\left|_x+u_{xx}\right|_xdx+o(dx)
 \]</div>
-<p>忽略高阶小量，<span class="arithmatex">\(T\)</span>为弦内张力：<span class="arithmatex">\(<span class="arithmatex">\(Tu_{xx}dx=\rho u_{tt}dx\)</span>\)</span></p>
+<p>忽略高阶小量，<span class="arithmatex">\(T\)</span>为弦内张力：</p>
+<div class="arithmatex">\[Tu_{xx}dx=\rho u_{tt}dx\]</div>
 </li>
 </ol>
 <div class="admonition abstract">
 <p class="admonition-title">弦的横向振动</p>
-<div class="arithmatex">\[Tu_{xx}=\rho u_{tt}$$
-波速：记$a^2  =  \frac{T}{\rho}$, $a$的量纲为速度量纲。
-$$u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}\]</div>
+<div class="arithmatex">\[Tu_{xx}=\rho u_{tt}\]</div>
+<p>波速：记<span class="arithmatex">\(a^2  =  \frac{T}{\rho}\)</span>, <span class="arithmatex">\(a\)</span>的量纲为速度量纲。</p>
+<div class="arithmatex">\[u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}\]</div>
 </div>
 </div>
 <h3 id="2">2.二维波动方程或者薄膜的微小横振动<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
@@ -1156,7 +1157,7 @@ $$u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}\]</div>
 用 (x, y) 表示膜的位置，u(x,y,t)表示t 时刻 在(x, y) 位置处膜的横向位移。</p>
 <p>如图1： <span class="arithmatex">\(\vec{n} = x\vec{i} + \vec{y}j\)</span>， <span class="arithmatex">\(\vec{u}(t) = u(x,y,t)\vec{k}\)</span></p>
 <p><img alt="imag" src="../image-5.png" /></p>
-<p><strong>物理规律</strong>：牛顿第二定律 </p>
+<p><strong>物理规律</strong> ：牛顿第二定律 </p>
 </div>
 <p>和弦问题一样， 根据水平方向的力平衡（任意方向），可知膜上的张力处处相同，记单位长度膜上的张力（切线方向）为<span class="arithmatex">\(T\)</span>。<span class="arithmatex">\(T\)</span>沿着u(x,y)的切线方向。</p>
 <p><strong>微元法</strong>： 取平面上的微小单元 <span class="arithmatex">\(dxdy\)</span> 进行受力平衡分析:</p>
@@ -1235,9 +1236,10 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p>公式：</p>
 </li>
 </ul>
-<p><span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> 
-   分量形式：</p>
-<p><span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> 注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> </p>
+<p>分量形式：</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> </p>
+<p>注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
 <ul>
 <li>质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </li>
 </ul>
