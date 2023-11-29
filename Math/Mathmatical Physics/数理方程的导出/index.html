@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Crimson Text";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -614,6 +614,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.热传导方程
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1033,6 +1042,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.热传导方程
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1113,8 +1131,8 @@
 </ol>
 <div class="admonition abstract">
 <ul>
-<li>纵向方向<span class="arithmatex">\(x\)</span>方向的平衡： <span class="arithmatex">\(T_2cos\alpha_2 - T_1\alpha_1 = 0\)</span> </li>
-<li>横向方向<span class="arithmatex">\(y\)</span>方向的平衡：<span class="arithmatex">\(T_2sin\alpha_2 - T_1\alpha_2 = \rho d_s u_{tt}\)</span></li>
+<li>纵向方向<span class="arithmatex">\(x\)</span>方向的平衡： <span class="arithmatex">\(T_2\cos\alpha_2 - T_1\cos\alpha_1 = 0\)</span> </li>
+<li>横向方向<span class="arithmatex">\(y\)</span>方向的平衡：<span class="arithmatex">\(T_2\sin\alpha_2 - T_1\sin\alpha_2 = \rho d_s u_{tt}\)</span></li>
 </ul>
 </div>
 <ol>
@@ -1223,12 +1241,12 @@ u(x+dx,t)-u(x,t)=u_xdx
 <h3 id="1_1">1. 扩散方程<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <div class="admonition question">
 <p class="admonition-title">物理问题和物理规律</p>
-<p><strong>扩散</strong>： 由于物体内部物质浓度的分布不匀，导致物质从浓度高的区域向浓度低的区域转移。</p>
+<p><strong>扩散(diffusion)</strong>： 由于物体内部物质浓度的分布不匀，导致物质从浓度高的区域向浓度低的区域转移。</p>
 <p><strong>物理规律</strong>：</p>
 <ul>
 <li>
-<p>斐克第一定律(Fick’s first law)： 通过单位面积粒子数率（通常称为粒子流通量）与粒子浓度的梯度成正比，方向与梯度方向相反，其比例系数称为扩散系数。</p>
-</li>
+<p>斐克第一定律(Fick’s first law)： 单位时间内通过单位面积粒子数率（通常称为粒子流通量）与粒子浓度的梯度成正比，方向与梯度方向相反，其比例系数称为扩散系数。</p>
+<ul>
 <li>
 <p>扩散系数(diffusion coefficient)<span class="arithmatex">\(D\)</span>与物质的性态、温度(温度越高，扩散越快)等因素有关。</p>
 </li>
@@ -1236,10 +1254,14 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p>公式：</p>
 </li>
 </ul>
-<p><span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> </p>
-<p>分量形式：</p>
+<div class="arithmatex">\[\mathbf{q} = -D\nabla u\]</div>
+</li>
+</ul>
+<p>其中，<span class="arithmatex">\(\mathbf{q}\)</span> 为扩散流强度， <span class="arithmatex">\(D\)</span> 为扩散系数，<span class="arithmatex">\(u(x,y,z,t)\)</span> 为 <span class="arithmatex">\((x,y,z)\)</span> 位置在 <span class="arithmatex">\(t\)</span> 时刻的浓度，<span class="arithmatex">\(\nabla u\)</span>为浓度梯度。 </p>
+<div class="language-text highlight"><pre><span></span><code>- 分量形式：
+</code></pre></div>
 <p><span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> </p>
-<p>注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
+<p>注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span> 表示分量而不是偏微分。  </p>
 <ul>
 <li>质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </li>
 </ul>
@@ -1254,15 +1276,41 @@ u(x+dx,t)-u(x,t)=u_xdx
 <p>根据Fick's first law的分量形式，<span class="arithmatex">\(x\)</span>方向的净流入量也写作：
 <span class="arithmatex">\(D\frac{\partial^2 u}{\partial x^2} dxdydz\)</span></p>
 <p>因此总流入量：</p>
-<div class="arithmatex">\[D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial 
- z^2})dxdydz\]</div>
+<div class="arithmatex">\[D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\]</div>
 <p><strong>质量守恒</strong>：</p>
 <div class="arithmatex">\[\frac{\partial u}{\partial t} dxdydz  = D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\]</div>
 <div class="admonition abstrct">
-<p class="admonition-title">扩散方程</p>
+<p class="admonition-title">无源和汇的扩散方程</p>
 <div class="arithmatex">\[u_t= D( \frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2}) = D \Delta_3 u(x,y,z,t) \]</div>
 </div>
+<h3 id="2_1">2.热传导方程<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<div class="admonition question">
+<p class="admonition-title">物理问题和物理规律</p>
+<p><strong>热传导(thermal conduction)</strong> ：由于物体内部温度分布的不匀，导致热量从温度高的区域向温度低的区域转移。</p>
+<p><strong>物理规律</strong> ：</p>
+<ul>
+<li>
+<p>热传导定律： 在导热过程中，单位时间内通过给定截面的导热量，正比于垂直于该截面方向上的温度变化率和截面面积；热量传递的方向与温度升高的方向相反。</p>
+<ul>
+<li>公式： <span class="arithmatex">\(\mathbf{q} = -k \nabla u\)</span></li>
+</ul>
+<p>其中，<span class="arithmatex">\(\mathbf{q}\)</span> 为热流强度，即单位时间内通过单位面积的热量；<span class="arithmatex">\(k\)</span>为热传导系数， <span class="arithmatex">\(u(x,y,z,t)\)</span> 为 <span class="arithmatex">\((x,y,z)\)</span> 在 <span class="arithmatex">\(t\)</span> 时刻的温度。</p>
+<ul>
+<li>分量形式：</li>
+</ul>
+</li>
+<li>
+<p>能量守恒定律</p>
+</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">无源和汇的热传导方程</p>
+</div>
 <h2 id="_4">静电场和引力势方程<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>高斯定理：$<span class="arithmatex">\(\$\)</span>
+电场是无旋(电力线不相交，电场中任意一点的电场强度不可能有两个方向), <span class="arithmatex">\(\nabla\times\mathbf{E} = 0\)</span>。</p>
+<p>因此存在一个势函数<span class="arithmatex">\(V\)</span>，使得$\mathbf{E} = -\nabla V $</p>
 
 
 
