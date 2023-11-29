@@ -1088,7 +1088,8 @@
 </style>
 <div class="admonition question">
 <p class="admonition-title">物理问题与物理规律</p>
-<p><strong>对象</strong>：一固定长度的**柔软**(只能承受轴向载荷压力和拉力，忽略弯矩和剪切，则轴向载荷的方向与弦变形后的切线方向相一致)、<strong>均匀</strong> (单位长度的质量密度为一常数)，<strong>轻质</strong>（重力忽略不计）细弦，两端拉紧。在**垂直于弦线方向**施加外加激励，让其离开原来平衡位置，将作微小的横向振动，求弦上个每个点的运动方程。</p>
+<p><strong>对象</strong>：一固定长度的**柔软**(只能承受轴向载荷压力和拉力，忽略弯矩和剪切，则轴向载荷的方向与弦变形后的切线方向相一致)、<strong>均匀</strong> (单位长度的质量密度为一常数)，<strong>轻质</strong>（重力忽略不计）细弦，两端拉紧。</p>
+<p>在**垂直于弦线方向**施加外加激励，让其离开原来平衡位置，将作微小的横向振动，求弦上个每个点的运动方程。</p>
 <p><strong>坐标系的建立</strong>：当弦在崩紧不振动时是一根直线,取这直线记作<span class="arithmatex">\(x\)</span>轴（纵向）。在横向振动过程中，弦上每个点的纵向位移为0。即每个点的y值发生变化。<span class="arithmatex">\(u(x,t)\)</span>表示<span class="arithmatex">\(t\)</span> 时刻 <span class="arithmatex">\(x\)</span> 位置处的横向位移，即<span class="arithmatex">\(y = u(x,t)\)</span> 即求<span class="arithmatex">\(y = u(x,t)\)</span>
 <img alt="img" src="../image-2.png" /></p>
 <div class="admonition tip">
@@ -1110,35 +1111,42 @@
 <li><strong>平衡方程</strong>:
 根据牛顿第二定律: </li>
 </ol>
-<p>!!! abstract "" 
-       - 纵向方向<span class="arithmatex">\(x\)</span>方向的平衡： <span class="arithmatex">\(T_2cos\alpha_2 - T_1\alpha_1 = 0\)</span> 
-       - 横向方向<span class="arithmatex">\(y\)</span>方向的平衡：<span class="arithmatex">\(T_2sin\alpha_2 - T_1\alpha_2 = \rho d_s u_{tt}\)</span>
- 3. <strong>化简</strong>：
-- x方向的平衡：
-根据小变形假设： 横向位移相对于弦(绳) 的长度来说是小量，图中弦变形后的角度<span class="arithmatex">\(\alpha\)</span>非常小，<span class="arithmatex">\(\alpha&lt;&lt;1\)</span>。</p>
-<div class="language-text highlight"><pre><span></span><code>$\alpha_1 &lt;&lt;1,\cos\alpha_1\approx1,\alpha_2&lt;&lt;1,\cos\alpha_2\approx1$, $\Rightarrow T_1=T_2=T$
-</code></pre></div>
-<p>不考虑轴向运动影响，那么弦内张力保持不变。
-- y方向的平衡：
-<span class="arithmatex">\(T_2\sin\alpha_2-T_1\sin\alpha_1=(\rho ds)u_{tt}\)</span>
+<div class="admonition abstract">
+<ul>
+<li>纵向方向<span class="arithmatex">\(x\)</span>方向的平衡： <span class="arithmatex">\(T_2cos\alpha_2 - T_1\alpha_1 = 0\)</span> </li>
+<li>横向方向<span class="arithmatex">\(y\)</span>方向的平衡：<span class="arithmatex">\(T_2sin\alpha_2 - T_1\alpha_2 = \rho d_s u_{tt}\)</span></li>
+</ul>
+</div>
+<ol>
+<li>
+<p><strong>化简</strong>：</p>
+</li>
+<li>
+<p>x方向的平衡：</p>
+<p>根据小变形假设： 横向位移相对于弦(绳) 的长度来说是小量，图中弦变形后的角度<span class="arithmatex">\(\alpha\)</span>非常小，<span class="arithmatex">\(\alpha&lt;&lt;1\)</span>。</p>
+<p><span class="arithmatex">\(\alpha_1 &lt;&lt;1,\cos\alpha_1\approx1,\alpha_2&lt;&lt;1,\cos\alpha_2\approx1\)</span>, <span class="arithmatex">\(\Rightarrow T_1=T_2=T\)</span>
+不考虑轴向运动影响，那么弦内张力保持不变。</p>
+</li>
+<li>
+<p>y方向的平衡：</p>
+<p><span class="arithmatex">\(T_2\sin\alpha_2-T_1\sin\alpha_1=(\rho ds)u_{tt}\)</span>
 根据小变形假设： 横向位移相对于弦(绳) 的长度来说是小量</p>
-<div class="language-text highlight"><pre><span></span><code>$\sin\alpha_1\approx\alpha_1\approx\tan\alpha_1=u_x(x,t),\sin\alpha_2\approx\alpha_2\approx\tan\alpha_2=u_x\left(x+dx,t\right)$
-
-$$
+<p><span class="arithmatex">\(\sin\alpha_1\approx\alpha_1\approx\tan\alpha_1=u_x(x,t),\sin\alpha_2\approx\alpha_2\approx\tan\alpha_2=u_x\left(x+dx,t\right)\)</span></p>
+<div class="arithmatex">\[
 \begin{array}{c}T_1=T_2=T\\T\left(\left.u_x\right|_{x+dx}-\left.u_x\right|_x\right)=\rho u_{tt}dx\end{array}
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \left.u_x\right|_{x+dx}=u_x\left|_x+u_{xx}\right|_xdx+o(dx)
-$$
-
-忽略高阶小量，$T$为弦内张力：$$Tu_{xx}dx=\rho u_{tt}dx$$
-
-!!! abstract &quot;弦的横向振动&quot; 
-    $$Tu_{xx}=\rho u_{tt}$$
-    波速：记$a^2  =  \frac{T}{\rho}$, $a$的量纲为速度量纲。
-    $$u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}$$
-</code></pre></div>
+\]</div>
+<p>忽略高阶小量，<span class="arithmatex">\(T\)</span>为弦内张力：<span class="arithmatex">\(<span class="arithmatex">\(Tu_{xx}dx=\rho u_{tt}dx\)</span>\)</span></p>
+</li>
+</ol>
+<div class="admonition abstract">
+<p class="admonition-title">弦的横向振动</p>
+<div class="arithmatex">\[Tu_{xx}=\rho u_{tt}$$
+波速：记$a^2  =  \frac{T}{\rho}$, $a$的量纲为速度量纲。
+$$u_{tt} = \frac{T}{\rho}u_{xx} = a^2u_{xx}\]</div>
+</div>
 </div>
 <h3 id="2">2.二维波动方程或者薄膜的微小横振动<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <div class="admonition question">
@@ -1146,32 +1154,31 @@ $$
 <p><strong>对象</strong>: 一张均匀张紧的轻质薄膜，离开水平位置沿垂直于水平位置的微小振动。
 <strong>坐标系的建立</strong>：以膜的水平位置(平衡状态)为xy平面，横向方向即为垂直xy平面的z轴。
 用 (x, y) 表示膜的位置，u(x,y,t)表示t 时刻 在(x, y) 位置处膜的横向位移。</p>
-<p>如图1： <span class="arithmatex">\(\vec{n} = x\vec{i} + \vec{y}j\)</span>
-        <span class="arithmatex">\(\vec{u}(t) = u(x,y,t)\vec{k}\)</span></p>
-<p><img alt="imag" src="../image-5.png" /> 
-<strong>物理规律</strong>：牛顿第二定律 </p>
+<p>如图1： <span class="arithmatex">\(\vec{n} = x\vec{i} + \vec{y}j\)</span>， <span class="arithmatex">\(\vec{u}(t) = u(x,y,t)\vec{k}\)</span></p>
+<p><img alt="imag" src="../image-5.png" /></p>
+<p><strong>物理规律</strong>：牛顿第二定律 </p>
 </div>
 <p>和弦问题一样， 根据水平方向的力平衡（任意方向），可知膜上的张力处处相同，记单位长度膜上的张力（切线方向）为<span class="arithmatex">\(T\)</span>。<span class="arithmatex">\(T\)</span>沿着u(x,y)的切线方向。</p>
-<p><strong>微元法</strong>： 取平面上的微小单元 <span class="arithmatex">\(dxdy\)</span> 进行受力平衡分析:
-<strong>受力分析</strong>： 沿<span class="arithmatex">\(x\)</span> 轴方向两对边上由张力引起的横向合力为(u的方向即横向方向为垂直于xy平面的z轴方向)：
+<p><strong>微元法</strong>： 取平面上的微小单元 <span class="arithmatex">\(dxdy\)</span> 进行受力平衡分析:</p>
+<p><strong>受力分析</strong>： 沿<span class="arithmatex">\(x\)</span> 轴方向两对边上由张力引起的横向合力为(u的方向即横向方向为垂直于xy平面的z轴方向)：
 $$
 \left(Tu_x\mid_{x+dx}-Tu_x\mid_x\right)dy=Tu_{xx}dxdy
-$$
-沿<span class="arithmatex">\(y\)</span>轴方向两对边上由张力引起的横向合力为：
+$$</p>
+<p>沿<span class="arithmatex">\(y\)</span>轴方向两对边上由张力引起的横向合力为：
 $$
 \left(Tu_y\mid_{y+dy}-Tu_y \mid_y\right)dx=Tu_{yy}dxdy
-$$
-<strong>平衡方程：</strong>
-忽略极小量， 用 <span class="arithmatex">\(\rho\)</span> 表示单位面积的质量，T表示张力。</p>
+$$</p>
+<p><strong>平衡方程：</strong>
+用 <span class="arithmatex">\(\rho\)</span> 表示单位面积的质量，<span class="arithmatex">\(T\)</span>表示张力。</p>
 <div class="arithmatex">\[
 Tu_{xx}dxdy+Tu_{yy}dxdy=\rho u_{_{tt}}dxdy
 \]</div>
 <div class="admonition abstract">
 <p class="admonition-title">膜的横向振动 :</p>
-<p>$$ u_{tt}=\frac{T}{\rho}{u_{xx}+u_{yy}}=\frac{T}{\rho}\Delta_{2}u(x,y)$$
-- 二维的拉普拉斯算符(子): <span class="arithmatex">\(\Delta_{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\)</span></p>
+<div class="arithmatex">\[ u_{tt}=\frac{T}{\rho}{u_{xx}+u_{yy}}=\frac{T}{\rho}\Delta_{2}u(x,y)\]</div>
 <div class="admonition warning">
 <ul>
+<li>二维的拉普拉斯算符(子): <span class="arithmatex">\(\Delta_{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\)</span></li>
 <li>拉普拉斯算子<span class="arithmatex">\(\Delta\)</span> 和 nabla<span class="arithmatex">\(\nabla\)</span>算子</li>
 <li>薄膜被拉伸发生微小的横向的振动，但是各点的(x,y)不变。（至于是否发生微小形变，准确来说，由于膜上(x,y)的质心对应的z在振动，因此薄膜发生了形变）</li>
 </ul>
@@ -1180,33 +1187,33 @@ Tu_{xx}dxdy+Tu_{yy}dxdy=\rho u_{_{tt}}dxdy
 <h3 id="3">3.均匀细长杆的纵向振动<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <div class="admonition question">
 <p class="admonition-title">物理问题和物理规律</p>
-<p><strong>对象</strong>: 一根均匀的细长杆，寻找沿轴向的纵向位移所应该遵循的方程。
-<strong>参数和变量</strong>： <span class="arithmatex">\(x\)</span> 表示某点的位置，<span class="arithmatex">\(u(x,t)\)</span> 表示 <span class="arithmatex">\(t\)</span>  时刻 <span class="arithmatex">\(x\)</span> 位置处点的纵向位移.
-<img alt="img" src="../image-6.png" />
-<strong>物理规律</strong>： 牛顿第二定律和胡克定律</p>
+<p><strong>对象</strong>: 一根均匀的细长杆，寻找沿轴向的纵向位移所应该遵循的方程。</p>
+<p><strong>参数和变量</strong>： <span class="arithmatex">\(x\)</span> 表示某点的位置，<span class="arithmatex">\(u(x,t)\)</span> 表示 <span class="arithmatex">\(t\)</span>  时刻 <span class="arithmatex">\(x\)</span> 位置处点的纵向位移.
+<img alt="img" src="../image-6.png" /></p>
+<p><strong>物理规律</strong>： 牛顿第二定律和胡克定律</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">纵向振动</p>
 <p>横截面变形后还是横截面，横截面形状保持不变。用位移的梯度<span class="arithmatex">\(du/dx\)</span> (应变) 来表征变形的程度。用单位横截面上的平均载荷来表征受力情况。</p>
 </div>
-<p><strong>分析变形</strong>：
-B 段左边的位移为 <span class="arithmatex">\(u(x,t),B\)</span> 段右边的位移为<span class="arithmatex">\(u(x+dx,t)\)</span>, 所以 <span class="arithmatex">\(B\)</span> 段的变形量为：</p>
+<p><strong>分析变形</strong>：</p>
+<p>B 段左边的位移为 <span class="arithmatex">\(u(x,t),B\)</span> 段右边的位移为<span class="arithmatex">\(u(x+dx,t)\)</span>, 所以 <span class="arithmatex">\(B\)</span> 段的变形量为：</p>
 <div class="arithmatex">\[
 u(x+dx,t)-u(x,t)=u_xdx
 \]</div>
 <p><span class="arithmatex">\(B\)</span> 段左边的相对变形(单位长度的变形量)为： <span class="arithmatex">\(u_x(x,t)\)</span></p>
-<p><span class="arithmatex">\(B\)</span> 段右边的相对变形(单位长度的变形量)为： <span class="arithmatex">\(\mu_x(x+dx,t)\)</span>。
-<strong>受力分析</strong>：</p>
-<p>根据胡克定律， B 段左边由于变形受到 A 段对它的作用力为：<span class="arithmatex">\(ESux(x,t) <span class="arithmatex">\(;
-B 段右边由于变形受到 C 段对它的作用力为：\)</span>ESux(x+dx,t)\)</span>。
-这里S为杆的横截面积，E为材料的弹性模量（类同于弹簧的劲度系数）。</p>
+<p><span class="arithmatex">\(B\)</span> 段右边的相对变形(单位长度的变形量)为： <span class="arithmatex">\(u_x(x+dx,t)\)</span>。</p>
+<p><strong>受力分析</strong>：</p>
+<p>根据胡克定律， B 段左边由于变形受到 A 段对它的作用力为：<span class="arithmatex">\(ESux(x,t)\)</span>;</p>
+<p>B 段右边由于变形受到 C 段对它的作用力为：<span class="arithmatex">\(ESux(x+dx,t)\)</span>。</p>
+<p>这里S为杆的横截面积，E为材料的弹性模量（类同于弹簧的劲度系数）。</p>
 <div class="admonition note">
 <p>弹性作用力为：<span class="arithmatex">\(ES\frac{du}{dx}\)</span>,   即为弹性模量<span class="arithmatex">\(\times\)</span>横截面积<span class="arithmatex">\(\times\)</span>应变</p>
 </div>
 <p><strong>平衡方程：</strong> 
 根据牛顿第二定律
-<span class="arithmatex">\(<span class="arithmatex">\(\rho Sdxu_t=ES\Bigl[u_x(x+dx,t)-u_x(x,t)\Bigr]=ESu_{xx}dx\)</span>\)</span> 
-<span class="arithmatex">\(\alpha\)</span> 具有速度量纲，也是波速。 <span class="arithmatex">\(a^2=E/\rho\)</span></p>
+<span class="arithmatex">\(<span class="arithmatex">\(\rho Sdxu_t=ES\Bigl[u_x(x+dx,t)-u_x(x,t)\Bigr]=ESu_{xx}dx\)</span>\)</span></p>
+<p><span class="arithmatex">\(\alpha\)</span> 具有速度量纲，也是波速。 <span class="arithmatex">\(a^2=E/\rho\)</span></p>
 <div class="admonition abstract">
 <p class="admonition-title">杆的纵向振动</p>
 <div class="arithmatex">\[ u_{tt}=\frac{E}{\rho} u_{xx} = a^2u_{xx}\]</div>
@@ -1215,16 +1222,37 @@ B 段右边由于变形受到 C 段对它的作用力为：\)</span>ESux(x+dx,t)
 <h3 id="1_1">1. 扩散方程<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <div class="admonition question">
 <p class="admonition-title">物理问题和物理规律</p>
-<p><strong>扩散</strong>： 由于物体内部物质浓度的分布不匀，导致物质从浓度高的区域向浓度低的区域转移。
-<strong>物理规律</strong>：
-- 斐克第一定律(Fick’s first law)： 通过单位面积粒子数率（通常称为粒子流通量）与粒子浓度的梯度成正比，方向与梯度方向相反，其比例系数称为扩散系数。
-  - 扩散系数(diffusion coefficient)<span class="arithmatex">\(D\)</span>与物质的性态、温度(温度越高，扩散越快)等因素有关。
-  - <span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> 
-- 质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </p>
+<p><strong>扩散</strong>： 由于物体内部物质浓度的分布不匀，导致物质从浓度高的区域向浓度低的区域转移。</p>
+<p><strong>物理规律</strong>：</p>
+<ul>
+<li>
+<p>斐克第一定律(Fick’s first law)： 通过单位面积粒子数率（通常称为粒子流通量）与粒子浓度的梯度成正比，方向与梯度方向相反，其比例系数称为扩散系数。</p>
+</li>
+<li>
+<p>扩散系数(diffusion coefficient)<span class="arithmatex">\(D\)</span>与物质的性态、温度(温度越高，扩散越快)等因素有关。</p>
+</li>
+<li>
+<p>公式：<span class="arithmatex">\(<span class="arithmatex">\(\mathbf{q} = -D\nabla u\)</span>\)</span> 分量形式：<span class="arithmatex">\(<span class="arithmatex">\(q_x= -D\frac{\partial{u}}{\partial{x}}, q_y= -D\frac{\partial{u}}{\partial{y}},q_z= -D\frac{\partial{u}}{\partial{z}}\)</span>\)</span> 注意这里的<span class="arithmatex">\(q_x,q_y,q_z\)</span>表示分量而不是偏微分。  </p>
+</li>
+<li>
+<p>质量守恒定律：总质量（或者总颗粒数）随着时间的推移而保持不变。 </p>
+</li>
+</ul>
 </div>
 <p><strong>微元</strong>：取空间一个平行六面体<br />
-<img alt="img" src="../image-7.png" />
-<strong>参数和变量</strong>：<span class="arithmatex">\(u(x,y,z,t)\)</span> 表示$ (x,y,z)$ 位置在 <span class="arithmatex">\(t\)</span> 时刻的浓度，<span class="arithmatex">\(\nabla u\)</span>表示某个位置处浓度的梯度。</p>
+<img alt="img" src="../image-7.png" /></p>
+<p><strong>参数和变量</strong>：<span class="arithmatex">\(u(x,y,z,t)\)</span> 表示$ (x,y,z)$ 位置在 <span class="arithmatex">\(t\)</span> 时刻的浓度，<span class="arithmatex">\(\nabla u\)</span>表示某个位置处浓度的梯度。
+<strong>总的流入量</strong>：</p>
+<p>单位时间内：</p>
+<p>沿着<span class="arithmatex">\(x\)</span>方向的**净**流入量：$q_x\mid_{x} dxdy -q_x\mid_{x+dx} dxdy   = - \frac{\partial{q_x}}{\partial{x}}dxdydz $</p>
+<p>根据Fick's first law的分量形式，<span class="arithmatex">\(x\)</span>方向的净流入量也写作：<span class="arithmatex">\(D\frac{\partial^2 u}{\partial x^2} dxdydz\)</span></p>
+<p>因此总流入量：<span class="arithmatex">\(<span class="arithmatex">\(D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial 
+ z^2})dxdydz\)</span>\)</span></p>
+<p><strong>质量守恒</strong>：<span class="arithmatex">\(<span class="arithmatex">\(\frac{\partial u}{\partial t} dxdydz  = D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\)</span>\)</span></p>
+<div class="admonition abstrct">
+<p class="admonition-title">扩散方程</p>
+<div class="arithmatex">\[u_t= D( \frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2}) = D \Delta_3 u(x,y,z,t) \]</div>
+</div>
 <h2 id="_4">静电场和引力势方程<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 
 
