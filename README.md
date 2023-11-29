@@ -1,2 +1,5 @@
-# YoungNotes
-Some study notes in math and cs.
+#🍋🍋 YoungNotes
+To see my notewebsite, click[🍋YoungNotes](https://yangmei-zju.github.io/YoungNotes/).
+
+
+
