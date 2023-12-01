@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Crimson Text";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -292,6 +292,12 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
         <a href="../../../Math/Mathmatical%20Physics/%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%AF%BC%E5%87%BA/" class="md-tabs__link">
           
@@ -302,6 +308,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -503,16 +512,64 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../Math/Mathmatical%20Physics/%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%AF%BC%E5%87%BA/" class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     数理方程定解问题
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            数理方程定解问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Math/Mathmatical%20Physics/%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%AF%BC%E5%87%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数理方程的导出
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1083,39 +1140,32 @@
 <table>
 <thead>
 <tr>
-<th>方法</th>
-<th>描述</th>
-<th>时间复杂度</th>
+<th style="text-align: center;">方法</th>
+<th style="text-align: center;">描述</th>
+<th style="text-align: center;">时间复杂度</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>push()</code></td>
-<td>元素入栈（添加至栈底）</td>
-<td><span class="arithmatex">\(O(1)\)</span></td>
+<td style="text-align: center;"><code>push()</code></td>
+<td style="text-align: center;">元素入栈（添加至栈底）</td>
+<td style="text-align: center;"><span class="arithmatex">\(O(1)\)</span></td>
 </tr>
 <tr>
-<td><code>pop()</code></td>
-<td>栈顶元素出栈</td>
-<td><span class="arithmatex">\(O(1)\)</span></td>
+<td style="text-align: center;"><code>pop()</code></td>
+<td style="text-align: center;">栈顶元素出栈</td>
+<td style="text-align: center;"><span class="arithmatex">\(O(1)\)</span></td>
 </tr>
 <tr>
-<td><code>peek()</code></td>
-<td>访问栈顶元素</td>
-<td><span class="arithmatex">\(O(1)\)</span></td>
+<td style="text-align: center;"><code>peek()</code></td>
+<td style="text-align: center;">访问栈顶元素</td>
+<td style="text-align: center;"><span class="arithmatex">\(O(1)\)</span></td>
 </tr>
-<tr>
-<td>### 4.1.2栈的实现</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>#### 1. 基于链表</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/* 基于链表实现的栈 */</span>
+</tbody>
+</table>
+<h3 id="412">4.1.2栈的实现<a class="headerlink" href="#412" title="Permanent link">&para;</a></h3>
+<h4 id="1">1. 基于链表<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/* 基于链表实现的栈 */</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">ListNode</span><span class="w"> </span><span class="o">*</span><span class="n">top</span><span class="p">;</span><span class="w"> </span><span class="c1">// 将头节点作为栈顶</span>
@@ -1193,12 +1243,7 @@
 </span><span id="__span-2-76"><a id="__codelineno-2-76" name="__codelineno-2-76" href="#__codelineno-2-76"></a><span class="w">    </span><span class="n">s</span><span class="o">-&gt;</span><span class="n">size</span><span class="o">--</span><span class="p">;</span>
 </span><span id="__span-2-77"><a id="__codelineno-2-77" name="__codelineno-2-77" href="#__codelineno-2-77"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">val</span><span class="p">;</span>
 </span><span id="__span-2-78"><a id="__codelineno-2-78" name="__codelineno-2-78" href="#__codelineno-2-78"></a><span class="p">}</span>
-</span></code></pre></div></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+</span></code></pre></div>
 <h4 id="2">2. 基于数组<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">/* 基于数组实现的栈 */</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
@@ -1282,14 +1327,10 @@
 <td style="text-align: center;">访问队首元素</td>
 <td style="text-align: center;"><span class="arithmatex">\(O(1)\)</span></td>
 </tr>
-<tr>
-<td style="text-align: center;">### 4.2.2 队列的实现</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
 </tbody>
 </table>
-<h4 id="1">1.基于链表的实现<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<h3 id="422">4.2.2 队列的实现<a class="headerlink" href="#422" title="Permanent link">&para;</a></h3>
+<h4 id="1_1">1.基于链表的实现<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
 <h4 id="2_1">2. 基于数组的实现<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
 <h1 id="chapter-6">Chapter 6 哈希表<a class="headerlink" href="#chapter-6" title="Permanent link">&para;</a></h1>
 <h2 id="61">6.1 哈希表<a class="headerlink" href="#61" title="Permanent link">&para;</a></h2>
