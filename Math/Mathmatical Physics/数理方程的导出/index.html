@@ -525,6 +525,8 @@
       
         
       
+        
+      
     
     
     
@@ -690,10 +692,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      稳态问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathmatical Physics/数理方程定解条件.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数理方程定界条件
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -825,6 +856,8 @@
       
         
       
+        
+      
     
     
     
@@ -906,6 +939,26 @@
   
   <span class="md-ellipsis">
     树
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/FDS/images/4heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    堆
   </span>
   
 
@@ -1148,6 +1201,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      稳态问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1365,9 +1427,13 @@ u(x+dx,t)-u(x,t)=du = u_xdx
 <div class="arithmatex">\[D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\]</div>
 <p><strong>质量守恒</strong>：</p>
 <div class="arithmatex">\[\frac{\partial u}{\partial t} dxdydz  = D(\frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2})dxdydz\]</div>
-<div class="admonition abstrct">
+<div class="admonition abstract">
 <p class="admonition-title">无源和汇的扩散方程</p>
-<div class="arithmatex">\[u_t= D( \frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2}) = D \Delta_3 u(x,y,z,t) \]</div>
+<div class="arithmatex">\[u_t= D( \frac{\partial^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2}+ \frac{\partial ^2 u}{\partial z^2}) = D \Delta_3 u(x,y,z,t) = a^2\Delta_3 u \]</div>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">有源(或汇)的扩散方程</p>
+<div class="arithmatex">\[u_t - a^2\Delta_3u = F(x,y,z,t)\]</div>
 </div>
 <h3 id="2_1">2.热传导方程<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
 <div class="admonition question">
@@ -1420,6 +1486,25 @@ u(x+dx,t)-u(x,t)=du = u_xdx
 <p>泊松定理:</p>
 <div class="arithmatex">\[\Delta V = -\frac{\rho}{\varepsilon_0}\]</div>
 </div>
+<h2 id="_5">稳态问题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>稳态问题：稳定的浓度分布和稳定的温度分布
+1. 在扩散问题中，如果扩散源强度不随时间变化，F= F(x,y,z) ， 那么当扩散时间足够长后，空间中各点的浓度将不再随时间发生变化，趋于一个稳定状态。
+- 有不随时间变化的源：</p>
+<div class="arithmatex">\[D\Delta u = -F(x,y,z)\]</div>
+<ul>
+<li>无源</li>
+</ul>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\Delta u = 0\)</span>\)</span> 
+2. 在热传导问题中，如果热源强度不随时间变化，F= F(x,y,z) ， 那么当热传导时间足够长后，空间中各点的温度将不再随时间发生变化， 趋于一个稳定状态， 即<span class="arithmatex">\(\lim_{t\rightarrow \infty}u_t = 0\)</span>。
+- 有不随时间变化的源：</p>
+<div class="arithmatex">\[k\Delta u = -F(x,y,z)\]</div>
+<ul>
+<li>无源</li>
+</ul>
+<div class="arithmatex">\[\Delta u = 0\]</div>
+<ol>
+<li>声学方程</li>
+</ol>
 
 
 

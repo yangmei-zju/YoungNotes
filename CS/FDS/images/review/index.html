@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://github.io/yangmei-zju/YoungNots/CS/FDS/images/review/">
       
       
-        <link rel="prev" href="../3tree/">
+        <link rel="prev" href="../4heap/">
       
       
         <link rel="next" href="../../../c%E5%B0%8F%E7%A8%8B/">
@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
     
@@ -558,6 +560,26 @@
   
   <span class="md-ellipsis">
     数理方程的导出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Math/Mathmatical Physics/数理方程定解条件.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数理方程定界条件
   </span>
   
 
@@ -697,6 +719,8 @@
       
         
       
+        
+      
     
     
     
@@ -778,6 +802,26 @@
   
   <span class="md-ellipsis">
     树
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    堆
   </span>
   
 
@@ -1085,10 +1129,10 @@
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">Position</span><span class="w">  </span><span class="nf">Iter_Find</span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w"> </span><span class="n">X</span><span class="p">,</span><span class="w">  </span><span class="n">SearchTree</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">)</span><span class="w"> </span>
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">{</span><span class="w"> </span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="cm">/* iterative version of Find */</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="k">while</span><span class="w">  </span><span class="p">(</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">)</span><span class="w">   </span><span class="p">{</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">          </span><span class="k">if</span><span class="w">  </span><span class="p">(</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="n">Element</span><span class="w"> </span><span class="p">)</span><span class="w">  </span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">;</span><span class="w">  </span><span class="cm">/* found */</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">          </span><span class="k">if</span><span class="w">  </span><span class="p">(</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="n">Element</span><span class="w"> </span><span class="p">)</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="k">while</span><span class="p">(</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">)</span><span class="w">   </span><span class="p">{</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">            </span><span class="k">if</span><span class="w">  </span><span class="p">(</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="n">Element</span><span class="w"> </span><span class="p">)</span><span class="w">  </span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">;</span><span class="w">  </span><span class="cm">/* found */</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">            </span><span class="k">if</span><span class="w">  </span><span class="p">(</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="n">Element</span><span class="w"> </span><span class="p">)</span>
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">             </span><span class="n">T</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="n">Left</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="cm">/*move down along left path */</span>
 </span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">          </span><span class="k">else</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T</span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Right</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="cm">/* move down along right path */</span>
@@ -1300,7 +1344,7 @@ Time complexity of  N  Union and M Find operations is now O( N + M log2 N ).</p>
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../3tree/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 树">
+          <a href="../4heap/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 堆">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1310,7 +1354,7 @@ Time complexity of  N  Union and M Find operations is now O( N + M log2 N ).</p>
                 上一页
               </span>
               <div class="md-ellipsis">
-                树
+                堆
               </div>
             </div>
           </a>
