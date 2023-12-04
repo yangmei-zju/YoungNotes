@@ -296,16 +296,8 @@
   
     
     
-      
-  
-  
-    
-  
-  
-    
-    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%AF%BC%E5%87%BA/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -314,9 +306,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -482,6 +471,10 @@
     
       
         
+          
+        
+      
+        
       
     
     
@@ -495,16 +488,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     数理方法
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
@@ -512,6 +513,8 @@
             数理方法
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -536,10 +539,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -550,8 +553,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_1_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
             <span class="md-nav__icon md-icon"></span>
             数理方程定解问题
           </label>
@@ -689,12 +692,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#robin-boundary" class="md-nav__link">
     <span class="md-ellipsis">
       Robin Boundary
@@ -719,6 +717,11 @@
       细杆自由冷却问题
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1040,6 +1043,10 @@
     
       
         
+          
+        
+      
+        
       
     
     
@@ -1053,16 +1060,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../CS/cs61a/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     CS61a
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
@@ -1070,6 +1085,8 @@
             CS61a
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1193,12 +1210,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#robin-boundary" class="md-nav__link">
     <span class="md-ellipsis">
       Robin Boundary
@@ -1223,6 +1235,11 @@
       细杆自由冷却问题
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1274,7 +1291,7 @@
 <h1 id="_1">数理方法的定界问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <style>
     img[alt="img"]{
-        width:60%;
+        width:40%;
         display: block;
         margin: 0 auto;
     }
@@ -1292,17 +1309,17 @@
 <details class="hint">
 <summary>不同的方程具有不同的初始条件</summary>
 <p>反映了系统初始时刻状态对结果的影响，必须给出整个分析区域上而不是个别点上的分布情况。
-- 对于运输过程（扩散、热传导）方程中只出现时间 t 的一阶微分，只需要初始状态条件；
-- 对于振动过程（弦、膜、杆振动，声振动和声波，电磁波等波动方程），由于方程中出现了时间 <span class="arithmatex">\(t\)</span> 的二阶微分， 因此需要给定两个初始条件：初始的状态+初始的“速度”(变化状态)；
-- 对于稳态问题，由于初始状态不影响最终的稳态分布规律，因此无需给出初始条件。</p>
+- 对于运输过程（扩散、热传导）方程中只出现时间 t 的一阶微分，只需要初始状态条件；<br />
+- 对于振动过程（弦、膜、杆振动，声振动和声波，电磁波等波动方程），由于方程中出现了时间 <span class="arithmatex">\(t\)</span> 的二阶微分， 因此需要给定两个初始条件：初始的状态+初始的“速度”(变化状态)；<br />
+- 对于稳态问题，由于初始状态不影响最终的稳态分布规律，因此无需给出初始条件。  </p>
 </details>
 <h2 id="_3">边界条件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>周围环境通过系统的边界对区域内的状态产生影响，这种影响需要用边界条件进行描述。  </p>
 <h3 id="dirichlet-boundary">Dirichlet Boundary<a class="headerlink" href="#dirichlet-boundary" title="Permanent link">&para;</a></h3>
 <p>第一类 (狄利克雷条件，Dirichlet boundary): 给定了物理量在边界上所要满足的条件 。<br />
-- 细杆导热问题，比如，端点<span class="arithmatex">\(x=\alpha\)</span> 的温度<span class="arithmatex">\(u\)</span> 按已知的规律，函数<span class="arithmatex">\(f(t)\)</span>发生变化。
-- 细杆振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 固定，<span class="arithmatex">\(u(x=\alpha,t)=0, \forall t\)</span>。
-- 弦的振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 和端点<span class="arithmatex">\(x=b\)</span> 同时固定，<span class="arithmatex">\(u(x=\alpha,t)=0,\quad u(x=b,t)=0, \quad \forall t\)</span> 。</p>
+- 细杆导热问题，比如，端点<span class="arithmatex">\(x=\alpha\)</span> 的温度<span class="arithmatex">\(u\)</span> 按已知的规律，函数<span class="arithmatex">\(f(t)\)</span>发生变化。<br />
+- 细杆振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 固定，<span class="arithmatex">\(u(x=\alpha,t)=0, \forall t\)</span>。<br />
+- 弦的振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 和端点<span class="arithmatex">\(x=b\)</span> 同时固定，<span class="arithmatex">\(u(x=\alpha,t)=0,\quad u(x=b,t)=0, \quad \forall t\)</span> 。  </p>
 <h3 id="neumann-boundary">Neumann Boundary<a class="headerlink" href="#neumann-boundary" title="Permanent link">&para;</a></h3>
 <p>第二类（纽曼，Neumann boundary ）： 给定物理量 <strong>沿边界上外法线方向的导数</strong> （边界的梯度）所要满足的条件。  </p>
 <details class="hint">
@@ -1326,26 +1343,28 @@
 <div class="arithmatex">\[f(t) - ES\left.\frac{\partial u}{\partial x}\right|_{x=b} = \rho Sdx \]</div>
 <p>为什么忽略了惯性力。因为取得是非常小得微段，即 <span class="arithmatex">\(dx\rightarrow0\)</span>，所以惯性力 <span class="arithmatex">\(\rho S dx \rightarrow 0\)</span></p>
 <ul>
-<li><span class="arithmatex">\(u_x\)</span> (<span class="arithmatex">\(u\)</span> 对 <span class="arithmatex">\(x\)</span> 的偏导)是以物体内部 <span class="arithmatex">\(x\)</span> 轴为正方向，<span class="arithmatex">\(u_n\)</span>是以边界上物体外法线方向为正方向，所以 在在右端<span class="arithmatex">\(u_x = u_n\)</span>, 在左端$u_x = -u_n $</li>
+<li><span class="arithmatex">\(u_x\)</span> (<span class="arithmatex">\(u\)</span> 对 <span class="arithmatex">\(x\)</span> 的偏导)是以物体内部 <span class="arithmatex">\(x\)</span> 轴为正方向，<span class="arithmatex">\(u_n\)</span>是以边界上物体外法线方向为正方向，所以 在右端 <span class="arithmatex">\(u_x = u_n\)</span> ,  在左端 <span class="arithmatex">\(u_x = -u_n\)</span> </li>
 <li><span class="arithmatex">\(f(t)\)</span>与坐标系方向一致，即以<span class="arithmatex">\(x\)</span>轴正方向为其正方向。</li>
 </ul>
 </div>
 <ol>
-<li>如果在左边端部 x = a 处有一个沿轴向的外力 f (t) ，分析左边边界附近一个非常小微段的平衡，同理可得 </li>
+<li>如果在左边端部 <span class="arithmatex">\(x = a\)</span> 处有一个沿轴向的外力 <span class="arithmatex">\(f (t)\)</span> ，分析左边边界附近一个非常小微段的平衡，同理可得 </li>
 </ol>
 <div class="arithmatex">\[\left.\begin{aligned} &amp; \left.ES\frac{\partial u}{\partial x}\right|_{x=a}+f(t)=0 \\  &amp; \left.\frac{\partial u}{\partial x}\right|_{x=a}=-\left.\frac{\partial u}{\partial n}\right|_{x=a}\Rightarrow\begin{aligned} &amp; \left.ES\frac{\partial u}{\partial n}\right|_{x=a}\end{aligned}=f(t)\end{aligned}\right.\]</div>
 <p>3.综合起来有：</p>
 <div class="arithmatex">\[ES\frac{\partial u}{\partial n}=f(t)\]</div>
-<p>这里<span class="arithmatex">\(f(t)\)</span>的方向和坐标轴正向一致
-3. 如果边界自由：</p>
+<p>这里<span class="arithmatex">\(f(t)\)</span>的方向和坐标轴正向一致</p>
+<ol>
+<li>如果边界自由：</li>
+</ol>
 <div class="arithmatex">\[ES\frac{\partial u}{\partial n} = 0\]</div>
 </div>
 <h4 id="_5">热传导问题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <p>根据热传导定理，沿着边界外法线方向的热流强度分量为：</p>
 <div class="arithmatex">\[\mathbf{q_n} = \mathbf{q} \cdot \mathbf{n} = -k\nabla u \cdot \mathbf{n} =-k\frac{\partial u}{\partial n}\]</div>
 <ul>
-<li>边界上沿外法线方向的热流强度 <span class="arithmatex">\(q_n &gt; 0\)</span> ，说明热量是从物体内部向外传递；</li>
-<li>边界上沿外法线方向的热流强度 <span class="arithmatex">\(q_n &lt; 0\)</span> ，说明热量是从物体外部向内部传递；</li>
+<li>边界上沿外法线方向的热流强度 <span class="arithmatex">\(q_n &gt; 0\)</span> ，说明热量是从物体内部向外传递；  </li>
+<li>边界上沿外法线方向的热流强度 <span class="arithmatex">\(q_n &lt; 0\)</span> ，说明热量是从物体外部向内部传递；  </li>
 </ul>
 <p>如果在边界上给定了沿外法线方向的热流强度f(t)，那么根据傅里叶定律得到的热流强度在边界上应该等于给定的热流强度 <span class="arithmatex">\(q_n = f(t)\)</span></p>
 <div class="admonition note">
@@ -1353,11 +1372,11 @@
 <p><img alt="img" src="../image-9.png" /></p>
 <ol>
 <li>左端热流流入流出  </li>
-<li>若左端有热流<span class="arithmatex">\(f(t)\)</span>流出：<span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴负向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = -f(t)， q_n = f(t)\)</span>  </li>
-<li>若左端有热流<span class="arithmatex">\(f(t)\)</span>流入: <span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴正向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = f(t), q_n = -f(t)\)</span>  </li>
-<li>右端热流流入流出  </li>
-<li>若右端有热流<span class="arithmatex">\(f(t)\)</span>流出：<span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴正向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = f(t)，q_n= f(t)\)</span>  </li>
-<li>若右端有热流<span class="arithmatex">\(f(t)\)</span>流入: <span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴负向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = - f(t), q_n = -f(t)\)</span>    </li>
+<li>若左端有热流<span class="arithmatex">\(f(t)\)</span>流出：<span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴负向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = -f(t)， q_n = f(t)\)</span>    </li>
+<li>若左端有热流<span class="arithmatex">\(f(t)\)</span>流入: <span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴正向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = f(t), q_n = -f(t)\)</span>   </li>
+<li>右端热流流入流出    </li>
+<li>若右端有热流<span class="arithmatex">\(f(t)\)</span>流出：<span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴正向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = f(t)，q_n= f(t)\)</span>   </li>
+<li>若右端有热流<span class="arithmatex">\(f(t)\)</span>流入: <span class="arithmatex">\(q_x\)</span>沿<span class="arithmatex">\(x\)</span>轴负向，<span class="arithmatex">\(q_x = -k\frac{\partial u}{\partial x}  = - f(t), q_n = -f(t)\)</span>   </li>
 </ol>
 <div class="admonition warning">
 <p>这里因为已经指定了热流的方向，所以 <span class="arithmatex">\(f(t)\)</span> 只是一个数值，不带符号。</p>
@@ -1367,16 +1386,16 @@
 <div class="arithmatex">\[\boxed{q_n = -k\frac{\partial u}{\partial n} = g(t)}\]</div>
 </div>
 </div>
-<h2 id="robin-boundary">Robin Boundary<a class="headerlink" href="#robin-boundary" title="Permanent link">&para;</a></h2>
+<h3 id="robin-boundary">Robin Boundary<a class="headerlink" href="#robin-boundary" title="Permanent link">&para;</a></h3>
 <p>第三类（混合边界条件，Robin condition）：给定边界上 <strong>物理量与物理量沿外法线方向的方向导数</strong> 之间所应该满足的关系，较常见的情况为线性函数。</p>
 <h4 id="_6">细杆纵向振动问题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">细杆纵向振动问题</p>
 <p><img alt="img" src="../image-10.png" />
-1. 如果右边端点 x = b 有一个固定的弹簧支撑，右边端点附近取一个微段，进行受力和平衡分析(惯性力可以忽略)，结合Hook's Law:</p>
+1. 如果右边端点 <span class="arithmatex">\(x = b\)</span> 有一个固定的弹簧支撑，右边端点附近取一个微段，进行受力和平衡分析(惯性力可以忽略)，结合Hook's Law:</p>
 <div class="arithmatex">\[\left(\left.ES\frac{\partial u}{\partial n}+Ku\right)\right|_{x=b}=0,\quad\left(\left.ES\frac{\partial u}{\partial x}+Ku\right)\right|_{x=b}=0\]</div>
 <ol>
-<li>如果左边端点 x = a 有固定的弹簧支撑:</li>
+<li>如果左边端点 <span class="arithmatex">\(x = a\)</span> 有固定的弹簧支撑:</li>
 </ol>
 <div class="arithmatex">\[\left(\left.ES\frac{\partial u}{\partial n}+Ku\right)\right|_{x=a}=0,\quad\left(\left.ES\frac{\partial u}{\partial x}-Ku\right)\right|_{x=a}=0\]</div>
 </div>
@@ -1386,10 +1405,8 @@
 热对流 (heat convection): 热量通过流动介质传递的过程<br />
 热辐射 (heat radiation)：物体由于具有温度而辐射电磁波的现象。  </p>
 <p><strong>细杆导自由冷却</strong> ：端部放在一个确定温度的环境中自由冷却，端部与环境之间 <strong>由于存在温差有热对流</strong> ，此时既不能立即确定温度，也不能立即确定温度的梯度。</p>
-<p><strong>牛顿冷却定理</strong>：
-$$
-\frac{dT}{dt}=h(T_e-T)
-$$</p>
+<p><strong>牛顿冷却定理</strong>：</p>
+<div class="arithmatex">\[\frac{dT}{dt}=h(T_e-T)\]</div>
 <p><span class="arithmatex">\(h\)</span> 称为热交换系数， <span class="arithmatex">\(T_e\)</span> 为环境温度</p>
 <div class="admonition note">
 <p class="admonition-title">细杆自由冷却问题</p>
@@ -1431,8 +1448,10 @@ $$\begin{aligned}Tu_{Rx}(x_0+,t)+Tu_{Lx}(x_0-,t)-F(t)=0\end{aligned}\]</div>
 <details class="example">
 <summary>物理属性的间断</summary>
 <p><img alt="" src="../image-14.png" /></p>
-<p>位移连续：<span class="arithmatex">\(u_1(x_0^-, t) = u_2(x_0^+,t)\)</span><br />
-力连续：<span class="arithmatex">\(E_1S_1\frac{\partial u_1(x_0^-,t)}{\partial x} = E_2S_2\frac{\partial u_2(x_0^+,t)}{\partial x}\)</span></p>
+<p>位移连续：</p>
+<div class="arithmatex">\[u_1(x_0^-, t) = u_2(x_0^+,t)\]</div>
+<p>力连续：</p>
+<div class="arithmatex">\[E_1S_1\frac{\partial u_1(x_0^-,t)}{\partial x} = E_2S_2\frac{\partial u_2(x_0^+,t)}{\partial x}\]</div>
 <p><img alt="img" src="../image-15.png" />
 同理，对于不同材料构成的细杆热传导问题，需要满足间断处温度连续，热流强度连续</p>
 </details>
