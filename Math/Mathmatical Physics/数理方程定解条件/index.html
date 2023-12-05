@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Libre Baskerville";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../index.md" class="md-tabs__link">
         
   
     
@@ -342,6 +342,35 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Physics and Mechanics/Physics2/electromagnetic_waves.md" class="md-tabs__link">
+          
+  
+    
+  
+  📚Physics and Mechanics
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -398,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,6 +1152,146 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    📚Physics and Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📚Physics and Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physics Ⅱ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Physics Ⅱ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Physics and Mechanics/Physics2/electromagnetic_waves.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Light as Electromagnetic Waves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Physics and Mechanics/Physics2/interference.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    interference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1288,10 +1457,10 @@
   
 
 
-<h1 id="_1">数理方法的定界问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">数理方程定解条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <style>
     img[alt="img"]{
-        width:40%;
+        width:50%;
         display: block;
         margin: 0 auto;
     }
@@ -1299,29 +1468,33 @@
 <div class="admonition question">
 <p class="admonition-title">如何使得方程的解存在且唯一</p>
 <p>无论常微分方程还是偏微分方程，都需要给定具体的定解条件才能使得问题的解存在且唯一。</p>
-<p>定解条件分为两类：
-- 初始条件（ Initial conditions）：给定时刻（一般为系统初始时刻） t = t0时所分析区域上相关一些物理量的分布情况；</p>
+<p>定解条件分为两类：</p>
 <ul>
+<li>初始条件（ Initial conditions）：给定时刻（一般为系统初始时刻） t = t0时所分析区域上相关一些物理量的分布情况；  </li>
 <li>边界条件（Boundary conditions）：所分析区域的边界上，相关物理量所要满足的约束或者物理条件。</li>
 </ul>
 </div>
 <h2 id="_2">初始条件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <details class="hint">
 <summary>不同的方程具有不同的初始条件</summary>
-<p>反映了系统初始时刻状态对结果的影响，必须给出整个分析区域上而不是个别点上的分布情况。
-- 对于运输过程（扩散、热传导）方程中只出现时间 t 的一阶微分，只需要初始状态条件；<br />
-- 对于振动过程（弦、膜、杆振动，声振动和声波，电磁波等波动方程），由于方程中出现了时间 <span class="arithmatex">\(t\)</span> 的二阶微分， 因此需要给定两个初始条件：初始的状态+初始的“速度”(变化状态)；<br />
-- 对于稳态问题，由于初始状态不影响最终的稳态分布规律，因此无需给出初始条件。  </p>
+<p>反映了系统初始时刻状态对结果的影响，必须给出整个分析区域上而不是个别点上的分布情况。</p>
+<ul>
+<li>对于运输过程（扩散、热传导）方程中只出现时间 t 的一阶微分，只需要初始状态条件；  </li>
+<li>对于振动过程（弦、膜、杆振动，声振动和声波，电磁波等波动方程），由于方程中出现了时间 <span class="arithmatex">\(t\)</span> 的二阶微分， 因此需要给定两个初始条件：初始的状态+初始的“速度”(变化状态)； </li>
+<li>对于稳态问题，由于初始状态不影响最终的稳态分布规律，因此无需给出初始条件。  </li>
+</ul>
 </details>
 <h2 id="_3">边界条件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>周围环境通过系统的边界对区域内的状态产生影响，这种影响需要用边界条件进行描述。  </p>
 <h3 id="dirichlet-boundary">Dirichlet Boundary<a class="headerlink" href="#dirichlet-boundary" title="Permanent link">&para;</a></h3>
-<p>第一类 (狄利克雷条件，Dirichlet boundary): 给定了物理量在边界上所要满足的条件 。<br />
-- 细杆导热问题，比如，端点<span class="arithmatex">\(x=\alpha\)</span> 的温度<span class="arithmatex">\(u\)</span> 按已知的规律，函数<span class="arithmatex">\(f(t)\)</span>发生变化。<br />
-- 细杆振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 固定，<span class="arithmatex">\(u(x=\alpha,t)=0, \forall t\)</span>。<br />
-- 弦的振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 和端点<span class="arithmatex">\(x=b\)</span> 同时固定，<span class="arithmatex">\(u(x=\alpha,t)=0,\quad u(x=b,t)=0, \quad \forall t\)</span> 。  </p>
+<p>第一类 (狄利克雷条件，Dirichlet boundary): 给定了物理量在边界上所要满足的条件 。 </p>
+<ul>
+<li>细杆导热问题，比如，端点<span class="arithmatex">\(x=\alpha\)</span> 的温度<span class="arithmatex">\(u\)</span> 按已知的规律，函数<span class="arithmatex">\(f(t)\)</span>发生变化。  </li>
+<li>细杆振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 固定，<span class="arithmatex">\(u(x=\alpha,t)=0, \forall t\)</span>。  </li>
+<li>弦的振动问题，端点<span class="arithmatex">\(x=\alpha\)</span> 和端点<span class="arithmatex">\(x=b\)</span> 同时固定，<span class="arithmatex">\(u(x=\alpha,t)=0,\quad u(x=b,t)=0, \quad \forall t\)</span> 。  </li>
+</ul>
 <h3 id="neumann-boundary">Neumann Boundary<a class="headerlink" href="#neumann-boundary" title="Permanent link">&para;</a></h3>
-<p>第二类（纽曼，Neumann boundary ）： 给定物理量 <strong>沿边界上外法线方向的导数</strong> （边界的梯度）所要满足的条件。  </p>
+<p>第二类（纽曼，Neumann boundary）:给定物理量 <strong>沿边界上外法线方向的导数</strong> （边界的梯度）所要满足的条件。  </p>
 <details class="hint">
 <summary>什么是外法线向量(outer normal vector)</summary>
 <ol>
@@ -1442,8 +1615,8 @@
 <p>位移连续条件为：</p>
 <div class="arithmatex">\[u_L(x_0-,t){=}u_R(x_0+,t)\]</div>
 <p>力的连续条件为</p>
-<div class="arithmatex">\[T\sin\alpha_1+T\sin\alpha_2 = F(t)
-$$\begin{aligned}Tu_{Rx}(x_0+,t)+Tu_{Lx}(x_0-,t)-F(t)=0\end{aligned}\]</div>
+<div class="arithmatex">\[T\sin\alpha_1+T\sin\alpha_2 = F(t)\]</div>
+<div class="arithmatex">\[\begin{aligned}Tu_{Rx}(x_0+,t)+Tu_{Lx}(x_0-,t)-F(t)=0\end{aligned}\]</div>
 </details>
 <details class="example">
 <summary>物理属性的间断</summary>
