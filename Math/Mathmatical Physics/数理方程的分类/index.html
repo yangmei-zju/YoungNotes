@@ -123,6 +123,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -259,7 +264,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.md" class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -342,12 +347,12 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Physics and Mechanics/Physics2/electromagnetic_waves.md" class="md-tabs__link">
+        <a href="../../../Physics%26Mechanics/Physics2/electromagnetic_waves/" class="md-tabs__link">
           
   
     
   
-  📚Physics and Mechanics
+  📓Physics and Mechanics
 
         </a>
       </li>
@@ -414,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.md" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1071,7 +1076,7 @@
             
   
   <span class="md-ellipsis">
-    📚Physics and Mechanics
+    📓Physics and Mechanics
   </span>
   
 
@@ -1081,7 +1086,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            📚Physics and Mechanics
+            📓Physics and Mechanics
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1133,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Physics and Mechanics/Physics2/electromagnetic_waves.md" class="md-nav__link">
+      <a href="../../../Physics%26Mechanics/Physics2/electromagnetic_waves/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1153,7 +1158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Physics and Mechanics/Physics2/interference.md" class="md-nav__link">
+      <a href="../../../Physics%26Mechanics/Physics2/interference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1199,6 +1204,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性二阶偏微分方程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性二阶偏微分方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性和齐次的定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      叠加原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      两个自变量方程的分类
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1229,9 +1286,53 @@
   
 
 
-  <h1>数理方程的分类</h1>
-
-
+<h1 id="_1">数理方程的分类<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">线性二阶偏微分方程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">线性和齐次的定义<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\sum_{j=1}^n\sum_{i=1}^n\alpha_{ij}u_{x_ix_j}+\sum_{i=1}^nb_iu_{x_i}+cu-f=0
+\]</div>
+<p>如果系数<span class="arithmatex">\(a_{ij},b_i,c\)</span>及<span class="arithmatex">\(f\)</span>与<span class="arithmatex">\(u\)</span>无关，只是 <strong><span class="arithmatex">\(x_1,x_2,...,x_n\)</span>的函数或者是常数</strong> ，那么该方程对于<span class="arithmatex">\(u\)</span>及其各阶导数来说是线性的，因此微分方程也是线性(linear)的。<br />
+记微分算子<span class="arithmatex">\(L{:}\)</span></p>
+<p>$$
+Lu=\sum_{j=1}<sup>n\sum_{i=1}</sup>na_{ij}u_{.x_ix_j}+\sum_{i=1}^nb_iu_{x_i}+cu \Longrightarrow Lu=f
+$$
+<span class="arithmatex">\(L\)</span>是线性 <span class="arithmatex">\(\Leftrightarrow L(u+\nu)=Lu+L\nu,L(\alpha u)=\alpha L(u),\forall u,\nu,\alpha\in C\)</span></p>
+<details class="example">
+<summary></summary>
+<p><span class="arithmatex">\(L\)</span>是线性：  <span class="arithmatex">\(\begin{aligned}L(u)=u_{xx}+1\end{aligned}\)</span>
+<span class="arithmatex">\(L\)</span>不是线性： <span class="arithmatex">\(\begin{aligned}L(u)&amp;=u_t+uu_x\end{aligned}\)</span></p>
+</details>
+<p>!!! note 自由项<span class="arithmatex">\(f\)</span>
+    - 如果 <span class="arithmatex">\(f\equiv0\)</span>, 那么该方程被称为是齐次(homogeneous)方程。
+    - 如果 <span class="arithmatex">\(f\neq0\)</span>, 那么该方程被称为是非齐次(inhomogeneous)方程。
+    那么    </p>
+<div class="language-text highlight"><pre><span></span><code>$$\begin{aligned}Lu^h=&amp;0,Lu^p=f\quad L(\alpha u^h+u^p)=f\end{aligned}$$
+</code></pre></div>
+<h3 id="_4">叠加原理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><strong>叠加原理 (superposition principle)</strong>：若泛定方程和定解条件都是线性的（可以是非齐次），可以把泛定方程和定解条件分别拆成多个**线性方程**的合理叠加。只要各部分的解分别满足各自的泛定方程和定解条件，那么叠加后的函数可以满足原来的方程和定解条件。
+<strong>物理含义</strong>：几种不同原因综合所产生的效果，等于这些不同原因单独产生效果的累加。</p>
+<h2 id="_5">两个自变量方程的分类<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+a_{11}u_{xx}+2a_{12}u_{xy}+a_{22}u_{yy}+b_{1}u_{x}+b_{2}u_{y}+cu+f=0
+\]</div>
+<p>其中系数 <span class="arithmatex">\(\alpha_{11},\alpha_{12},\alpha_{22},b_1,b_2,c,f\)</span>均为实数。  </p>
+<p>引入两个新的自变数(自变量),进行坐标代换(变换):</p>
+<div class="arithmatex">\[\begin{cases}x=x(\xi,\eta)\\y=y(\xi,\eta),\end{cases}\quad\text{and}\quad\begin{cases}\xi=\xi(x,y)\\\eta=\eta(x,y)\end{cases}\]</div>
+<p>这里要求坐标变换的雅可比矩阵(Jacobian matrix)非奇异，也就是要保证变换是可逆的：</p>
+<div class="arithmatex">\[J = \begin{bmatrix}
+    \varepsilon\\
+    \eta
+\end{bmatrix} \times 
+\begin{bmatrix}
+    \frac{\partial}{\partial x}&amp;\frac{\partial}{\partial y}
+\end{bmatrix}
+= \begin{bmatrix}\frac{\partial\xi}{\partial x}&amp;\frac{\partial\xi}{\partial y}\\\frac{\partial\eta}{\partial x}&amp;\frac{\partial\eta}{\partial y}\end{bmatrix}
+\]</div>
+<div class="arithmatex">\[
+\left|J\right|=\frac{\partial(\xi,\eta)}{\partial(x,y)}=\neq0
+\]</div>
+<p>根据函数的导数链式法则：</p>
 
 
 
