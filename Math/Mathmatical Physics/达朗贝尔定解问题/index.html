@@ -625,7 +625,7 @@
         
   
   <span class="md-ellipsis">
-    数理方程定界条件
+    数理方程定解条件
   </span>
   
 
@@ -709,9 +709,42 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      坐标变换，方程叠加
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      考虑无限长弦的波动
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      半无限长弦的振动"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="半无限长弦的振动"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      左端固定的半无限长弦振动
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1337,9 +1370,42 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      坐标变换，方程叠加
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      考虑无限长弦的波动
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      半无限长弦的振动"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="半无限长弦的振动"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      左端固定的半无限长弦振动
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1375,13 +1441,80 @@
 
 
 <h1 id="_1">达朗贝尔公式定解问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">达朗贝尔公式推导过程</p>
+<h2 id="_2">坐标变换，方程叠加<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="arithmatex">\[\frac{\partial^2u}{\partial t^2}-\alpha^2\frac{\partial^2u}{\partial x^2}=0 \Rightarrow\left(\frac\partial{\partial t}+\alpha\frac\partial{\partial x}\right)\left(\frac\partial{\partial t}-\alpha\frac\partial{\partial x}\right)u=0\]</div>
 <div class="arithmatex">\[\begin{cases}X = x+at\\Y= x-at\end{cases}\quad 
 \text{and} \quad\begin{cases}x=\frac{X+Y}{2}\\t=\frac{X-Y}{2a}\end{cases}\]</div>
+<div class="arithmatex">\[\begin{aligned}\frac{\partial}{\partial X}&amp;=\frac{\partial t}{\partial X}\frac{\partial}{\partial t}+\frac{\partial x}{\partial X}\frac{\partial}{\partial x}=\frac{1}{2a}\bigg(\frac{\partial}{\partial t}+a\frac{\partial}{\partial x}\bigg)\\\frac{\partial}{\partial Y}&amp;=\frac{\partial t}{\partial Y}\frac{\partial}{\partial t}+\frac{\partial x}{\partial Y}\frac{\partial}{\partial x}=-\frac{1}{2a}\bigg(\frac{\partial}{\partial t}-a\frac{\partial}{\partial x}\bigg)\end{aligned}\]</div>
+<p>那么在新坐标系下的控制方程为：</p>
+<div class="arithmatex">\[\begin{equation}
+    \frac{\partial^{2}u}{\partial X\partial Y} = 0    
+\end{equation}\]</div>
+<p>显然方程的通解为:</p>
+<div class="arithmatex">\[\begin{equation}
+{u = f_1(X) + f_2(Y) = f_1(x+at)+f_2(x-at)}
+\end{equation}\]</div>
+<div class="admonition abstract">
+<p class="admonition-title">行波法</p>
+<p>两个方程的叠加：<br />
+- <span class="arithmatex">\(f_1(X)\)</span>: <span class="arithmatex">\(X\)</span>( <span class="arithmatex">\(x= X-at\)</span> )这个坐标系以恒定的速度 <span class="arithmatex">\(a\)</span> 向原来坐标轴的负方向移动，解的形式始终不变（位置和形状与 <span class="arithmatex">\(t\)</span> 无关）<br />
+- <span class="arithmatex">\(f_2(Y)\)</span>: <span class="arithmatex">\(Y\)</span>( <span class="arithmatex">\(x = Y+at\)</span> )这个坐标系以恒定的速度 <span class="arithmatex">\(a\)</span> 向坐标轴的正方向移动上来看，解的形式始终不变（位置和形状与 <span class="arithmatex">\(t\)</span> 无关）  </p>
 </div>
+<h2 id="_3">考虑无限长弦的波动<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>对于足够长的弦，<strong>在有限时间内</strong> ，远处的边界条件会对结果有影响此问题，因此可以把足够长的弦近似为一个无限长的弦问题（没有边界条件）。   </p>
+<p>泛定方程：</p>
+<div class="arithmatex">\[\begin{equation}u_{tt} - a^2u_{xx} = 0(a^2 = \frac{T}{\rho}, -\infty &lt; x &lt;\infty)\end{equation}\]</div>
+<p>初始条件：初始位移和初始速度</p>
+<div class="arithmatex">\[\begin{equation}
+    \left.u\right|_{t=0}=\varphi(x)\quad
+    \left.u_t\right|_{t=0}=\psi(x),(-\infty&lt;x&lt;\infty)
+\end{equation}\]</div>
+<p>把初始条件代入通解方程（2）</p>
+<div class="arithmatex">\[\begin{cases}
+&amp;f_1(x)+f_2(x)=\varphi(x) \\
+&amp;af_1(x)-af_2(x)=\int_{x_0}^x\psi(\xi)\mathrm{d}\xi+af_1(x_0)-af_2(x_0) 
+\end{cases}\]</div>
+<div class="arithmatex">\[\begin{cases}f_1(x)=&amp;\frac{1}{2}\varphi(x)+\frac{1}{2a}\int_{x_0}^x\psi(\xi)\mathrm{d}\xi+\frac{1}{2}\Big[f_1\big(x_0\big)-f_2\big(x_0\big)\Big]\\f_2(x)=&amp;\frac{1}{2}\varphi(x)-\frac{1}{2a}\int_{x_0}^x\psi(\xi)\mathrm{d}\xi-\frac{1}{2}\Big[f_1\big(x_0\big)-f_2\big(x_0\big)\Big]\end{cases}\]</div>
+<div class="admonition abstract">
+<p class="admonition-title">达朗贝尔公式(d’Alembert’s Formula)</p>
+<div class="arithmatex">\[u(x,t)=\frac12[\varphi(x+at)+\varphi(x-at)]+\frac{1}{2a}\int_{x-at}^{x+at}\psi(\xi)d\xi \]</div>
+</div>
+<h2 id="_4">半无限长弦的振动"<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>定解方程：</p>
+<ol>
+<li>泛定方程：</li>
+</ol>
+<div class="arithmatex">\[\begin{equation}u_{tt} - a^2u_{xx} = 0\quad(a^2 = \frac{T}{\rho}, \quad 0 &lt; x &lt;\infty)\end{equation}\]</div>
+<ol>
+<li>初始条件：初始位移和初始速度</li>
+</ol>
+<div class="arithmatex">\[\begin{equation}
+    \left.u\right|_{t=0}=\varphi(x)\quad
+    \left.u_t\right|_{t=0}=\psi(x)\quad(0&lt;x&lt;\infty)
+\end{equation}\]</div>
+<ol>
+<li>边界条件</li>
+</ol>
+<p><img alt="img" src="../image-16.png" /> </p>
+<p>根据左边的边界条件来考虑进行 <strong>奇延拓还是偶延拓</strong> :</p>
+<h3 id="_5">左端固定的半无限长弦振动<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>定解方程：方程(5)和(6) 和边界条件 <span class="arithmatex">\(\left.u\right|_{x=0} = 0\)</span>   </p>
+</li>
+<li>
+<p>把初始条件进行奇延拓</p>
+</li>
+</ol>
+<div class="arithmatex">\[\varphi_{odd}=\begin{cases}&amp;\varphi(x),x&gt;0\\&amp;0,x=0\\&amp;-\varphi(-x),x&lt;0\end{cases}
+\qquad \psi(x)_{odd}=\begin{cases}&amp;\psi(x),x&gt;0\\&amp;0,x=0\\&amp;-\psi(-x),x&lt;0&amp;\end{cases}\]</div>
+<ol>
+<li>等价于一个无限长弦的振动方程，<span class="arithmatex">\(x&gt;0\)</span> 部分的解 <span class="arithmatex">\(v(x,t)\)</span> 就为原方程的解 <span class="arithmatex">\(u(x,t)\)</span> 。</li>
+</ol>
+<div class="arithmatex">\[\left.\frac{\partial^2\nu}{\partial t^2}-a^2\frac{\partial^2\nu}{\partial x^2}=0,(-\infty&lt;x&lt;\infty)\quad\left.\nu\right|_{t=0}=\left.\varphi_{odd}(x),\nu_t\right|_{t=0}=\psi_{odd}(x)(-\infty&lt;x&lt;\infty)\right. \]</div>
+<details class="example">
+<summary>奇延拓</summary>
+</details>
 
 
 
