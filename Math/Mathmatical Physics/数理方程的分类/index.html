@@ -1514,21 +1514,24 @@
 \]</div>
 <p>如果系数<span class="arithmatex">\(a_{ij},b_i,c\)</span>及<span class="arithmatex">\(f\)</span>与<span class="arithmatex">\(u\)</span>无关，只是 <strong><span class="arithmatex">\(x_1,x_2,...,x_n\)</span>的函数或者是常数</strong> ，那么该方程对于<span class="arithmatex">\(u\)</span>及其各阶导数来说是线性的，因此微分方程也是线性(linear)的。<br />
 记微分算子<span class="arithmatex">\(L{:}\)</span></p>
-<p>$$
-Lu=\sum_{j=1}<sup>n\sum_{i=1}</sup>na_{ij}u_{.x_ix_j}+\sum_{i=1}^nb_iu_{x_i}+cu \Longrightarrow Lu=f
-$$
-<span class="arithmatex">\(L\)</span>是线性 <span class="arithmatex">\(\Leftrightarrow L(u+\nu)=Lu+L\nu,L(\alpha u)=\alpha L(u),\forall u,\nu,\alpha\in C\)</span></p>
+<div class="arithmatex">\[
+Lu=\sum_{j=1}^n\sum_{i=1}^na_{ij}u_{.x_ix_j}+\sum_{i=1}^nb_iu_{x_i}+cu\ \Longrightarrow Lu=f
+\]</div>
+<p><span class="arithmatex">\(L\)</span>是线性 <span class="arithmatex">\(\Leftrightarrow L(u+\nu)=Lu+L\nu,L(\alpha u)=\alpha L(u),\forall u,\nu,\alpha\in C\)</span></p>
 <details class="example">
-<summary></summary>
+<summary>线性与非线性举例</summary>
 <p><span class="arithmatex">\(L\)</span>是线性：  <span class="arithmatex">\(\begin{aligned}L(u)=u_{xx}+1\end{aligned}\)</span>
 <span class="arithmatex">\(L\)</span>不是线性： <span class="arithmatex">\(\begin{aligned}L(u)&amp;=u_t+uu_x\end{aligned}\)</span></p>
 </details>
-<p>!!! note 自由项<span class="arithmatex">\(f\)</span>
-    - 如果 <span class="arithmatex">\(f\equiv0\)</span>, 那么该方程被称为是齐次(homogeneous)方程。
-    - 如果 <span class="arithmatex">\(f\neq0\)</span>, 那么该方程被称为是非齐次(inhomogeneous)方程。
-    那么    </p>
-<div class="language-text highlight"><pre><span></span><code>$$\begin{aligned}Lu^h=&amp;0,Lu^p=f\quad L(\alpha u^h+u^p)=f\end{aligned}$$
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">自由项<span class="arithmatex">\(f\)</span></p>
+<ul>
+<li>如果 <span class="arithmatex">\(f\equiv0\)</span>, 那么该方程被称为是齐次(homogeneous)方程。</li>
+<li>如果 <span class="arithmatex">\(f\neq0\)</span>, 那么该方程被称为是非齐次(inhomogeneous)方程。
+那么    </li>
+</ul>
+<div class="arithmatex">\[\begin{aligned}Lu^h=&amp;0,Lu^p=f\quad L(\alpha u^h+u^p)=f\end{aligned}\]</div>
+</div>
 <h3 id="_4">叠加原理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><strong>叠加原理 (superposition principle)</strong>：若泛定方程和定解条件都是线性的（可以是非齐次），可以把泛定方程和定解条件分别拆成多个**线性方程**的合理叠加。只要各部分的解分别满足各自的泛定方程和定解条件，那么叠加后的函数可以满足原来的方程和定解条件。
 <strong>物理含义</strong>：几种不同原因综合所产生的效果，等于这些不同原因单独产生效果的累加。</p>
@@ -1627,7 +1630,7 @@ u_{\xi\eta}=-\frac1{2A_{12}}\Big(B_1u_{\xi}+B_2u_{\eta}+Cu+F\Big)
 \]</div>
 <p>我们取 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\beta\)</span> 分别为 <span class="arithmatex">\(\xi_{(x,y)}\)</span> 函数的实部和虚部，即 <span class="arithmatex">\(\alpha=\operatorname{Re}(\xi)\)</span>, <span class="arithmatex">\(\beta=\operatorname{Im}(\xi)\)</span>, 得到椭圆方程的标准形式：</p>
 <div class="arithmatex">\[u_{\alpha\alpha}+u_{\beta\beta}=-\frac1{A_{12}}{\left[(B_1+B_2)u_\alpha+i(B_2-B_1)u_\beta+2Cu+F\right]}\]</div>
-<p>前面的稳定浓度分布、稳定扩散分布及静电场势函数等都属于椭圆方程s</p>
+<p>前面的稳定浓度分布、稳定扩散分布及静电场势函数等都属于椭圆方程。</p>
 
 
 
