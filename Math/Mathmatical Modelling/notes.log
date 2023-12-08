@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  7 DEC 2023 20:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  8 DEC 2023 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Modelling/secretsharing"
-(c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Modelling/secretsharing.tex
+**"c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Modelling/notes"
+(c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Modelling/notes.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (c:/texlive/2023/texmf-dist/tex/latex/ctex/ctexbook.cls (c:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
@@ -450,8 +450,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
 \c@theorem=\count318
- (./secretsharing.aux)
-\openout1 = `secretsharing.aux'.
+ (./notes.aux)
+\openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -565,9 +565,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 16.
-(./secretsharing.out) (./secretsharing.out)
+(./notes.out) (./notes.out)
 \@outlinefile=\write3
-\openout3 = `secretsharing.out'.
+\openout3 = `notes.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -583,9 +583,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-] (./secretsharing.toc)
+] (./notes.toc)
 \tf@toc=\write4
-\openout4 = `secretsharing.toc'.
+\openout4 = `notes.toc'.
 
  [1
 
@@ -648,17 +648,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--214
 ]
 File: assets/网页重要度例题.png Graphic file (type bmp)
 <assets/网页重要度例题.png>
- [8] [9] [10] (./secretsharing.aux)
-Package rerunfilecheck Info: File `secretsharing.out' has not changed.
+ [8] [9] [10] (./notes.aux)
+Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 6E87F2DFC72935588BD156888828E1ED;1958.
  ) 
 Here is how much of TeX's memory you used:
  16532 strings out of 478563
- 364439 string characters out of 5844776
+ 364271 string characters out of 5844776
  1860012 words of memory out of 5000000
  36409 multiletter control sequences out of 15000+600000
  528336 words of font info for 124 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,9n,97p,505b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,9n,97p,497b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on secretsharing.pdf (12 pages).
+Output written on notes.pdf (12 pages).
