@@ -302,7 +302,7 @@
   
     
   
-  📕Math
+  📔Math
 
         </a>
       </li>
@@ -477,7 +477,7 @@
             
   
   <span class="md-ellipsis">
-    📕Math
+    📔Math
   </span>
   
 
@@ -487,7 +487,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            📕Math
+            📔Math
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -727,11 +727,11 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      半无限长弦的振动
+      无限长弦的振动
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="半无限长弦的振动">
+    <nav class="md-nav" aria-label="无限长弦的振动">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1256,6 +1256,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1312,11 +1316,51 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../Physics%26Mechanics/Physics2/geometrical_optics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Optics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../Physics%26Mechanics/Physics2/interference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Interference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Physics%26Mechanics/Physics2/diffraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diffraction
   </span>
   
 
@@ -1388,11 +1432,11 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      半无限长弦的振动
+      无限长弦的振动
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="半无限长弦的振动">
+    <nav class="md-nav" aria-label="无限长弦的振动">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1479,7 +1523,7 @@
 <p class="admonition-title">达朗贝尔公式(d’Alembert’s Formula)</p>
 <div class="arithmatex">\[u(x,t)=\frac12[\varphi(x+at)+\varphi(x-at)]+\frac{1}{2a}\int_{x-at}^{x+at}\psi(\xi)d\xi \]</div>
 </div>
-<h2 id="_4">半无限长弦的振动<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">无限长弦的振动<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>定解方程：</p>
 <ol>
 <li>泛定方程：</li>
@@ -1514,6 +1558,12 @@
 <div class="arithmatex">\[\left.\frac{\partial^2\nu}{\partial t^2}-a^2\frac{\partial^2\nu}{\partial x^2}=0,(-\infty&lt;x&lt;\infty)\quad\left.\nu\right|_{t=0}=\left.\varphi_{odd}(x),\nu_t\right|_{t=0}=\psi_{odd}(x)(-\infty&lt;x&lt;\infty)\right. \]</div>
 <details class="example">
 <summary>奇延拓</summary>
+<div class="arithmatex">\[x&gt;at:\quad\nu(x,t)=\frac12[\varphi(x+at)+\varphi(x-at)]+\frac1{2\alpha}\int_{x-at}^{x+at}\psi(\xi)d\xi \]</div>
+<div class="arithmatex">\[\begin{aligned}
+x&lt;at{:} \quad\nu(x,t)&amp;=\frac12[\varphi(x+at)-\varphi(at-x)]-\frac1{2a}\int_{x-at}^0\psi(-\xi)d\xi+\frac1{2a}\int_0^{x+at}\psi(\xi)d\xi \\
+&amp;=\frac12[\varphi(x+at)-\varphi(at-x)]+\frac1{2a}\int_{at-x}^0\psi(\xi)d\xi+\frac1{2a}\int_0^{x+at}\psi(\xi)d\xi  \\
+&amp;=\frac12[\varphi(x+at)-\varphi(at-x)]+\frac1{2\alpha}\int_{at-x}^{x+at}\psi(\xi)d\xi 
+\end{aligned}\]</div>
 </details>
 
 

@@ -18,7 +18,7 @@
         <link rel="prev" href="../../../CS/cs61a/chapter_1/">
       
       
-        <link rel="next" href="../interference/">
+        <link rel="next" href="../geometrical_optics/">
       
       
       <link rel="icon" href="../../../assets/lemom.png">
@@ -298,7 +298,7 @@
   
     
   
-  📕Math
+  📔Math
 
         </a>
       </li>
@@ -475,7 +475,7 @@
             
   
   <span class="md-ellipsis">
-    📕Math
+    📔Math
   </span>
   
 
@@ -485,7 +485,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            📕Math
+            📔Math
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1172,6 +1172,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1418,11 +1422,51 @@
   
   
     <li class="md-nav__item">
+      <a href="../geometrical_optics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrical Optics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../interference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Interference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diffraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diffraction
   </span>
   
 
@@ -1712,7 +1756,7 @@
 \vec{E }(x,t) =\vec{E }_m \cos (k x-\omega t+\phi)\\
  \vec{B }(x,t) =\vec{B }_m \cos (k x-\omega t+\phi)
 \end{align*}\]</div>
-<p><img alt="img" src="../images/Plane%20Wave.png" /></p>
+<p><img alt="img" src="../images/Lec15/Plane%20Wave.png" /></p>
 <ul>
 <li>three space dimension (vector field (矢量场))</li>
 </ul>
@@ -1721,7 +1765,7 @@
 \vec{E }(\vec{r},t) =\vec{E }_m \cos (\vec{k }\cdot\vec{r }-\omega t+\phi)\\
 \vec{B }(\vec{r},t) =\vec{B }_m \cos (\vec{k }\cdot\vec{r }-\omega t+\phi)
 \end{align*}\]</div>
-<p><img alt="img" src="../images/three_dimension.png" /></p>
+<p><img alt="img" src="../images/Lec15/three_dimension.png" /></p>
 <h3 id="wave-fronts">Wave Fronts(波前)<a class="headerlink" href="#wave-fronts" title="Permanent link">&para;</a></h3>
 <p>At any instant a wavefront is a surface of constant phase. For the plane wave such a surface is</p>
 <div class="arithmatex">\[\begin{align*}
@@ -1751,14 +1795,14 @@
 \end{align*}\]</div>
 <p>hence <span class="arithmatex">\(k=nk_0\)</span>, where <span class="arithmatex">\(k_0\)</span> is the wave number in vacuum.</p>
 <h3 id="reflection-and-refraction">Reflection(反射) and Refraction(折射)<a class="headerlink" href="#reflection-and-refraction" title="Permanent link">&para;</a></h3>
-<p><img alt="img" src="../images/Reflection%20and%20Refraction.png" /> </p>
+<p><img alt="img" src="../images/Lec15/Reflection%20and%20Refraction.png" /> </p>
 <ul>
 <li><strong>Law of reflection</strong>: <span class="arithmatex">\(\boxed{\theta_1^{\prime}=\theta_1}\)</span>. </li>
 <li><strong>Law of refraction</strong> (or Snell's law): <span class="arithmatex">\(\boxed{n_2\sin\theta_2=n_1\sin\theta_1}\)</span></li>
 </ul>
-<p><img alt="" src="../images/refractionangle.png" /></p>
+<p><img alt="" src="../images/Lec15/refractionangle.png" /></p>
 <h4 id="total-internal-reflection">Total Internal Reflection<a class="headerlink" href="#total-internal-reflection" title="Permanent link">&para;</a></h4>
-<p><img alt="img" src="../images/Total%20Internal%20Reflection.png" /></p>
+<p><img alt="img" src="../images/Lec15/Total%20Internal%20Reflection.png" /></p>
 <p>With <span class="arithmatex">\(n_glass &gt; n_air\)</span>, at a critical (临界) <span class="arithmatex">\(\theta_0\)</span> , the refracted ray points directly along the interface, i.e.</p>
 <div class="arithmatex">\[\begin{align*}
     n_{glass}\sin\theta_c=n_{air}\sin\left( \frac{\pi}{2} \right)\\
@@ -1773,12 +1817,12 @@
 <ol>
 <li>Reflection</li>
 </ol>
-<p><img alt="img" src="../images/Fermat%27s%20Principle%20in%20reflection.png" />  </p>
+<p><img alt="img" src="../images/Lec15/Fermat%27s%20Principle%20in%20reflection.png" />  </p>
 <p>The straight-line path S′BP,which corresponds to <span class="arithmatex">\(θ_i=θ_r\)</span>, is the shortest possible one.</p>
 <ol>
 <li>Refraction</li>
 </ol>
-<p><img alt="img" src="../images/Fermat%27s%20Principle%20in%20reflection.png" /> </p>
+<p><img alt="img" src="../images/Lec15/Fermat%27s%20Principle%20%20in%20%20refraction%20.png" /> </p>
 <div class="arithmatex">\[\begin{align*}
 &amp;t=\frac{\overrightarrow{SO }}{v_i }+\frac{\overrightarrow{OP }}{v_t }, \text{ Let } \frac{dt }{dx }=0\\
 \therefore&amp; n_i\sin \theta_i = n_t \sin \theta_t
@@ -1788,12 +1832,12 @@
 <p><strong>Huygens’ principle</strong> :All points on a wavefront serve as point sources of spherical secondary wavelets. After a time <span class="arithmatex">\(t\)</span>, the new position of the wavefront will be that of a surface tangent to these secondary wavelets.</p>
 <details class="example">
 <summary>wavefront</summary>
-<p><img alt="img" src="../images/hygenwavefront.png" /></p>
+<p><img alt="img" src="../images/Lec15/hygenwavefront.png" /></p>
 <p>Huygens’s principle applied to a straight wave front. Each point on the wave front emits a semicircular wavelet that moves a distance <span class="arithmatex">\(s = vt\)</span>. The new wave front is a line tangent to the wavelets.</p>
 </details>
 <details class="hint">
 <summary>Driving Law of Refraction</summary>
-<p><img alt="img" src="../images/hygenrefraction.png" /></p>
+<p><img alt="img" src="../images/Lec15/hygenrefraction.png" /></p>
 <div class="arithmatex">\[\begin{align*}
     \because \, &amp;\frac{\lambda_1}{\lambda_2}=\frac{v_1}{v_2}\\
     &amp; \sin \theta_1=\frac{\lambda_1}{hc}, \, \sin\theta_2=\frac{\lambda_2}{hc}\\
@@ -1811,9 +1855,9 @@
 <p><span class="arithmatex">\(\vec{k}\)</span> is space angular velocity. </p>
 <p>So we have <span class="arithmatex">\(\vec{E}=\vec{E}_i+\vec{E}_r\)</span> above the interface and <span class="arithmatex">\(\vec{E}=\vec{E}_t\)</span> below. <br />
 For simplicity, we consider the case that <span class="arithmatex">\(\vec{E}_{0i}, \vec{E}_{0r}, \vec{E}_{0t}\)</span> are constant in time. </p>
-<p><img alt="img" src="../images/The%20Electromagnetic%20Approach.png" /></p>
+<p><img alt="img" src="../images/Lec15/The%20Electromagnetic%20Approach.png" /></p>
 <h3 id="boundary-conditions">Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permanent link">&para;</a></h3>
-<p><img alt="img" src="../images/the%20boundary%20conditions.png" />
+<p><img alt="img" src="../images/Lec15/the%20boundary%20conditions.png" />
 We draw a narrow closed path <span class="arithmatex">\(C\)</span> that runs parallel to the interface inside both media. 
 According to Faraday's induction law </p>
 <div class="arithmatex">\[\begin{align*}
@@ -1899,13 +1943,13 @@ The boundary condition leads to</p>
         
         
           
-          <a href="../interference/" class="md-footer__link md-footer__link--next" aria-label="下一页: Interference">
+          <a href="../geometrical_optics/" class="md-footer__link md-footer__link--next" aria-label="下一页: Geometrical Optics">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Interference
+                Geometrical Optics
               </div>
             </div>
             <div class="md-footer__button md-icon">
