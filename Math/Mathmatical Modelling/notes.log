@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  8 DEC 2023 11:44
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  9 DEC 2023 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,17 +648,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--214
 ]
 File: assets/网页重要度例题.png Graphic file (type bmp)
 <assets/网页重要度例题.png>
- [8] [9] [10] (./notes.aux)
+ [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
+
+ []
+
+File: assets/修正矩阵-原矩阵.png Graphic file (type bmp)
+<assets/修正矩阵-原矩阵.png>
+File: assets/修正矩阵-修正后矩阵.png Graphic file (type bmp)
+<assets/修正矩阵-修正后矩阵.png>
+File: assets/两个特征向量的修正矩阵.png Graphic file (type bmp)
+<assets/两个特征向量的修正矩阵.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+[10]
+File: assets/多解修正.png Graphic file (type bmp)
+<assets/多解修正.png>
+ [11]
+File: assets/不可约矩阵.png Graphic file (type bmp)
+<assets/不可约矩阵.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--373
+
+ []
+
+[12] [13] [14] (./notes.aux)
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 6E87F2DFC72935588BD156888828E1ED;1958.
+(rerunfilecheck)             Checksum: 511A09867014BE975D8CE080C8D8216A;2565.
  ) 
 Here is how much of TeX's memory you used:
- 16532 strings out of 478563
- 364271 string characters out of 5844776
- 1860012 words of memory out of 5000000
- 36409 multiletter control sequences out of 15000+600000
+ 16632 strings out of 478563
+ 368738 string characters out of 5844776
+ 1861012 words of memory out of 5000000
+ 36504 multiletter control sequences out of 15000+600000
  528336 words of font info for 124 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,9n,97p,497b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,9n,97p,497b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notes.pdf (12 pages).
+Output written on notes.pdf (16 pages).

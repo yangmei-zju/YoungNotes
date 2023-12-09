@@ -256,7 +256,7 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
 \end{equation}
 \noindent(1)$\mathbf{x}$是$\mathbf{P}$的特征向量，对应的特征值为1。\\
 (2)$\text{Rank}(\mathbf{I}-\mathbf{P})<n$ 由于$\mathbf{1}^T(\mathbf{I}-\mathbf{P}) = \mathbf{0}$(即说明其行向量线性相关)\\
-(3)方程(2.1)一定有非零解吗，即重要度向量$\mathbf{x}$一定存在吗，这个问题之后分析。
+(3)方程(2.1)一定有非零解吗，即重要度向量$\mathbf{x}$一定存在吗，以及存在一定唯一吗，这个问题之后分析。
 \begin{example}[链接矩阵与重要度向量的求解]
     \begin{figure}[H]
         \centering
@@ -278,8 +278,135 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
 \section{链接矩阵}
 \noindent\textbf{链接矩阵的基本性质}\\
 (1)链接矩阵 $\mathbf{P}$ 的每列元素之和为 1 ，为列随机矩阵\\
-(2)初始链接矩阵和修正链接矩阵$\mathbf{P}$一定具有特征值为$1$的非零特征向量\\
+(2)链接矩阵 $\mathbf{P}$ 一定存在特征值为$1$的非零特征向量\\
 (3)  $\mathbf{1}^T \mathbf{P} = \mathbf{1}^T$
-\subsection{悬挂网页修正}
 
+\subsection{悬挂网页修正}
+\noindent 悬挂网页(dangling link): 若某网页不链接任意其它网页\\
+悬挂网页修正：将链接矩阵 $\mathbf{P}$ 中对应列的所有元素由 $0$ 修改为 $\frac{1}{n}$，得到修正链接矩阵$\overline{\mathbf{P}}$\\
+$$\overline{\mathbf{P}}=\mathbf{P}+\frac1n\mathbf{1}\mathbf{d}^\mathrm{T}$$
+其中 $mathbf{1}$ 为分量全为 $0$ 的列向量。
+\begin{example}[悬挂网页修正]
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width = 8cm]{assets/修正矩阵-原矩阵.png}
+        \includegraphics[width=8cm]{assets/修正矩阵-修正后矩阵.png}       
+    \end{figure}
+\end{example}
+\subsection{多解修正}
+若 P 有两个属于特征值 1 的线性无关的特征向量重要度向量排序不唯一\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 8cm]{assets/两个特征向量的修正矩阵.png}
+    \caption{修正矩阵 $\overline{\mathbf{P}}$ 具有两个特征值为一的特征向量(重要度向量)}  
+\end{figure}
+
+\noindent 将 $\overline{\mathbf{P}}$修改为最终的链接矩阵，修正方法：
+
+$$\overline{\overline{\mathbf{P}}}=\alpha\overline{\mathbf{P}}+(1-\alpha)\frac{1}{n}{\mathbf{-}}\mathbf{11}^{\mathrm{T}}$$ 
+
+其中参数 $\alpha=0.85$
+
+$\overline{\overline{\mathbf{P}}}$ 为完全正矩阵 (totally positive matrix) 与列随机矩阵:
+
+$$\mathbf{1} ^{\mathrm{T} }\overline{\overline{\mathbf{P}}} = \alpha\mathbf{1} ^{\mathrm{T} }\mathbf{P} + ( 1- \alpha) \mathbf{- } \mathbf{1} ^{\mathrm{T} }\mathbf{1} \mathbf{1} ^{\mathrm{T} }= \alpha\mathbf{1} ^{\mathrm{T} }+ ( 1- \alpha) \mathbf{1} ^{\mathrm{T} }= \mathbf{1} ^{\mathrm{T} }$$
+\begin{figure}{H}
+    \centering
+    \includegraphics[width = 8cm]{assets/多解修正.png}
+    \caption{多解修正}
+\end{figure}
+\subsection{重要度向量的存在唯一性}
+\begin{lemma}
+    完全正、列随机矩阵属于特征值的特征向量分量之和不为0。
+\end{lemma}
+\begin{proof}
+    设$\mathbf{x}$是完全正、列随机矩阵 $\mathbf{P}$ 的属于特征值1的特征向量，则$x_i=\sum\limits_{j=1}^n\overline{\overline{p}}_{ij}x_j$
+        
+        若$\sum\limits_{i=1}^nx_i=0$，则$\mathbf{x}$的分量有正有负，故
+        
+        $$|x_i|=|\sum\limits_{j=1}^n\overline{\overline{p}}_{ij}x_j|<\sum\limits_{j=1}^n\overline{\overline{p}}_{ij}|x_i|$$
+
+        故而
+
+        $$\sum\limits_{i=1}^n|x_i|<\sum\limits_{i=1}^n\sum\limits_{j=1}^n\overline{\overline{p}}_{ij}|x_j|=\sum\limits_{j=1}^n\sum\limits_{i=1}^n\overline{\overline{p}}_{ij}|x_j|=\sum\limits_{j=1}^n(|x_j|\sum\limits_{i=1}^n\overline{\overline{p}}_{ij})=\sum\limits_{j=1}^n|x_j|$$
+
+        矛盾。
+\end{proof}
+\begin{proposition}
+    完全正、列随机矩阵仅有个属于特征值 1 的线性无关的特征向量。
+\end{proposition}
+\begin{proof}
+    
+    设$\mathbf{v}=(v_1,v_2,\cdots,v_n)^T, \mathbf{w}=(w_1,w_2,\cdots,w_n)^T$是完全正、列随机矩阵$\mathbf{P}$的两个属于特征值1的线性无关的特征向量。令$x_i = -\frac{W}{V}v_i+w_i, i = 1,2,\cdots,n$，其中$W=\sum_{i=1}^nw_i, V=\sum_{i=1}^nv_i\neq 0$.
+    
+    首先若向量 $\mathbf{x} = (x_1,x_2,\cdots,x_n)$ 是 $\mathbf{P}$ 的特征值为 $\lambda$ 的特征向量 $\Leftrightarrow \forall i, \sum\limits_{j=1}^n p_{ij}x_j=\lambda x_i$,根据特征向量的定义即可证得。
+
+    由$\mathbf{v}$和$\mathbf{w}$线性无关，且
+    $$\sum\limits_{j=1}^n p_{ij}x_j=\sum\limits_{j=i}^n p_{ij}(-\frac{W}{V}v_j+w_j)=-\frac{W}{V} p_{ij}v_j+\sum\limits_{j=i}^n p_{ij}w_j=-\frac{W}{V}v_i+w_i=x_i$$
+
+    可知 $\mathbf{x}=(x_1,\cdots,x_n)$为 P 的属于特征值 1 的特征向量
+   
+    又有
+    $$\sum\limits_{i=1}^nx_i = \sum\limits_{i=1}^n(-\frac{W}{V}v_i+w_i) = -\frac{W}{V}\sum\limits_{i=1}^nv_i+\sum\limits_{i=1}^nw_i = -\frac{W}{V}V+W = 0$$
+
+    即$\mathbf{x}$的分量之和为零。
+
+    从而与上面的结论矛盾。
+\end{proof}
+
+\subsubsection{Perron—Frobenius定理}
+\noindent\textbf{Perron定理}\\
+若矩阵 $\mathbf{A}$是完全正矩阵，则\\
+    (1) $\mathbf{A}$的模最大特征值唯一，且为正实数\\
+    (2) 该特征值代数重数为1\\
+    (3) 存在该特征值的一个特征向量，其分量全为正\\
+\noindent\textbf{Perron—Frobenius定理}\\
+若矩阵 $\mathbf{A}$是非负\textbf{不可约}（irreducible）矩阵，则\\
+    (1) $\mathbf{A}$的模最大特征值为正实数\\
+    (2) 该特征值代数重数为1\\
+    (3) 存在该特征值的一个特征向量，其分量全为正\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 15cm]{assets/不可约矩阵.png}
+    \caption{不可约矩阵简单介绍}
+    
+\end{figure}
+\noindent\textbf{链接矩阵与重要度向量}\\
+链接矩阵为\underline{完全正、列随机矩阵}，模最大特征值为1，重要度向量\underline{唯一且分量全为正}.    
+    
+\section{矩阵计算}
+\subsection{幂法迭代}
+
+幂法是计算矩阵模最大特征值和对应的特征向量的一种迭代算法
+
+任取初始向量$\mathbf{x}^{(0)}>0$，且$\sum\limits_{i=1}^nx_i^{(0)}=1$，
+
+迭代计算$\mathbf{x}^{(k)}=\overline{\overline{\mathbf{P}}}\mathbf{x}^{(k-1)}$，直到$\mathbf{x}^{(k)}$收敛\\
+迭代后的向量仍然向量之和为1:
+$$\mathbf{1}^T\mathbf{x}^{(k)}=\mathbf{1}^T\overline{\overline{\mathbf{P}}}\mathbf{x}^{(k-1)}=\mathbf{1}^T\mathbf{x}^{(k-1)}=1$$
+
+将$\overline{\mathbf{P}}=\mathbf{P}+\frac{1}{n}\mathbf{1}\mathbf{d}^T$， $\overline{\overline{\mathbf{P}}}=\alpha\overline{\mathbf{P}}+(1-\alpha)\frac{1}{n}\mathbf{1}\mathbf{1}^T$
+两式带入迭代计算式中
+
+$$\begin{aligned}
+    \mathbf{x}^{(k)}&=\overline{\overline{\mathbf{P}}}\mathbf{x}^{(k-1)}\\
+    &=\alpha\overline{\mathbf{P}}\mathbf{x}^{(k-1)}+(1-\alpha)\frac{1}{n}\mathbf{1}\mathbf{1}^T\mathbf{x}^{(k-1)}\\
+    &=\alpha\overline{\mathbf{P}}\mathbf{x}^{(k-1)}+(1-\alpha)\frac{1}{n}\mathbf{1}\\
+    &=\alpha(\mathbf{P}+\frac{1}{n}\mathbf{1}\mathbf{d}^T)\mathbf{x}^{(k-1)}+(1-\alpha)\frac{1}{n}\mathbf{1}\\
+    &=\alpha\mathbf{P}\mathbf{x}^{(k-1)}+\alpha\frac{1}{n}\mathbf{1}\mathbf{d}^T\mathbf{x}^{(k-1)}+(1-\alpha)\frac{1}{n}\mathbf{1}\\
+\end{aligned}$$
+
+\subsection{完全正、列随机矩阵的幂法收敛性}
+\begin{proof}
+    记$\mathbf{V}$为满足$\mathbf{1}^T\mathbf{v}= 0 $的$n$维列向量$\mathbf{v}=\{v_1,v_2,\cdots,v_n\}$全体组成的集合。记$\|\mathbf{v}\|_1=\sum\limits_{i=1}^n|v_i|$(范数)\\
+    对任意的$\mathbf{v}\in\mathbf{V}$，取$\mathbf{w}=\mathbf{P}\mathbf{v}$，下证：$\left\|\mathbf{w}\right\|_1\leq c\left\|\mathbf{v}\right\|_1$， 其中$c<1$
+
+    \noindent 若$\mathbf{w}=0$，显然成立。\\
+    若$\mathbf{w}\neq0$，记$\mathbf{w}=(w_1,w_2,\cdots,w_n)^T$，$e_i = \text{sgn}(w_i)$，则 $c=\max_{j}\left|\sum_{i=1}^{n}p_{ij}e_{i}\right|<\left|\sum_{i=1}^np_{ij}e_{i}\right|<1$ 
+    $$\begin{aligned}
+        \left\|\mathbf{w}\right\|_1
+        &=\sum_{i=1}^n\left|\mathbf{w}_i\right|=\sum_{i=1}^ne_iw_i=\sum_{i=1}^ne_i\left(\sum_{j=1}^np_{ij}\nu_j\right)=\sum_{j=1}^nv_j\left(\sum_{i=1}^np_{ij}e_i\right)\\
+        &\leq\sum_{j=1}^n\left|v_j\right|\left|\sum_{i=1}^np_{ij}e_i\right|\leq c\sum_{j=1}^n\left|\mathbf{v}_j\right|=c\left\|\mathbf{v}\right\|_1
+    \end{aligned}$$
+\end{proof}
 \end{document} 
