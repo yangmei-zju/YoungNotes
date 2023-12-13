@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  9 DEC 2023 22:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  13 DEC 2023 02:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,13 +583,15 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-] (./notes.toc)
+] (./notes.toc [1
+
+])
 \tf@toc=\write4
 \openout4 = `notes.toc'.
 
- [1
-
-]
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 35.
+ [2]
 第一章
 [1
 
@@ -603,8 +605,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 99.
 
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 104.
 [2]
 Overfull \hbox (2.09995pt too wide) in paragraph at lines 114--116
 \TU/SimSun(0)/m/n/12 其 行 列 式 为 \TU/lmr/m/n/12 Vandermode \TU/SimSun(0)/m/n/12 行 列 式，|  即 $\OML/cmm/m/it/12 det \OT1/cmr/m/n/12 = [][](\OML/cmm/m/it/12 c[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 c[]\OT1/cmr/m/n/12 )$\TU/SimSun(0)/m/n/12 ，|  因 此 $\OML/cmm/m/it/12 det \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$ \TU/SimSun(0)/m/n/12 同 时 $\OML/cmm/m/it/12 rank\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 row\OT1/cmr/m/n/12 ) =
@@ -649,7 +649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--214
 File: assets/网页重要度例题.png Graphic file (type bmp)
 <assets/网页重要度例题.png>
  [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
  []
 
@@ -657,35 +657,39 @@ File: assets/修正矩阵-原矩阵.png Graphic file (type bmp)
 <assets/修正矩阵-原矩阵.png>
 File: assets/修正矩阵-修正后矩阵.png Graphic file (type bmp)
 <assets/修正矩阵-修正后矩阵.png>
+[10]
 File: assets/两个特征向量的修正矩阵.png Graphic file (type bmp)
 <assets/两个特征向量的修正矩阵.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--302
+Underfull \hbox (badness 10000) in paragraph at lines 328--333
 
  []
 
-[10]
 File: assets/多解修正.png Graphic file (type bmp)
 <assets/多解修正.png>
- [11]
+[11] [12]
 File: assets/不可约矩阵.png Graphic file (type bmp)
 <assets/不可约矩阵.png>
+ [13] [14] [15]
+第三章
+[16
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--373
+]
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
-[12] [13] [14] (./notes.aux)
+[17] (./notes.aux)
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 511A09867014BE975D8CE080C8D8216A;2565.
+(rerunfilecheck)             Checksum: 9C0AC1F178C679D069773CBC8835EABC;3208.
  ) 
 Here is how much of TeX's memory you used:
- 16632 strings out of 478563
- 368738 string characters out of 5844776
- 1861012 words of memory out of 5000000
- 36504 multiletter control sequences out of 15000+600000
+ 16634 strings out of 478563
+ 368762 string characters out of 5844776
+ 1863012 words of memory out of 5000000
+ 36506 multiletter control sequences out of 15000+600000
  528336 words of font info for 124 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,9n,97p,497b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,97p,497b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notes.pdf (16 pages).
+Output written on notes.pdf (20 pages).

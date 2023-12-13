@@ -255,7 +255,7 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
     \mathbf{x}=\mathbf{P}\mathbf{x}
 \end{equation}
 \noindent(1)$\mathbf{x}$是$\mathbf{P}$的特征向量，对应的特征值为1。\\
-(2)$\text{Rank}(\mathbf{I}-\mathbf{P})<n$ 由于$\mathbf{1}^T(\mathbf{I}-\mathbf{P}) = \mathbf{0}$(即说明其行向量线性相关)\\
+(2)$\text{Rank}(\mathbf{I}-\mathbf{P})<n$ 由于$\mathbf{1}^T(\mathbf{I}-\mathbf{P}) = \mathbf{0}$，即说明其行向量线性相关，因此方程(2.1)有非零解\\
 (3)方程(2.1)一定有非零解吗，即重要度向量$\mathbf{x}$一定存在吗，以及存在一定唯一吗，这个问题之后分析。
 \begin{example}[链接矩阵与重要度向量的求解]
     \begin{figure}[H]
@@ -268,6 +268,36 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
 \noindent 各行 (列) 元素之和均为 1 的非负方阵称为行 (列) 随机矩阵 (row(column) stochastic matrix)\\
 各行与各列元素之和均为 1 的非负方阵称为双随机矩阵 ( doubly stochastic matrix )
 \end{definition}
+\begin{proposition}
+    随机矩阵一定存在特征值为1对应的特征向量  
+\end{proposition}
+\begin{proof}
+    上文已经简单地从行秩的角度说明了$(\mathbf{P}-\mathbf{I})\mathbf{x} = 0$有非零解，下面以列随机矩阵从行列式的角度证明$det({\mathbf{P}-\mathbf{I}}
+    ) = 0$，从而证明行列式有非零解。
+
+    $$\begin{aligned}
+        &det({\mathbf{P}-\mathbf{I}}) = 
+        \begin{vmatrix}
+            &p_{11}-1 & p_{12} &\cdots& p_{1n}\\
+            &p_{21} &p_{22}-1&\cdots&p_{2n}\\
+            &\vdots&\vdots&\ddots&\vdots\\
+            &p_{n1}&p_{n2}&\cdots&p_{nn}-1
+        \end{vmatrix}\\
+        &=\begin{vmatrix}
+            &\sum_{i=1}^np_{i1}-1 & \sum_{i=1}^np_{i2} &\cdots& \sum_{i=1}^np_{in}\\
+            &p_{21} &p_{22}-1&\cdots&p_{2n}\\
+            &\vdots&\vdots&\ddots&\vdots\\
+            &p_{n1}&p_{n2}&\cdots&p_{nn}-1
+        \end{vmatrix}
+        =\begin{vmatrix}
+            &0& 0 &\cdots& 0\\
+            &p_{21} &p_{22}-1&\cdots&p_{2n}\\
+            &\vdots&\vdots&\ddots&\vdots\\
+            &p_{n1}&p_{n2}&\cdots&p_{nn}-1
+        \end{vmatrix} = 0
+    \end{aligned}$$
+\end{proof}
+
 \begin{theorem}[随机矩阵的模最大特征值]
     任一随机矩阵的模最大特征值为 1   
 \end{theorem}
@@ -275,6 +305,7 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
     设 $\lambda$ 是行随机矩阵 $\mathbf{P}=(p_{ij})_{n\times n}$ 的特征值，非零向量 $\mathbf{X} = ( x_1, \cdots , x_n) ^{\mathrm{T} }$ 为属于特征值 $\lambda$ 的特征向量。设$|x_i|=\max_{1\leq j\leq n}|x_j|>0$\\
     由 $\mathbf{PX}=\lambda\mathbf{X}$,可得 $\lambda x_i=\sum_{j=1}^np_{ij}x_j$。 两边取模，$|\lambda\|x_i|=|\lambda x_i|=\left|\sum_{i=1}^np_{ij}.x_j\right|\leq\sum_{i=1}^n|p_{ij}\|x_j|\leq|x_i|\sum_{i=1}^n|p_{ij}|=|x_i|$, 即$|\lambda|\leq1$
 \end{proof}
+
 \section{链接矩阵}
 \noindent\textbf{链接矩阵的基本性质}\\
 (1)链接矩阵 $\mathbf{P}$ 的每列元素之和为 1 ，为列随机矩阵\\
@@ -285,7 +316,7 @@ $$x_i=\sum_{j=1}^np_{ij}x_j$$
 \noindent 悬挂网页(dangling link): 若某网页不链接任意其它网页\\
 悬挂网页修正：将链接矩阵 $\mathbf{P}$ 中对应列的所有元素由 $0$ 修改为 $\frac{1}{n}$，得到修正链接矩阵$\overline{\mathbf{P}}$\\
 $$\overline{\mathbf{P}}=\mathbf{P}+\frac1n\mathbf{1}\mathbf{d}^\mathrm{T}$$
-其中 $mathbf{1}$ 为分量全为 $0$ 的列向量。
+其中 $\mathbf{1}$ 为分量全为 $0$ 的列向量。
 \begin{example}[悬挂网页修正]
     \begin{figure}[H]
         \centering
@@ -297,7 +328,7 @@ $$\overline{\mathbf{P}}=\mathbf{P}+\frac1n\mathbf{1}\mathbf{d}^\mathrm{T}$$
 若 P 有两个属于特征值 1 的线性无关的特征向量重要度向量排序不唯一\\
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 8cm]{assets/两个特征向量的修正矩阵.png}
+    \includegraphics[width = 4cm,height = 4cm]{assets/两个特征向量的修正矩阵.png}
     \caption{修正矩阵 $\overline{\mathbf{P}}$ 具有两个特征值为一的特征向量(重要度向量)}  
 \end{figure}
 
@@ -310,12 +341,15 @@ $$\overline{\overline{\mathbf{P}}}=\alpha\overline{\mathbf{P}}+(1-\alpha)\frac{1
 $\overline{\overline{\mathbf{P}}}$ 为完全正矩阵 (totally positive matrix) 与列随机矩阵:
 
 $$\mathbf{1} ^{\mathrm{T} }\overline{\overline{\mathbf{P}}} = \alpha\mathbf{1} ^{\mathrm{T} }\mathbf{P} + ( 1- \alpha) \mathbf{- } \mathbf{1} ^{\mathrm{T} }\mathbf{1} \mathbf{1} ^{\mathrm{T} }= \alpha\mathbf{1} ^{\mathrm{T} }+ ( 1- \alpha) \mathbf{1} ^{\mathrm{T} }= \mathbf{1} ^{\mathrm{T} }$$
-\begin{figure}{H}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width = 8cm]{assets/多解修正.png}
     \caption{多解修正}
 \end{figure}
+
 \subsection{重要度向量的存在唯一性}
+根据随机矩阵存在特征值为1的特征向量，因此链接矩阵的重要度向量一定存在。下证它的唯一性。
 \begin{lemma}
     完全正、列随机矩阵属于特征值的特征向量分量之和不为0。
 \end{lemma}
@@ -333,7 +367,7 @@ $$\mathbf{1} ^{\mathrm{T} }\overline{\overline{\mathbf{P}}} = \alpha\mathbf{1} ^
         矛盾。
 \end{proof}
 \begin{proposition}
-    完全正、列随机矩阵仅有个属于特征值 1 的线性无关的特征向量。
+    完全正、列随机矩阵仅有 1 个属于特征值 1 的线性无关的特征向量。
 \end{proposition}
 \begin{proof}
     
@@ -364,7 +398,7 @@ $$\mathbf{1} ^{\mathrm{T} }\overline{\overline{\mathbf{P}}} = \alpha\mathbf{1} ^
 若矩阵 $\mathbf{A}$是非负\textbf{不可约}（irreducible）矩阵，则\\
     (1) $\mathbf{A}$的模最大特征值为正实数\\
     (2) 该特征值代数重数为1\\
-    (3) 存在该特征值的一个特征向量，其分量全为正\\
+    (3) 存在该特征值的一个特征向量，其分量全为正
 \begin{figure}[H]
     \centering
     \includegraphics[width = 15cm]{assets/不可约矩阵.png}
@@ -409,4 +443,80 @@ $$\begin{aligned}
         &\leq\sum_{j=1}^n\left|v_j\right|\left|\sum_{i=1}^np_{ij}e_i\right|\leq c\sum_{j=1}^n\left|\mathbf{v}_j\right|=c\left\|\mathbf{v}\right\|_1
     \end{aligned}$$
 \end{proof}
+\section{随机浏览}
+\begin{definition}[随机浏览]
+    按以下模式浏览互联网的网页
+\begin{enumerate}
+    \item 有时从当前网页的链接中随机打开一个网页
+    \item 有时键入网址新建一个网页
+    \item 从任一网页开始，充分长时间后，访问各网页的概率即为网页重要度
+\end{enumerate}
+\end{definition}
+经过统计，随机打开网页的次数与键入网址新建网页的次数之比约为$5:1$，也即$\alpha=0.85$。
+
+\begin{definition}[随机概率]
+记事件 $\{X_m=j\}$ 为时刻 $m$ 访问网页 $v_j$，则$P\{X_m=i | X_{m-1}=j\}=p_{ij}$
+
+若  $P\{X_m=j\}=x_j$，则$P\{X_{m}=i\}=\sum\limits_{j=1}^nP\{X_m=i | X_{m-1}=j\}P\{X_{m-1}=j\}=\sum\limits_{j=1}^np_{ij}x_j$
+
+记 $\mathbf{x}^{(m)}=(P\{X_m=1\},P\{X_m=2\},\cdots,P\{X_m=n\})^T$，则有$\mathbf{x}^{(m)}=\overline{\overline{\mathbf{P}}}\mathbf{x}^{(m-1)}$
+\end{definition}
+\begin{definition}[随机过程]
+随机过程是描述随机现象随时间推移而演化的一类数学模型。\\
+在一族随机变量$\{X(t),t\in T\}$中$T$为参数集，$t$是参数。$\{X(t),t\in T\}$称为参数为$t$的随机变量。$T$为整数集的随机过程称为随机序列。
+\end{definition}
+\begin{definition}[Markov过程]
+在已知目前的状态的条件下，它未来的演变不依赖于它以往的演变。\\
+在随机序列$\{X(n),n=0,1,2,\cdots\}$中($X_n$有限或可列)，对任意的$n\geq0$，有
+$$P\{X_{n+1}=j | X_n=i,X_{n-1}=i_{n-1},\cdots,X_0=i_0\}=P\{X_{n+1}=j | X_n=i\}$$
+\end{definition}
+\newpage
+\chapter{数论与组合模型}
+\section{Nim Game}
+现有$n$堆硬币，每堆数量一定。两人轮流取硬币，每次只能从其中一堆中取，且每次取至少一枚。取到最后一枚硬币的一方获胜。 
+\subsection{位值制计数法}
+选定进位制的基底 $b$ , 给定 $0,1,2,\cdots,b-1$共 $b$ 个数码。任何一个自然数$N$, 均可用某个以这些数码为系数的 $b$ 的多项式表示出来。
+$$
+\begin{aligned}N&=a_k\cdot b^k+a_{k-1}\cdot b^{k-1}+\cdots+a_1\cdot b+a_0\\&\Rightarrow\left(a_ka_{k-1}\cdots a_1a_0\right)_b,\:a_0,a_1,\cdots,a_k\in\left\{0,1,\cdots,b-1\right\}\end{aligned}
+$$
+\begin{proposition}
+(1)任意数的 $b$ 进制表示是唯一的
+\begin{proof}
+    可以取模证明。 
+\end{proof} 
+(2)任意两个数的 $b$ 进制表示不同 
+\begin{proof}
+    根据(1)$0$的 $b$ 进制表示是唯一的用反证法证明。
+\end{proof}
+\end{proposition}
+\subsection{Nim Game的必胜策略}
+\subsubsection{Safe Combination 安全状态}
+(1)安全状态：若无论对方如何取均不会获胜，或者无论对方如何取，己方下一次取后均可变为一个安全状态的，称为安全状态。
+
+(2)不安全状态若对方至少存在一种获胜的取法，己方下一次取无法变为一个安全状态的，称为不安全状态。
+
+必胜策略：己方取法使得下一状态为安全状态。
+\subsubsection{二进制位和与安全状态}
+\noindent\textbf{二进制与位和:}
+将每堆硬币数表示为二进制。将所有二进制数的每一位数字分别求和，其尾数称为位和。
+
+Write the number of the counters in each pile in the binary scale of notation,  and place these numbers in three horizontal lines so that the units are in the same vertical column. If then the sum of each column is 2 or 0 (i.e.congruent to 0, mood.2), the set of numbers forms a safecombination. 
+\begin{theorem}[Basic Property]
+    If a, b, c form a safe combination any two of the numbers determine the remaining one, that is, the system is closed.
+    So it is for $n$ piles situation.
+\end{theorem}
+\begin{corollary}
+    (1)只有一堆硬币时，位和不可能全为0\\
+    (2)每次从某一堆中取若干枚硬币，该堆硬币的二进制数发生变化，且至少有一位位和发生变化。\\
+\end{corollary} 
+\noindent\textbf{位和和安全状态:}   
+若所有位和均为 0 ，则当前状态为安全的，否则为不安全
+
+\noindent(1)若当前状态安全，对任意取法，状态变为不安全
+
+    只能从一堆中取，由于当其他$n-1$堆在给定时，能让这$n-1$堆直和第$n$堆变为安全状态的第$n$堆是唯一确定的，就是当前安全状态下要取走的这堆的数目，所以取走该堆的任意个硬币后，都不能达到安全状态。\\
+(2)若当前状态不安全，存在一种取法，状态变为安全
+
+    按自左至右的顺序确定第一个数字之和不为 0 的位，寻找该位数字为 1 的堆，从该堆中取走若干枚使得状态变为安全
+\section{伪币称重问题}
 \end{document} 
