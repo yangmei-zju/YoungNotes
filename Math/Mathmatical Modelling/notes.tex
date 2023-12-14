@@ -518,5 +518,63 @@ Write the number of the counters in each pile in the binary scale of notation,  
 (2)若当前状态不安全，存在一种取法，状态变为安全
 
     按自左至右的顺序确定第一个数字之和不为 0 的位，寻找该位数字为 1 的堆，从该堆中取走若干枚使得状态变为安全
+
+\noindent\textbf{Nim Game 必胜情况与先后手的关系}\\
+(1) 若初始状态不安全，先手必胜。若初始状态安全，后手必胜\\
+(2) 必胜一方选择适当的取法，使取后状态对己方是安全的
+
+因此先手必胜的概率可以从 Nim Game 随机开局时是否为不安全状态算出，即
+$$P{\text{先手必胜}} = P{\text{开局为不安全状态}} = \frac{\text{不安全状态个数}}{\text{所有开局可能个数}}(\text{古典概型})$$
+
 \section{伪币称重问题}
+\noindent\textbf{伪币辨识}
+12枚外观相同的硬币中有一枚是伪币，伪币质量与真币不同（偏轻或者偏重不知），能否用天平称量三次找出伪币，并说明伪币相对真币偏轻或偏重。其中天平一次称量只能比较两端质量大小，不能读出质量数值
+\subsection{自适应方案}
+硬币真伪的可能性共有$12\times2 = 24$种。每一种称量结果对应一种可能性，不同称量结果对应的可能性各不相同\\
+\textbf{自适应与非自适应}
+\begin{definition}
+后一次称量依赖于之前称量结果的方案为自适应（adaptive）的，否则称为非自适应（non-adaptive）的。\\
+\end{definition}
+\textbf{Type Konwn 伪币称重的自适应方案}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 15cm]{assets/sequential_weighing_design.png}
+    \caption{A sequential weighing design for c = 12 coins in w = 3 weighings with type konwn}
+\end{figure}
+自适应方案的核心在于：在每一次称重后，我们都需要把解答的空间缩小到原来的 1/3。
+\subsection{非自适应方案}
+\noindent{Type Konwn自适应最优方案}\\
+若 $3\leq n\leq \frac{3^w-3}{2}$，则存在一种非自适应的称量方案，使用 $w$ 次称量可从 $n$ 枚硬币中辨别伪币并确定轻重。\\
+若 $n>\frac{3^w-3}{2}$，则不存在自适应的称量方案，用 $w$ 次称量即可从 $n$ 枚硬币中辨别伪币并确定轻重。\\
+\newpage
+\chapter{随机模型}
+\section{疾病检测}
+\noindent\text{疾病检测性能指标}
+记 $A$ 为患病，$B$ 为检测结果为阳性，疾病的发病率为 $r$
+
+(1)灵敏度（sensitivity）: $p=P(B|A)$ ：患病者被检测为阳性（positive）的概率
+
+(2)特异度（specificity）: $p=P(\overline{B}|\overline{A})$ ：未患病者被检测为阴性（negative）的概率
+
+(3)被检测出阳性的情况下患病的概率为
+$$
+P(A|B)=\frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|\overline{A})P(\overline{A})}=\frac{pr}{pr+(1-q)(1-r)}
+$$
+\subsection{概率群试(group testing)}
+概率群式：假定 $n$ 个人相互独立地以概率 $p$ 患病，如何找出全部的病人，使平均检测次数尽可能少？
+
+如何选择群式方案？要考虑平均检测次数、检测阶段数、每人最大检测次数、每组最多样本数、方案的可操作性、检测的灵敏度与特异度等多个因素。
+
+\subsubsection{两阶段群试}
+
+将 $n$ 人的样本混合后检测。若结果为阴性，说明这 $n$ 人均未感染。若结果为阳性，说明这 $n$ 人中至少有一人已感染。此时逐个检测每个人样本。
+
+下求两阶段群试的平均检测次数的数学期望:\\
+(1) 混合样本阴性概率为 $(1-p)^n$ ，总检测次数为 $1$ ；\\
+(2) 混合样本阳性概率为 $1-(1-p)^n$ ，总检测次数为 $n+1$ 。\\
+(3) 检测次数的数学期望为 $1\cdot(1-p)^n+(n+1)\cdot(1-(1-p)^n)$ ；\\
+(4) 平均检测次数的数学期望为 $\frac{1\cdot(1-p)^n+(n+1)\cdot(1-(1-p)^n)}{n}$
+
+\section{The Monty Hall Problem}
+
 \end{document} 

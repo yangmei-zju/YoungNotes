@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  13 DEC 2023 02:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  13 DEC 2023 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,17 +679,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
-[17] (./notes.aux)
-Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 9C0AC1F178C679D069773CBC8835EABC;3208.
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+
+ []
+
+File: assets/sequential_weighing_design.png Graphic file (type bmp)
+<assets/sequential_weighing_design.png>
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 546--549
+
+ []
+
+[19]
+第四章
+[20
+
+] [21] (./notes.aux)
+
+Package rerunfilecheck Warning: File `notes.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `notes.out':
+(rerunfilecheck)             Before: FDC8F835B1A9486E9BA1542B8095E1EB;3942
+(rerunfilecheck)             After:  9475C850B4635BFBC20FAB3FD8AB5FD2;3935.
  ) 
 Here is how much of TeX's memory you used:
- 16634 strings out of 478563
- 368762 string characters out of 5844776
+ 16702 strings out of 478563
+ 372616 string characters out of 5844776
  1863012 words of memory out of 5000000
- 36506 multiletter control sequences out of 15000+600000
+ 36573 multiletter control sequences out of 15000+600000
  528336 words of font info for 124 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  89i,15n,97p,497b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notes.pdf (20 pages).
+Output written on notes.pdf (24 pages).
