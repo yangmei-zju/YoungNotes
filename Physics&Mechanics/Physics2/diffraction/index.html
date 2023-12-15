@@ -1980,13 +1980,13 @@ For <span class="arithmatex">\(D &gt;&gt; a\)</span>, we can approximate rays <s
 </div>
 <h3 id="second-dark-fringes">Second Dark Fringes<a class="headerlink" href="#second-dark-fringes" title="Permanent link">&para;</a></h3>
 <p><img alt="minimg" src="../images/Lec18/Second%20Minimum.png" />
- Divide the slit into four zones of equal width <span class="arithmatex">\(\frac{a}{4}\)</span>. To produce the second dark fringe at <span class="arithmatex">\(P_2\)</span>, the path length difference between <span class="arithmatex">\(r_1\)</span> and <span class="arithmatex">\(r_2\)</span>, that between <span class="arithmatex">\(r_2\)</span> and <span class="arithmatex">\(r_3\)</span>, and that between <span class="arithmatex">\(r_3\)</span> and <span class="arithmatex">\(r_4\)</span> must all be equal to <span class="arithmatex">\(\frac{\lambda}{2}\)</span>. </p>
+Divide the slit into four zones of equal width <span class="arithmatex">\(\frac{a}{4}\)</span>. To produce the second dark fringe at <span class="arithmatex">\(P_2\)</span>, the path length difference between <span class="arithmatex">\(r_1\)</span> and <span class="arithmatex">\(r_2\)</span>, that between <span class="arithmatex">\(r_2\)</span> and <span class="arithmatex">\(r_3\)</span>, and that between <span class="arithmatex">\(r_3\)</span> and <span class="arithmatex">\(r_4\)</span> must all be equal to <span class="arithmatex">\(\frac{\lambda}{2}\)</span>. </p>
 <p>For <span class="arithmatex">\(D \gg a\)</span>, we can approximately these four rays as being parallel, at angle <span class="arithmatex">\(\theta\)</span> to the central axis. </p>
-<p><img alt="img" src="../images/Lec18/Path%20Length%20Difference2.png" />
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+<p><img alt="img" src="../images/Lec18/Path%20Length%20Difference2.png" /></p>
+<div class="arithmatex">\[\begin{align*}
     &amp;\frac{a}{4}\sin\theta=\frac{\lambda}{2}\\
     &amp;\Rightarrow a\sin\theta=2\lambda
-\end{align*}\)</span>\)</span></p>
+\end{align*}\]</div>
 <h3 id="all-dark-fringes">All Dark Fringes<a class="headerlink" href="#all-dark-fringes" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[\begin{align*}
     &amp;\frac{a}{2m}\sin\theta=\frac{\lambda}{2}\\
@@ -2012,8 +2012,8 @@ For <span class="arithmatex">\(D &gt;&gt; a\)</span>, we can approximate rays <s
 <p class="admonition-title">Plot the Relative Intensity- <span class="arithmatex">\(\theta\)</span> with different a/<span class="arithmatex">\(\lambda\)</span></p>
 <p><img alt="minimg" src="../images/Lec18/Relative%20Intensity-a.png" />
 As the slit width increases (relative to the wavelength), 
-- the width of the central diffraction maximum increases, 
-- the relative height of the secondary maxima increases, but the width of the secondary maxima decreases.</p>
+- the width of the central diffraction maximum increases;<br />
+- the relative height of the secondary maxima increases, but the width of the secondary maxima decreases;  </p>
 </div>
 <p>The geometric series of phasors <strong>from sum to integral</strong> is </p>
 <div class="arithmatex">\[\begin{align*}
@@ -2026,7 +2026,7 @@ As the slit width increases (relative to the wavelength),
 \end{align*}\]</div>
 <p>This leads to the result we have derived</p>
 <div class="arithmatex">\[\begin{align*}
-    I_{sq}(\theta)=I_{max}\left[ \frac{\sin\alpha}{\alpha} \right]^2
+    \boxed{I_{sq}(\theta)=I_{max}\left[ \frac{\sin\alpha}{\alpha} \right]^2}
 \end{align*}\]</div>
 <h2 id="fourier-methods-in-diffraction-theory">Fourier Methods in Diffraction Theory<a class="headerlink" href="#fourier-methods-in-diffraction-theory" title="Permanent link">&para;</a></h2>
 <details class="hint">
@@ -2034,9 +2034,9 @@ As the slit width increases (relative to the wavelength),
 <p>The Fourier transform of a one-dimensional function <span class="arithmatex">\(f(x)\)</span> is defined as </p>
 <div class="arithmatex">\[\begin{align*}
     F(k_x)=\int_{\infty}^{\infty} f(x)e^{-ik_x x}\,\mathrm{d}x
-\end{align*}$$
-whose inverse transform is 
-$$\begin{align*}
+\end{align*}\]</div>
+<p>whose inverse transform is </p>
+<div class="arithmatex">\[\begin{align*}
     f(x)=\frac{1}{2\pi}\int_{\infty}^{\infty}F(k_x)e^{ik_x x}\,\mathrm{d}k_x
 \end{align*}\]</div>
 </details>
@@ -2051,18 +2051,18 @@ $$\begin{align*}
     \right.
 \end{align*}\]</div>
 <p>The Fourier transform of <span class="arithmatex">\(E_{sq}(x)\)</span> is</p>
-<p><span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+<div class="arithmatex">\[\begin{align*}
     \tilde{E}_{sq}(k_x)&amp;=\frac{1}{a}\int_{-\infty}^{\infty}E_{sq}(x)e^{-ik_x x}\,\mathrm{d}x\\
     &amp;=\frac{E_0}{a}\int_{-\frac{a}{2}}^{\frac{a}{2}} e^{-ik_x x}\,\mathrm{d}x\\
     &amp;=-\frac{E_0}{a}\frac{1}{ik_x}\left( e^{-ik_x \frac{a}{2}} - e^{ik_x \frac{a}{2}}\right)\\
-    &amp;\xlongequal{\alpha = \frac{a}{2}k_x}\frac{E_0}{a} \frac{a}{2}\frac{2i\sin\alpha}{i\alpha}\\
+    &amp;\overset{\alpha = \frac{a}{2}k_x}{=\!=\!=\!=}\frac{E_0}{a} \frac{a}{2}\frac{2i\sin\alpha}{i\alpha}\\
     &amp;=E_0 \frac{\sin\alpha}{\alpha}
-\end{align*}\)</span>\)</span>
-where <span class="arithmatex">\(\alpha=\frac{a}{2}k_x=\frac{a}{2}k\sin\theta\)</span>. </p>
-<p>This leads to the result we have derived
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
-    I_{sq}(\theta)=I_{max}\left[ \frac{\sin\alpha}{\alpha} \right]^2
-\end{align*}\)</span>\)</span></p>
+\end{align*}\]</div>
+<p>where <span class="arithmatex">\(\alpha=\frac{a}{2}k_x=\frac{a}{2}k\sin\theta\)</span>. </p>
+<p>This leads to the result we have derived</p>
+<div class="arithmatex">\[\begin{align*}
+    \boxed{I_{sq}(\theta)=I_{max}\left[ \frac{\sin\alpha}{\alpha} \right]^2}
+\end{align*}\]</div>
 <p>The key message is that <strong>the field distribution in the Fraunhofer diffraction pattern is the Fourier transform of the field distribution across the aperture (打到屏幕的光分布是过小孔的光分布的傅里叶变换).</strong></p>
 <p><img alt="img" src="../images/Lec18/The%20Fourier%20Method%20for%20the%20Single%20Slit.png" /></p>
 <h3 id="the-fourier-method-for-the-double-silt">The Fourier Method for the Double Silt<a class="headerlink" href="#the-fourier-method-for-the-double-silt" title="Permanent link">&para;</a></h3>
@@ -2078,7 +2078,7 @@ where <span class="arithmatex">\(\alpha=\frac{a}{2}k_x=\frac{a}{2}k\sin\theta\)<
 <div class="arithmatex">\[\begin{align*}
     \tilde{E}_{ds}(k_x)&amp;=\int_{\infty}^{\infty}E_{ds}(x)e^{-ik_x x}\,\mathrm{d}x\\
     &amp;=\int_{-\frac{d+a}{2}}^{-\frac{d-a}{2}} E_0 e^{-ik_x x}\,\mathrm{d} x + \int_{\frac{d-a}{2}}^{\frac{d+a}{2}} E_0 e^{-ik_x x}\,\mathrm{d} x\\
-    &amp;\xlongequal{x^{\prime}=x+\frac{d}{2}, x^{\prime\prime}=x-\frac{d}{2}}\int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x (-\frac{d}{2}+x^{\prime})}\,\mathrm{d}x^{\prime} + \int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x (\frac{d}{2}+x^{\prime\prime})}\,\mathrm{d}x^{\prime\prime}\\
+    &amp;\overset{x^{\prime}=x+\frac{d}{2}, x^{\prime\prime}=x-\frac{d}{2}}{=\!=\!=\!=\!=\!=\!}\int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x (-\frac{d}{2}+x^{\prime})}\,\mathrm{d}x^{\prime} + \int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x (\frac{d}{2}+x^{\prime\prime})}\,\mathrm{d}x^{\prime\prime}\\
     &amp;=\left( e^{ik_x \frac{d}{2}} + e^{-ik_x \frac{d}{2}}\right)\int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x x^{\prime}}\,\mathrm{d} x^{\prime}
 \end{align*}\]</div>
 <div class="arithmatex">\[\begin{align*}
@@ -2086,57 +2086,57 @@ where <span class="arithmatex">\(\alpha=\frac{a}{2}k_x=\frac{a}{2}k\sin\theta\)<
     &amp;\int_{-\frac{a}{2}}^{\frac{a}{2}} E_0 e^{-ik_x x^{\prime}}\,\mathrm{d} x^{\prime} \text{ is single-slit diffraction}
 \end{align*}\]</div>
 <p>The interference pattern can be understood by a <strong>convolution theorem(卷积)</strong> for Fourier transformation: <strong>The transform of the convolution of two function is the product of their transforms. (<span class="arithmatex">\(\mathcal{F} [f\circ g]=\mathcal{F}[f]\times \mathcal{F}[g]\)</span>)</strong> .</p>
-<p>The Young's double-slit interference result (with negligible slit width that is <span class="arithmatex">\(a &lt;&lt; \lambda\)</span>) as the Fourier transform of an aperture function
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+<p>The Young's double-slit interference result (with negligible slit width that is <span class="arithmatex">\(a &lt;&lt; \lambda\)</span>) as the Fourier transform of an aperture function</p>
+<div class="arithmatex">\[\begin{align*}
     h(x)=\delta\left(x+\frac{d}{2}\right)+\delta\left(x-\frac{d}{2}\right)
-\end{align*}\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+\end{align*}\]</div>
+<div class="arithmatex">\[\begin{align*}
     \mathcal{F}[h(x)]=&amp;\int_{-\infty}^{\infty} h(x)e^{-ikx}\,\mathrm{d}x\\
     =&amp;e^{ik\frac{d}{2}}+e^{-ik\frac{d}{2}}\\
     =&amp;2\cos\left(k\frac{d}{2}\right)
-\end{align*}\)</span>\)</span>
-Notice that 
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+\end{align*}\]</div>
+<p>Notice that </p>
+<div class="arithmatex">\[\begin{align*}
     \delta (x) =&amp;\left\{ \begin{array}{cc}
         1 &amp; x=0\\
         0 &amp; otherwise
     \end{array} \right.\\
     f(a)=&amp;\int_{-\infty}^{\infty}f(x)\delta (x-a)\,\mathrm{d}x
-\end{align*}\)</span>\)</span></p>
-<p>Therefore, we can express the double-slit aperture function and its Fourier transform as 
-<span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}
+\end{align*}\]</div>
+<p>Therefore, we can express the double-slit aperture function and its Fourier transform as </p>
+<div class="arithmatex">\[\begin{align*}
     E_{ds}(x)=&amp;\int_{-\infty}^{\infty}E_{sq}(x^{\prime})h(x-x^{\prime})\,\mathrm{d}x^{\prime}\\
     \mathcal{F}\left[E_{ds}(x)\right]=&amp;\mathcal{F}\left[E_{sq}(x)\right]\mathcal{F}\left[h(x)\right]
-\end{align*}\)</span>\)</span></p>
+\end{align*}\]</div>
 <p>Formally, with diffraction effects taken into account, the intensity of a double-slit interference pattern is</p>
 <div class="arithmatex">\[\begin{align*}
-    I(\theta)=&amp;I_0\left(\frac{\sin\alpha}{\alpha}\right)^2 \cos^2\beta\\
-    \beta=&amp;\frac{\delta_2}{2}=\frac{\pi}{\lambda}d\sin\theta\\
-    \alpha=&amp;\frac{\pi}{\lambda}a\sin\theta
+    &amp;\boxed{I(\theta)=I_0\left(\frac{\sin\alpha}{\alpha}\right)^2 \cos^2\beta}\\
+    &amp;\beta=\frac{\delta_2}{2}=\frac{\pi}{\lambda}d\sin\theta\\
+    &amp;\alpha=\frac{\pi}{\lambda}a\sin\theta
 \end{align*}\]</div>
 <details class="hint">
 <summary>The cause of two factors in the intensity</summary>
-</details>
 <ul>
-<li>(1) The interference factor <span class="arithmatex">\(\cos2\beta\)</span> is due to the interference between two slits with slit separation d.  </li>
-<li>(2) The diffraction factor <span class="arithmatex">\([(\sin \alpha)/\alpha]2\)</span> is due to diffraction by a single slit of width a.  </li>
+<li>(1) The interference factor <span class="arithmatex">\(\cos2\beta\)</span> is due to the interference between two slits with slit separation d.    </li>
+<li>(2) The diffraction factor <span class="arithmatex">\([(\sin \alpha)/\alpha]2\)</span> is due to diffraction by a single slit of width a.    </li>
 </ul>
+</details>
 <details class="warinig">
 <summary>The Double-Slit Interference with width &gt; wavelength</summary>
-<p>In the double-slit interference experiments , we implicitly <span class="arithmatex">\(a &lt;&lt; \lambda\)</span> (<span class="arithmatex">\(a\)</span> is slit width and <span class="arithmatex">\(\lambda\)</span> is wavelength) . For such narrow slits, the central maximum of the diffraction pattern of either slit covers the entire viewing screen.
+<p>In the double-slit interference experiments , we implicitly <span class="arithmatex">\(a &lt;&lt; \lambda\)</span> (<span class="arithmatex">\(a\)</span> is slit width and <span class="arithmatex">\(\lambda\)</span> is wavelength) . For such narrow slits, the central maximum of the diffraction pattern of either slit covers the entire viewing screen.<br />
 For relatively wide slits, <strong>the intensities of the fringes produced by double-slit interference are modified by diffraction of the light passing through each slit.</strong></p>
 </details>
-<p>??? Plot the Relative intensity- <span class="arithmatex">\(\theta\)</span></p>
-<div class="language-text highlight"><pre><span></span><code>![](images/Lec18/relative%20intensity%20in%20doube-slit%20interference.png)
-
-- (a) The intensity plot to be expected in a double-slit bright fringes.double-slit interference experiment with vanishingly
-narrow slits.   
-- (b) The intensity plot for diffraction by a typical slit of width a (not vanishingly narrow).   
-- (c) The intensity plot to be expected for two slits of width a.
-
-The curve of (b) acts as an envelope, limiting the intensity
-of the double-slit fringes in (a). Note that the first minima of the diffraction pattern of (b) eliminate the double-slit fringes that would occur near 12° in (c).
-</code></pre></div>
+<details class="hint">
+<summary>Plot the Relative intensity- <span class="arithmatex">\(\theta\)</span></summary>
+<p><img alt="" src="../images/Lec18/relative%20intensity%20in%20doube-slit%20interference.png" /></p>
+<ul>
+<li>(a) The intensity plot to be expected in a double-slit bright fringes.double-slit interference experiment with vanishinglynarrow slits.   </li>
+<li>(b) The intensity plot for diffraction by a typical slit of width a (not vanishingly narrow).   </li>
+<li>&copy; The intensity plot to be expected for two slits of width a.  </li>
+</ul>
+<p>The curve of (b) acts as an envelope, limiting the intensity
+of the double-slit fringes in (a). Note that the first minima of the diffraction pattern of (b) eliminate the double-slit fringes that would occur near 12° in &copy;.</p>
+</details>
 <details class="hint">
 <summary>The analysis of the minimum intensity</summary>
 <p>The first minimum occurs where the phase differencebetween the two slits <span class="arithmatex">\((N = 2)\)</span> is </p>
@@ -2155,7 +2155,7 @@ is </p>
 <p><img alt="img" src="../images/Lec18/Diffraction%20by%20a%20Circular%20Aperture.png" /></p>
 <p>The first minimum for the diffraction pattern of a circular aperture of diameter <span class="arithmatex">\(a\)</span> is located :</p>
 <div class="arithmatex">\[\begin{align*}
-    \sin\theta=1.22\frac{\lambda}{a}
+    \boxed{\sin\theta=1.22\frac{\lambda}{a}}
 \end{align*}\]</div>
 
 
