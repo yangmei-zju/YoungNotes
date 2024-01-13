@@ -1,0 +1,47 @@
+\contentsline {section}{\numberline {1}The Electric Field}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Coulomb’s Law}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Gauss's Law}{1}{}%
+\contentsline {subsection}{\numberline {1.3}The way to find the Electric field}{1}{}%
+\contentsline {section}{\numberline {2}Electric Potential}{3}{}%
+\contentsline {section}{\numberline {3}Electric Dipole}{3}{}%
+\contentsline {section}{\numberline {4}The Triangle of Electrostatics}{4}{}%
+\contentsline {section}{\numberline {5}The Electrical Properties of Conductors}{4}{}%
+\contentsline {subsection}{\numberline {5.1}A Charged Isolated Conductor}{4}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Electric Field Outside Isolated Conductors}{5}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Parallel Plates}{5}{}%
+\contentsline {subsection}{\numberline {5.2}Charge Inside a Spherical Metal Shell}{5}{}%
+\contentsline {subsection}{\numberline {5.3}Charge Above a Infinite Grounded Gonducting Plane}{6}{}%
+\contentsline {section}{\numberline {6}Resistance and Capacitance}{6}{}%
+\contentsline {subsection}{\numberline {6.1}Resistance}{6}{}%
+\contentsline {subsection}{\numberline {6.2}Calculating Capacitance}{7}{}%
+\contentsline {subsection}{\numberline {6.3}Energy Stored in a Capacitor}{8}{}%
+\contentsline {subsection}{\numberline {6.4}DC Circuits}{8}{}%
+\contentsline {subsection}{\numberline {6.5}Dielectrics and Gauss’ Law}{9}{}%
+\contentsline {section}{\numberline {7}The Ampere Force}{9}{}%
+\contentsline {subsection}{\numberline {7.1}Hlical Movement}{9}{}%
+\contentsline {subsection}{\numberline {7.2}The Hall Effect}{9}{}%
+\contentsline {subsection}{\numberline {7.3}Current-Carrying Wire}{9}{}%
+\contentsline {section}{\numberline {8}The Magenetic Field}{10}{}%
+\contentsline {subsection}{\numberline {8.1}Biot-Savart law}{10}{}%
+\contentsline {subsection}{\numberline {8.2}Ampere's Law}{11}{}%
+\contentsline {subsection}{\numberline {8.3}Examples}{11}{}%
+\contentsline {subsubsection}{\numberline {8.3.1} A Long Straight Wire}{11}{}%
+\contentsline {subsubsection}{\numberline {8.3.2}Outside a Long Straight Wire}{12}{}%
+\contentsline {subsubsection}{\numberline {8.3.3}Inside a Long Straight Wire}{12}{}%
+\contentsline {subsubsection}{\numberline {8.3.4}A Sheet Of Moving Charge}{12}{}%
+\contentsline {subsubsection}{\numberline {8.3.5}Magnetic Field of a Solenoid}{12}{}%
+\contentsline {subsubsection}{\numberline {8.3.6}Magnetic Field of a Toroid}{13}{}%
+\contentsline {subsection}{\numberline {8.4}The Properties of B}{13}{}%
+\contentsline {section}{\numberline {9}Magnetic Properties of Materials}{14}{}%
+\contentsline {subsection}{\numberline {9.1}Magenetic Dipole}{14}{}%
+\contentsline {subsection}{\numberline {9.2}Magnetic Materials}{14}{}%
+\contentsline {section}{\numberline {10}Faraday’s Law of Induction}{14}{}%
+\contentsline {section}{\numberline {11}Inductors and Inductance}{15}{}%
+\contentsline {subsection}{\numberline {11.1}RL Circuits}{15}{}%
+\contentsline {subsection}{\numberline {11.2}Energy and Energy Density}{16}{}%
+\contentsline {subsection}{\numberline {11.3}Mutual Induction}{16}{}%
+\contentsline {section}{\numberline {12}AC Circuits}{16}{}%
+\contentsline {subsection}{\numberline {12.1}LC Oscillations}{16}{}%
+\contentsline {subsection}{\numberline {12.2}Damped Oscillations in an RLC Circuit}{16}{}%
+\contentsline {subsection}{\numberline {12.3}Impendance}{17}{}%
+\contentsline {section}{\numberline {13}Maxwell’s Equations and EM Waves}{17}{}%

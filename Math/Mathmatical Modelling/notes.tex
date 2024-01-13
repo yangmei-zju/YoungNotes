@@ -1,5 +1,5 @@
-\documentclass[12pt, a4paper, oneside]{ctexbook}
-\usepackage{amsmath, amsthm, amssymb, bm, float,graphicx, geometry,hyperref, mathrsfs}
+\documentclass[10t, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, float,graphicx, geometry,hyperref, mathrsfs,forest,tikz}
 \geometry{left = 2.54cm, right = 2.54cm, top = 3.18cm, bottom = 3.18cm}
 
 \title{{\Huge{\textbf{数学建模课程笔记}}}}
@@ -574,7 +574,190 @@ $$
 (2) 混合样本阳性概率为 $1-(1-p)^n$ ，总检测次数为 $n+1$ 。\\
 (3) 检测次数的数学期望为 $1\cdot(1-p)^n+(n+1)\cdot(1-(1-p)^n)$ ；\\
 (4) 平均检测次数的数学期望为 $\frac{1\cdot(1-p)^n+(n+1)\cdot(1-(1-p)^n)}{n}$
+\subsubsection{三阶段群试}
+1. 将$n$ 人的样本混合后检测。若结果为阴性，说明这 $n$ 人均未感染。
+若结果为阳性，说明这 $n$ 人中至少有一人已感染。
+2.将$n$人随机分成人数分别$\left\lfloor\frac n2\right\rfloor$，$\left\lfloor\frac n2\right\rfloor$
+的两组 A 和 B。
+先对A检测，若结果为阴性，则感染者必在B组.
+若结果为阳性，此时也要对 B 组进行检测.
+3. 对有感染者的组进行逐个检测.
 
+\subsubsection{二分群试}
+
+1. 将$n$ 份个体样本组成混合样本$\Pi$ 进行检测。
+
+若$\Pi$的检测结果为阴性，则$n$ 人中无感染者。
+若$\Pi$的检测结果为阳性，则将$n$人随机分成人数分别$\left\lfloor\frac n2\right\rfloor$，$\left\lfloor\frac n2\right\rfloor$
+的两组 A 和 B。
+
+2. 对每一组，取该组人的个体样本组成混合样本。记 为$\left\lfloor\frac n2\right\rfloor$和$\left\lfloor\frac n2\right\rfloor$，记两组的混合样本分别为$\Pi_{A}$和$\Pi_{B}$。
+先对$\Pi_{A}$进行检测，若$\Pi_{A}$的检测结果为阴性，则感染者必在组 B 中。
+若$\Pi_{A}$的检测结果为阳性，再对$\Pi_{B}$进行检测。
+
+3. 若$\Pi_{B}$的检测结果为阴性，则感染者仅在组 A 中。
+若$\Pi_{_{B}}$的检测结果为阳性，则 A 和 B 两组中均有感染者。
+
+4. 对有感染者的组重复上述操作，直至找出所有感染者为止。
 \section{The Monty Hall Problem}
+\subsection{主持人已知汽车位置}
+1. 舞台上有三扇道具门，其中一扇门后置有一辆汽 车，另两扇门后各置有一头山羊。竞猜者可任选其中一扇门并获赠门后物品.
+
+2. 竞猜者选择了其中一扇门后，主持人打开了另两扇门中的一扇，门后面是一头山羊.主持人知道汽车所在位置。他打开的门既不是竞猜者选择的，也不是后置汽车的。若有两扇门符合以上要求， 他以相同概率选择其中一扇.
+
+3. 主持人允许竞猜者改变之前的选择，竞猜者为增加获得汽车的可能性，是否应该改变当前的选择。
+
+假设竞猜者初次选择1号门，记 $C_i$ 为事件 "汽车位于 $i$ 号门后",$P(C_1)=P(C_2)=P(C_3)=\frac12$
+
+假设主持人打开2号门。记 M 为事件“主持人打开2号门”， $P(M|C_1)= \frac12, P(M|C_2) = 0, P(M|C_2)= 1$
+
+若竞猜者不改变选择，获得汽车的概率，由Bayes公式，$C_i$构成了样本空间的一个分划：
+$$P\big(C_1|M\big)=\frac{P\big(M|C_1\big)P\big(C_1\big)}{P\big(M|C_1\big)P\big(C_1\big)+P\big(M|C_2\big)P\big(C_2\big)+P\big(M|C_3\big)P\big(C_3\big)} = \frac12$$
+若竞猜者改变选择，选择3号门获得汽车的概率为，
+$$P\left(C_{3}|M\right)={\frac{P\left(M\mid C_{3}\right)P\left(C_{3}\right)}{P\left(M\mid C_{1}\right)P\left(C_{1}\right)+P\left(M\mid C_{2}\right)P\left(C_{2}\right)+P\left(M\mid C_{3}\right)P\left(C_{3}\right)}}=\frac23$$
+\subsection{主持人不知汽车位置}
+主持人不知汽车的位置，他在竞选者选择后以相同的概率打开另两扇门中的一扇，后面是山羊.
+
+假设竞选者初次选择1号门，主持人打开2号门，记$M$为事件“主持人打开2号门，门后是一头山羊”,则$$P(M|C_1) = \frac12, \quad P(M|C_2) = 0, \quad P(M|C_3) = \frac{1}{2}$$
+若竞猜者不改变选择，获得汽车的概率
+$$P\big(C_1|M\big)=\frac{P\big(M|C_1\big)P\big(C_1\big)}{P\big(M|C_1\big)P\big(C_1\big)+P\big(M|C_2\big)P\big(C_2\big)+P\big(M|C_3\big)P\big(C_3\big)} = \frac12$$
+若竞猜者改变选择，获得汽车的概率
+$$P\left(C_{3}|M\right)={\frac{P\left(M\mid C_{3}\right)P\left(C_{3}\right)}{P\left(M\mid C_{1}\right)P\left(C_{1}\right)+P\left(M\mid C_{2}\right)P\left(C_{2}\right)+P\left(M\mid C_{3}\right)P\left(C_{3}\right)}}=\frac12$$
+
+\section{赠券收集问题(Coupon Collector's Problem)}
+\subsection{概率的加法原理}
+
+\textbf{De Morgan定律}
+设 $A_1,A_2,\cdots,A_n$ 为集合 $S$ 的 $n$ 个子集，则 $$\begin{aligned}&\overline{A_1\cup A_2\cup\cdots\cup A_n}={\overline{A_1}\cap \overline{A_2}\cap\cdots\cap \overline{A_n}}\\
+    &\overline{A_{1}\cap A_{2}\cap\cdots\cap A_{n}}=\overline{A_{1}}\cup\overline{A_{2}}\cup\cdots\cup\overline{A_{n}}\end{aligned}$$
+
+\textbf{容斥原理}
+设 $A_1,A_2,\cdots,A_n$ 为集合 $S$ 的 $n$ 个有限子集，则
+$$\begin{aligned}
+    \left|A_{1}\cup A_{2}\cup\cdots\cup A_{n}\right|=&\sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1\le i<j\le n}\left|A_{i}\cap A_{j}\right|\\
+    &+\sum_{1\leq i<j<k\leq n}\left|A_{i}\cap A_{j}\cap A_{k}\right|+\cdots+(-1)^{n-1}\left|A_{1}\cap A_{2}\cap\cdots\cap A_{n}\right|
+\end{aligned}$$
+\textbf{概率的加法原理}
+设$A_1, A_2,A_n$为$n$个事件,则
+$$\begin{aligned}P(A_1\cup A_2 \cdots \cup A_n) = &\sum_{i = 1}^n P(A_i) - \sum_{1 \le i < j \le n}P(A_i \cap A_j) \\
+    +& \sum_{1 \le i< j < k\le n}P(A_i \cap A_j \cap A_k) + \cdots + (-1)^{n-1}P(A_1\cap A_2 \cap \cdots \cap A_n)\end{aligned}$$
+
+一套赠券共有$N$种，商家在每件商品中随机放入一张赠券。集齐全套赠券平均需购买多少件商品，假设每件商品中放入各种赠券的概率相同
+
+\subsection{概率加法}
+定义随机变量$X$为“集齐全套赠券需购买的商品件数”,$E(X) = \sum_{i = 1}^{\infty} i \cdot P(x = i)$
+
+记$B_i$为事件“购买$i$商品后集齐全套赠券”，记$A_i^j$为事件“购买$i$件商品后收集到第$j$种赠券”
+$B_i$为$A_i^1, A_i^2,\cdots,A_i^N$的交
+$$\begin{aligned}
+    &P(A_i^j) =  1-P(\overline{A_i^j}) = 1-(1-\frac{1}{N})^i\\
+    &P(B_i) = P(A_i^1A_i^2\cdots A_i^N)=1-P\left(\overline{A_{i}^{1}A_{i}^{2}\cdots A_{i}^{N}}\right)=1-P\left(\overline{A_{i}^{1}}\cup\overline{A_{i}^{2}}\cup\cdots\cup\overline{A_{i}^{N}}\right)
+\end{aligned}$$
+由概率加法原理，
+$$\begin{aligned}P(A_1\cup A_2 \cdots \cup A_n) =& \sum_{j = 1}^N P(\overline{A_i^j})\\
+&-\begin{matrix}\underbrace{ \sum_{1 \le j_1 < j_2 \le N}P(\overline{A_i^{j_1}} \cap \overline{A_i^{j_2}})}\\
+    \begin{pmatrix}N\\2\end{pmatrix}\text{项}
+\end{matrix}+\cdots \\
+&+\begin{matrix}\underbrace{ (-1)^{l-1}\sum_{1 \le j_1 < j_2 \cdots < j_l\le N}P(\overline{A_i^{j_1}} \cap\cdots\cap \overline{A_j^{j_l}})}\\
+    \begin{pmatrix}N\\l\end{pmatrix}\text{项}
+\end{matrix}\\
+&+\begin{matrix}\underbrace{(-1)^{N-1}\sum_{1 \le j_1<\cdots\j_N\le n}P(\overline{A_i^{j_1}} \cap\cdots\cap \overline{A_i^{j_N}})}\\
+    \begin{pmatrix}N\\N\end{pmatrix}\text{项}
+\end{matrix}\end{aligned}$$
+
+其中对任意$1\leq j<k\leq N,P\Big(\overline{A_{i}^{j}}\cap\overline{A_{i}^{k}}\Big)=\left(1-\frac{2}{N}\right)^{i}$
+对任意 $1\leq l\leq N\text{,}1\leq j_1<j_2<\cdots<j_l\leq N\text{,}P\left(\overline{A_i^n}\cap\overline{A_i^{j_2}}\cap\cdots\cap\overline{A_i^{j_l}}\right)=\left(1-\frac lN\right)^i$
+综上$$$$
+因此$$E(X) = \sum_{i = 1}^N \cdot P(X = i) = $$
+\subsection{几何分布}
+随机变量$X$ 为“集齐全套赠券购买的商品件数”，定义随机变量 $Y$ 为“从收集到 $k-1$种赠券到$k$种赠券购买的商品件数"
+$$X = Y_1 + Y_2 +Y_n$$
+$Y_k$服从参数为$p = \frac{N-k+1}{N}$的几何分布， 则$$E(Y_k) = \frac{N}{N-k+1}.$$
+综上
+$$E\left(X\right)=E\left(Y_1\right)+E\left(Y_2\right)+\cdots+E\left(Y_n\right)=\sum_{k=1}^{N}\frac{N}{N-k+1}=N\sum_{k=1}^{N}\frac{1}{k}$$
+
+\newpage
+\chapter{数学规划}
+\section{概述}
+\begin{definition}[数学规划]
+    若干个变量在满足一些等式或不等式限制条件下，使目标函数取得最大值或最小值.
+研究问题的数学性质，构造求解问题的方法，实现求解问题的算法，以及将算法应用于实际问题.
+\end{definition}
+
+\subsection{数学规划的分类}
+1.按函数性质
+\begin{itemize}
+    \item 线性规划（linear programming）:目标函数为线性函数，约束条件为线性等式或不等式
+    \item 非线性规划（nonlinear programming）:目标函数为非线性函数，或至少有一个约束条件为非线性等式或不等式
+    \begin{itemize} 
+        \item 二次规划（Quadratic Programming, QP）：目标函数为二次函数，约束条件为线性等式或不等式
+        \item 带二次约束的二次规划（Quadratically Constrained Quadratic Program， QCQP）：目标函数为二次函数，约束条件为线性或二次等式或不等式
+        \item 线性分式规划（linear fractional programming）：目标函数为两个线性函数的商，约束条件为线性等式或不等式
+    \end{itemize}
+\end{itemize}
+2.按约束条件
+• 无约束优化（unconstrained optimization）
+• 约束优化（constrained optimization）
+\subsection{数学规划建模}
+将实际问题表示成数学规划的形式，使得可以借助数学规划的算法或软件求解具体的实例，利用数学规划的理论和方法分析解决问题
+
+• 建立实际问题的数学规划模型一般包含\underline{确定决策
+变量、给出目标函数、列出约束条件}等步骤
+
+• 约束条件为\underline{等式或不等式，等式或不等式左侧一般为
+决策变量的简单函数}，不直接出现分段函数、逻辑关系等复杂形式
+\subsubsection{数学规划建模的基本要求}
+
+数学规划模型是问题要求和限制的真实反映\\
+• 数学规划模型的最优解（可行解）与问题最优解（可行解）是否一致或对应\\
+• 是否遗漏问题的隐含约束、决策变量的必然要求、多组决策变量间的联系等约束条件
+
+数学规划模型应符合数学规划的内容规范和形式要求:要素完整、变量指标运用准确。逻辑关系、集合运算等一般不在数学规划中出现
+
+问题可能存在多个数学规划描述，需根据实际情况进行选择和不断完善\\
+• 复杂目标函数和约束条件的简化，0-1变量的灵活运用\\
+• 可行域约简、数学规划的重构、分解与松弛
+
+\section{食谱问题(diet problem)}
+(1)$n$种不同的食品，第$j$ 种食品的单位售价为$c_j$;
+(2)人体正常生命活动过程需要 $m$ 种基本营养成分，一个人每天至少需要摄入第 $i$ 种营养成分$b_i$ 个单位(含约束条件);
+(3)每单位第$j$种食物包含第$i$种营养成分$a_{ij}$个单位;
+求在满足人体营养需求的前提下，寻找\underline{最经济}(目标函数)的配食方案
+
+决策变量：食谱中第$j$种食物的数量为$x_j$个单位\\
+目标函数：所有食物的费用之和$\sum_{i=  1}^n c_{i}x_i$最小\\
+约束条件：满足人体营养要求$a_{ij}x_j$为从第$j$种食物种摄入第$i$种营养成分
+数量，则第$i$种营养成分的总数量不小于$b_i$, $$\sum_{j - 1}^n a_{ij}x_j \ge b_j$$,这对第$1,2,\cdots,m$种营养成分也同样如此
+隐含约束条件摄入食物量非负 $x_j \ge 0$\\
+综上：
+$$\begin{aligned}
+    &\text{min} \sum_{j=1}^{n}c_{j}x_{j}  \\
+    &s.t. \sum_{j=1}^{n}a_{ij}x_{j}\geq b_{i},i=1,\cdots,m  \\
+    &x_{j}\geq0,j=1,\cdots,n
+    \end{aligned}$$
+
+\section{运输问题(Transport Problem)}
+某货物有$^{m}$个产地，产地$i$ 的产量为$a_i,i=1,\cdots,m$,$n$个销地，销地$j$的销量为 $b_j,j=1,\cdots,n$
+并且满足产销平衡 $\sum_{i=1}^{n}a_{i}=\sum_{j= 1}^{n}b_j$. 
+由产地 $i\text{到销地}_j$ 的运输单价为 $c_{i_j},i=1,\cdots,m,j=1, \cdots, m$ .如何调运货物从产地到销地，可使总运输费用最小。
+
+决策变量：$x_{ij}$为产地$i$调运到销地$j$的货物数量\\
+约束条件：每个产地的货物全部运出$\sum_{j = 1}^nx_{ij} = a_i, i = 1,2,\cdots, m$\\
+每个销地的货物全部运入$\sum_{i = 1}^m x_{ij} = b_j, j = 1,2,\cdots,n$\\
+调入货物量非负$x_{ij} \ge 0$\\
+综上：
+$$\begin{aligned}
+    &\text{min} \sum_{i=1}^{m}\sum_{j=1}^{n}c_{ij}x_{ij}  \\
+    &\text{s.t.} \sum_{j=1}^{n}x_{ij}=a_{i},i=1,\cdots,m  \\
+    &\sum_{i=1}^{m}x_{ij}=b_{j},j=1,\cdots,n \\
+    &\mathbf{x}=\left(x_{11},x_{12},\cdots,x_{1n},x_{21},\cdots,x_{2n},\cdots,x_{m1},\cdots,x_{mn}\right)^{T}
+    \end{aligned}$$
+\section{数独(Sudoku)}
+81个方格排列成 9 行 9 列的方块，该方块可划分成 9 个
+小方块，每个小方块由相邻 3 行 3 列共 9 个方格构成.
+
+数独填数规则：在每个方格中填入1,2,3,4,5,6,7,8,9共 9 个数字之一，使得
+每行、每列、每个小方块中填入的数字各不相同.
+
 
 \end{document} 
