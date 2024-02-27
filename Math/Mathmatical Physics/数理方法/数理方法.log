@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  10 JAN 2024 14:56
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  13 JAN 2024 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Enote/考试/数理方法/数理方法
-(d:/Enote/考试/数理方法/数理方法.tex
+**"c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Physics/数理方法/数理方法"
+(c:/Users/yangmei/myGitHub/YoungNotes/docs/Math/Mathmatical Physics/数理方法/数理方法.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (c:/texlive/2023/texmf-dist/tex/latex/ctex/ctexbook.cls (c:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
@@ -530,4 +530,134 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 16.
 
-*geometry* dr
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.2698pt, 452.96826pt, 72.2698pt)
+* v-part:(T,H,B)=(90.47955pt, 664.08774pt, 90.47955pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.96826pt
+* \textheight=664.08774pt
+* \oddsidemargin=-0.00018pt
+* \evensidemargin=-0.00018pt
+* \topmargin=-13.66423pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 16.
+(./数理方法.out) (./数理方法.out)
+\@outlinefile=\write3
+\openout3 = `数理方法.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18.
+ (c:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
+
+
+] (./数理方法.toc [1
+
+])
+\tf@toc=\write4
+\openout4 = `数理方法.toc'.
+
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.95> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 24.
+ [2]
+第一章
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
+
+ []
+
+[2]
+File: 多值函数.png Graphic file (type bmp)
+<多值函数.png>
+
+第二章
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3] [4] [5]
+第三章
+[6] [7]
+第四章
+[8]
+File: 无穷积分围道.png Graphic file (type bmp)
+<无穷积分围道.png>
+
+Missing character: There is no 围 (U+56F4) in font [lmroman8-regular]:mapping=tex-text;!
+Missing character: There is no 道 (U+9053) in font [lmroman8-regular]:mapping=tex-text;!
+Missing character: There is no 内 (U+5185) in font [lmroman8-regular]:mapping=tex-text;!
+[9]
+第五章
+[10] [11] [12]
+第六章
+[13]
+Missing character: There is no e ("65) in font rsfs10!
+Missing character: There is no e ("65) in font rsfs10!
+Missing character: There is no e ("65) in font rsfs10!
+Missing character: There is no e ("65) in font rsfs10!
+Missing character: There is no e ("65) in font rsfs10!
+[14]
+第七章
+第八章
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--421
+
+ []
+
+[15]
+Missing character: There is no ̆ ("306) in font cmmi10!
+
+Underfull \vbox (badness 4217) has occurred while \output is active []
+
+ [16]
+Overfull \hbox (17.9276pt too wide) detected at line 440
+[]
+ []
+
+[17] [18] (./数理方法.aux)
+Package rerunfilecheck Info: File `数理方法.out' has not changed.
+(rerunfilecheck)             Checksum: F5D99FEAE656495968AB72A4B8197696;5956.
+ ) 
+Here is how much of TeX's memory you used:
+ 16610 strings out of 478563
+ 369864 string characters out of 5844776
+ 1863012 words of memory out of 5000000
+ 36488 multiletter control sequences out of 15000+600000
+ 525130 words of font info for 113 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 89i,15n,97p,892b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 数理方法.pdf (21 pages).

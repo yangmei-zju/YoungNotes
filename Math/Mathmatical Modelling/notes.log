@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  6 JAN 2024 11:56
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.19)  4 FEB 2024 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1013,22 +1013,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
 File: assets/sequential_weighing_design.png Graphic file (type bmp)
 <assets/sequential_weighing_design.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--549
-
- []
-
-[16]
+[16] [17] [18] [19] [20] [21]
 第四章
-[17
-
-] [18] [19]
-
-LaTeX Warning: Command \j invalid in math mode on input line 664.
-
-Missing character: There is no ȷ ("237) in font cmmi7!
-[20] [21]
-第五章
 [22
 
 ] [23] [24] (./notes.aux)
@@ -1037,13 +1023,13 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: B21ECFE5E040E9C21838EC3B571B835B;5613.
+(rerunfilecheck)             Checksum: DF6D634967E73AD3C3AA7057699AAF4C;5537.
  ) 
 Here is how much of TeX's memory you used:
- 37294 strings out of 478563
- 894028 string characters out of 5844776
+ 37293 strings out of 478563
+ 894017 string characters out of 5844776
  1868012 words of memory out of 5000000
- 56854 multiletter control sequences out of 15000+600000
+ 56853 multiletter control sequences out of 15000+600000
  528619 words of font info for 131 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  102i,20n,105p,1719b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s

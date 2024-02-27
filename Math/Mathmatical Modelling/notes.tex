@@ -541,13 +541,33 @@ $$P{\text{先手必胜}} = P{\text{开局为不安全状态}} = \frac{\text{不�
     \includegraphics[width = 15cm]{assets/sequential_weighing_design.png}
     \caption{A sequential weighing design for c = 12 coins in w = 3 weighings with type konwn}
 \end{figure}
-自适应方案的核心在于：在每一次称重后，我们都需要把解答的空间缩小到原来的 1/3。
-\subsection{非自适应方案}
-\noindent{Type Konwn自适应最优方案}\\
+\noindent{Type Kown自适应最优方案}\\
 若 $3\leq n\leq \frac{3^w-3}{2}$，则存在一种非自适应的称量方案，使用 $w$ 次称量可从 $n$ 枚硬币中辨别伪币并确定轻重。\\
 若 $n>\frac{3^w-3}{2}$，则不存在自适应的称量方案，用 $w$ 次称量即可从 $n$ 枚硬币中辨别伪币并确定轻重。\\
-\newpage
-\chapter{随机模型}
+自适应方案的核心在于：在每一次称重后，我们都需要把解答的空间缩小到原来的 1/3。
+\subsection{非自适应方案}
+\subsubsection{Type Unkown非自适应方案}
+
+假设现有$M$枚硬币，其中有一枚假币，假币轻重不知。其中$M = \frac{1}{2}(3^n - 3)$，则可经过$n$次称重找出伪币以及其轻重。
+
+1. \textbf{标签化}：
+标签1： 给硬币从1到$M$编号。每一枚硬币赋予一个由编号的三进制构成的标签，给每一个标签前补充适当的$0$使得所有标签的位数为$n$， 其中$3^n - 1 = 2M+ 2$。\\
+标签2： 每一枚硬币赋予第二个由$3^n - 1$减去第一个标签得到的标签。
+
+2. \textbf{分类}：如果从一个标签到另一个标签的第一个发生变化的位其变化为$0\rightarrow1$ 或者 $1\rightarrow2$ 或者 $2\rightarrow 0$,  则称该标签是“顺时针”的；
+反之，若第一个发生变化的位其比变化为$1 \rightarrow 0$ 或者 $2\rightarrow 1$ 或者 $0 \rightarrow 2$， 则称该标签为逆时针的。\\
+对于任意一个硬币其必定具有顺逆两种标签。我们用$C(i,d)$来表示顺时针标签的第$i$位为$d$的硬币构成的类。$C(i,0),C(i,1),C(i,2)$大小相等，因此分别包含$\frac{1}{3}M$个元素。
+
+3. \textbf{$n$ 次称重}
+第$i$次称重将$C(i,0)$放在左盘，将$C(i,2)$放在右盘，而$C(i,1)$不上天平。该次称重的结果用$a_i$来表示，
+$$a_i = \begin{cases}&0,\text{左盘重}\\&2,\text{右盘重}\\&1,\text{两盘相平}\end{cases}$$
+有假币出现的第$i$次称重只有两种结果，假币要么偏重，其顺时针标签的第$i$位为$a_i$,要么假币偏轻，其逆时针标签的第$i$位为$a_i$。
+4. \textbf{确认伪币}
+考虑三进制数
+$$A = 3^{n-1}a_1 + 3^{n-2}a_2 + \cdots +a_n$$
+因此标签值为$A$的硬币为伪币，若标签为顺时针标签，则伪币偏重；若为逆时针标签，则伪币偏轻。
+
+
 \section{疾病检测}
 \noindent\text{疾病检测性能指标}
 记 $A$ 为患病，$B$ 为检测结果为阳性，疾病的发病率为 $r$
@@ -587,7 +607,7 @@ $$
 
 1. 将$n$ 份个体样本组成混合样本$\Pi$ 进行检测。
 
-若$\Pi$的检测结果为阴性，则$n$ 人中无感染者。
+若$\Pi$的检测结果为阴性，则$n$人中无感染者。
 若$\Pi$的检测结果为阳性，则将$n$人随机分成人数分别$\left\lfloor\frac n2\right\rfloor$，$\left\lfloor\frac n2\right\rfloor$
 的两组 A 和 B。
 
@@ -629,7 +649,7 @@ $$P\left(C_{3}|M\right)={\frac{P\left(M\mid C_{3}\right)P\left(C_{3}\right)}{P\l
 
 \textbf{De Morgan定律}
 设 $A_1,A_2,\cdots,A_n$ 为集合 $S$ 的 $n$ 个子集，则 $$\begin{aligned}&\overline{A_1\cup A_2\cup\cdots\cup A_n}={\overline{A_1}\cap \overline{A_2}\cap\cdots\cap \overline{A_n}}\\
-    &\overline{A_{1}\cap A_{2}\cap\cdots\cap A_{n}}=\overline{A_{1}}\cup\overline{A_{2}}\cup\cdots\cup\overline{A_{n}}\end{aligned}$$
+&\overline{A_{1}\cap A_{2}\cap\cdots\cap A_{n}}=\overline{A_{1}}\cup\overline{A_{2}}\cup\cdots\cup\overline{A_{n}}\end{aligned}$$
 
 \textbf{容斥原理}
 设 $A_1,A_2,\cdots,A_n$ 为集合 $S$ 的 $n$ 个有限子集，则
@@ -637,6 +657,7 @@ $$\begin{aligned}
     \left|A_{1}\cup A_{2}\cup\cdots\cup A_{n}\right|=&\sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1\le i<j\le n}\left|A_{i}\cap A_{j}\right|\\
     &+\sum_{1\leq i<j<k\leq n}\left|A_{i}\cap A_{j}\cap A_{k}\right|+\cdots+(-1)^{n-1}\left|A_{1}\cap A_{2}\cap\cdots\cap A_{n}\right|
 \end{aligned}$$
+
 \textbf{概率的加法原理}
 设$A_1, A_2,A_n$为$n$个事件,则
 $$\begin{aligned}P(A_1\cup A_2 \cdots \cup A_n) = &\sum_{i = 1}^n P(A_i) - \sum_{1 \le i < j \le n}P(A_i \cap A_j) \\
@@ -653,6 +674,7 @@ $$\begin{aligned}
     &P(A_i^j) =  1-P(\overline{A_i^j}) = 1-(1-\frac{1}{N})^i\\
     &P(B_i) = P(A_i^1A_i^2\cdots A_i^N)=1-P\left(\overline{A_{i}^{1}A_{i}^{2}\cdots A_{i}^{N}}\right)=1-P\left(\overline{A_{i}^{1}}\cup\overline{A_{i}^{2}}\cup\cdots\cup\overline{A_{i}^{N}}\right)
 \end{aligned}$$
+
 由概率加法原理，
 $$\begin{aligned}P(A_1\cup A_2 \cdots \cup A_n) =& \sum_{j = 1}^N P(\overline{A_i^j})\\
 &-\begin{matrix}\underbrace{ \sum_{1 \le j_1 < j_2 \le N}P(\overline{A_i^{j_1}} \cap \overline{A_i^{j_2}})}\\
@@ -661,21 +683,31 @@ $$\begin{aligned}P(A_1\cup A_2 \cdots \cup A_n) =& \sum_{j = 1}^N P(\overline{A_
 &+\begin{matrix}\underbrace{ (-1)^{l-1}\sum_{1 \le j_1 < j_2 \cdots < j_l\le N}P(\overline{A_i^{j_1}} \cap\cdots\cap \overline{A_j^{j_l}})}\\
     \begin{pmatrix}N\\l\end{pmatrix}\text{项}
 \end{matrix}\\
-&+\begin{matrix}\underbrace{(-1)^{N-1}\sum_{1 \le j_1<\cdots\j_N\le n}P(\overline{A_i^{j_1}} \cap\cdots\cap \overline{A_i^{j_N}})}\\
+&+\begin{matrix}\underbrace{(-1)^{N-1}\sum_{1 \le j_1<\cdots j_N\le n}P(\overline{A_i^{j_1}} \cap\cdots\cap \overline{A_i^{j_N}})}\\
     \begin{pmatrix}N\\N\end{pmatrix}\text{项}
 \end{matrix}\end{aligned}$$
 
 其中对任意$1\leq j<k\leq N,P\Big(\overline{A_{i}^{j}}\cap\overline{A_{i}^{k}}\Big)=\left(1-\frac{2}{N}\right)^{i}$
 对任意 $1\leq l\leq N\text{,}1\leq j_1<j_2<\cdots<j_l\leq N\text{,}P\left(\overline{A_i^n}\cap\overline{A_i^{j_2}}\cap\cdots\cap\overline{A_i^{j_l}}\right)=\left(1-\frac lN\right)^i$
-综上$$$$
-因此$$E(X) = \sum_{i = 1}^N \cdot P(X = i) = $$
+
+综上$$P(B_i) = 1 - \sum_{l=1}^N(-1)^{l-1}\binom{N}{l}\biggl(1-\frac{l}{N}\biggr)^i=N\sum_{k=1}^N\frac{1}{k} = \sum_{l=0}^N(-1)^l\binom{N}{l}\biggl(1-\frac{l}{N}\biggr)^i$$
+
+因此$$E(X) = \sum_{i = 1}^{\infty} i \cdot P(X = i) =\sum_{i=1}^Ni\sum_{l=0}^N(-1)^l\binom{N}{l}\biggl(1-\frac{l}{N}\biggr)^i=N\sum_{k=1}^N\frac{1}{k}$$
 \subsection{几何分布}
 随机变量$X$ 为“集齐全套赠券购买的商品件数”，定义随机变量 $Y$ 为“从收集到 $k-1$种赠券到$k$种赠券购买的商品件数"
 $$X = Y_1 + Y_2 +Y_n$$
 $Y_k$服从参数为$p = \frac{N-k+1}{N}$的几何分布， 则$$E(Y_k) = \frac{N}{N-k+1}.$$
 综上
 $$E\left(X\right)=E\left(Y_1\right)+E\left(Y_2\right)+\cdots+E\left(Y_n\right)=\sum_{k=1}^{N}\frac{N}{N-k+1}=N\sum_{k=1}^{N}\frac{1}{k}$$
-
+\section{赌徒破产问题(Gambler's Ruin)}
+\subsection{随机过程(stochastic process)}
+\begin{definition}[随机过程]
+    描述随机现象随时间推移而演化的一类数学模型。一族随机变量$\{X(t), t \in T\}$, 其中$t$是参数，$T$为参数集，
+    特别地，$T$为整数集的随机过程称为随机序列。
+\end{definition}
+\begin{definition}
+    
+\end{definition}
 \newpage
 \chapter{数学规划}
 \section{概述}
@@ -696,8 +728,10 @@ $$E\left(X\right)=E\left(Y_1\right)+E\left(Y_2\right)+\cdots+E\left(Y_n\right)=\
     \end{itemize}
 \end{itemize}
 2.按约束条件
-• 无约束优化（unconstrained optimization）
-• 约束优化（constrained optimization）
+\begin{itemize}
+    \item 无约束优化（unconstrained optimization）
+    \item 约束优化（constrained optimization）
+\end{itemize}
 \subsection{数学规划建模}
 将实际问题表示成数学规划的形式，使得可以借助数学规划的算法或软件求解具体的实例，利用数学规划的理论和方法分析解决问题
 
