@@ -171,6 +171,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.io/yangmei-zju/YoungNotes/Reading/Mindmaps/</loc>
+         <lastmod>2024-03-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.io/yangmei-zju/YoungNotes/Reading/Mathmatical%20Foundations%20for%20Big%20Data%20Analysis/</loc>
          <lastmod>2024-03-01</lastmod>
          <changefreq>daily</changefreq>
